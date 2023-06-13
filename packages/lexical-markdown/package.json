@@ -1,5 +1,5 @@
 {
-  "name": "@lexical/markdown",
+  "name": "@meogic/lexical-markdown",
   "description": "This package contains Markdown helpers and functionality for Lexical.",
   "keywords": [
     "lexical",
@@ -8,7 +8,7 @@
     "markdown"
   ],
   "license": "MIT",
-  "version": "0.11.1",
+  "version": "0.11.1-mod1",
   "main": "LexicalMarkdown.js",
   "peerDependencies": {
     "lexical": "0.11.1"

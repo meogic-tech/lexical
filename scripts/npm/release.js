@@ -17,15 +17,15 @@ const argv = require('minimist')(process.argv.slice(2));
 
 const nonInteractive = argv['non-interactive'];
 const dryRun = argv['dry-run'];
-const channel = argv.channel;
-const validChannels = new Set(['next', 'latest', 'nightly', 'dev']);
-if (!validChannels.has(channel)) {
-  console.error(`Invalid release channel: ${channel}`);
-  process.exit(1);
-}
+// const channel = argv.channel;
+// const validChannels = new Set(['next', 'latest', 'nightly', 'dev']);
+// if (!validChannels.has(channel)) {
+//   console.error(`Invalid release channel: ${channel}`);
+//   process.exit(1);
+// }
 
 async function publish() {
-  const pkgs = [LEXICAL_PKG, ...DEFAULT_PKGS];
+  const pkgs = ['lexical-markdown'];
   if (!nonInteractive) {
     console.info(
       `You're about to publish:
@@ -41,7 +41,7 @@ async function publish() {
     console.info(`Publishing ${pkg}...`);
     if (dryRun === undefined || dryRun === 0) {
       await exec(
-        `cd ./packages/${pkg}/npm && npm publish --access public --tag ${channel}`,
+        `cd ./packages/${pkg}/npm && npm publish --access public`,
       );
       console.info(`Done!`);
     } else {
