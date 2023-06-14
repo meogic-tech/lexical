@@ -186,3 +186,5 @@ export {$isRootNode, RootNode} from './nodes/LexicalRootNode';
 export type {SerializedTabNode} from './nodes/LexicalTabNode';
 export {$createTabNode, $isTabNode, TabNode} from './nodes/LexicalTabNode';
 export {$createTextNode, $isTextNode, TextNode} from './nodes/LexicalTextNode';
+export type {MergeableNode} from './nodes/LexicalMergeableNode';
+export {$isMergeableNode} from './nodes/LexicalMergeableNode';

@@ -35,6 +35,7 @@ import {
   $shouldOverrideDefaultCharacterSelection,
 } from '@lexical/selection';
 import {
+  $findMatchingParent,
   $getNearestBlockElementAncestorOrThrow,
   addClassNamesToElement,
   mergeRegister,
@@ -50,6 +51,7 @@ import {
   $getSelection,
   $insertNodes,
   $isDecoratorNode,
+  $isElementNode,
   $isNodeSelection,
   $isRangeSelection,
   $isRootNode,
@@ -628,8 +630,14 @@ export function registerRichText(editor: LexicalEditor): () => void {
         }
         const nodes = selection.getNodes();
         for (const node of nodes) {
-          const element = $getNearestBlockElementAncestorOrThrow(node);
-          element.setFormat(format);
+          const element = $findMatchingParent(
+            node,
+            (parentNode) =>
+              $isElementNode(parentNode) && !parentNode.isInline(),
+          );
+          if (element !== null) {
+            element.setFormat(format);
+          }
         }
         return true;
       },
@@ -707,6 +715,7 @@ export function registerRichText(editor: LexicalEditor): () => void {
         } else if ($isRangeSelection(selection)) {
           const possibleNode = $getAdjacentNode(selection.focus, true);
           if (
+            !event.shiftKey &&
             $isDecoratorNode(possibleNode) &&
             !possibleNode.isIsolated() &&
             !possibleNode.isInline()
@@ -739,6 +748,7 @@ export function registerRichText(editor: LexicalEditor): () => void {
           }
           const possibleNode = $getAdjacentNode(selection.focus, false);
           if (
+            !event.shiftKey &&
             $isDecoratorNode(possibleNode) &&
             !possibleNode.isIsolated() &&
             !possibleNode.isInline()
