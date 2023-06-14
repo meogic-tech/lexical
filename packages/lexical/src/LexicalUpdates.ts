@@ -35,7 +35,7 @@ import {
   $garbageCollectDetachedNodes,
 } from './LexicalGC';
 import {initMutationObserver} from './LexicalMutations';
-import {$normalizeTextNode} from './LexicalNormalization';
+import {$normalizeMergeableNode, $normalizeTextNode} from './LexicalNormalization';
 import {reconcileRoot} from './LexicalReconciler';
 import {
   $isNodeSelection,
@@ -54,6 +54,7 @@ import {
   scheduleMicroTask,
   updateDOMBlockCursorElement,
 } from './LexicalUtils';
+import {$isMergeableNode} from "./nodes/LexicalMergeableNode";
 
 let activeEditorState: null | EditorState = null;
 let activeEditor: null | LexicalEditor = null;
@@ -222,6 +223,9 @@ function $applyAllTransforms(
           !node.isUnmergeable()
         ) {
           $normalizeTextNode(node);
+        }
+        if (node && $isMergeableNode(node)) {
+          $normalizeMergeableNode(node)
         }
 
         if (

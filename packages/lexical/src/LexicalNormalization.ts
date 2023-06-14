@@ -9,8 +9,9 @@
 import type {RangeSelection, TextNode} from '.';
 import type {PointType} from './LexicalSelection';
 
-import {$isElementNode, $isTextNode} from '.';
+import {$isElementNode, $isMergeableNode, $isTextNode, LexicalNode} from '.';
 import {getActiveEditor} from './LexicalUpdates';
+import {MergeableNode} from './nodes/LexicalMergeableNode';
 
 function $canSimpleTextNodesBeMerged(
   node1: TextNode,
@@ -30,6 +31,16 @@ function $canSimpleTextNodesBeMerged(
 }
 
 function $mergeTextNodes(node1: TextNode, node2: TextNode): TextNode {
+  const writableNode1 = node1.mergeWithSibling(node2);
+
+  const normalizedNodes = getActiveEditor()._normalizedNodes;
+
+  normalizedNodes.add(node1.__key);
+  normalizedNodes.add(node2.__key);
+  return writableNode1;
+}
+
+function $mergeMergeableNodes(node1: MergeableNode<unknown>, node2: MergeableNode<unknown>): MergeableNode<unknown> {
   const writableNode1 = node1.mergeWithSibling(node2);
 
   const normalizedNodes = getActiveEditor()._normalizedNodes;
@@ -83,6 +94,32 @@ export function $normalizeTextNode(textNode: TextNode): void {
     } else {
       break;
     }
+  }
+}
+
+export function $normalizeMergeableNode(mergeableNode: MergeableNode<unknown>): void {
+  type LexicalMergeableNode = MergeableNode<unknown> & LexicalNode
+  let node = mergeableNode as LexicalMergeableNode;
+
+  // Backward
+  let previousNode;
+  console.log('node.getPreviousSibling()', node.getPreviousSibling());
+
+  if (
+      (previousNode = node.getPreviousSibling()) !== null &&
+      $isMergeableNode(previousNode)
+      ) {
+    node = $mergeMergeableNodes(previousNode, node);
+  }
+
+  // Forward
+  let nextNode;
+
+  if (
+      (nextNode = node.getNextSibling()) !== null &&
+      $isMergeableNode(nextNode)
+      ) {
+    node = $mergeMergeableNodes(node, nextNode);
   }
 }
 
