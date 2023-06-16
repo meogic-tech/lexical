@@ -13,11 +13,10 @@ import type {
   PointType,
   RangeSelection,
 } from '../LexicalSelection';
-import type {Spread} from 'lexical';
 
 import invariant from 'shared/invariant';
 
-import {$isTextNode, TextNode} from '../';
+import {$isTextNode, Spread, TextNode} from '../';
 import {
   DOUBLE_LINE_BREAK,
   ELEMENT_FORMAT_TO_TYPE,

@@ -7,12 +7,12 @@ Internally, Lexical maintains the state of a given editor in memory, updating it
 
 ## HTML
 
-Currently, HTML serialization is primarily used to transfer data between Lexical and non-Lexical editors (such as Google Docs or Quip) via the copy & paste functionality in [`@lexical/clipboard`](https://github.com/facebook/lexical/blob/main/packages/lexical-clipboard/README.md), but we also offer generic utilities for converting `Lexical` -> `HTML` and `HTML` -> `Lexical` in our [`@lexical/html`](https://github.com/facebook/lexical/blob/main/packages/lexical-html/README.md) package.
+Currently, HTML serialization is primarily used to transfer data between Lexical and non-Lexical editors (such as Google Docs or Quip) via the copy & paste functionality in [`@meogic/lexical-clipboard`](https://github.com/facebook/lexical/blob/main/packages/lexical-clipboard/README.md), but we also offer generic utilities for converting `Lexical` -> `HTML` and `HTML` -> `Lexical` in our [`@meogic/lexical-html`](https://github.com/facebook/lexical/blob/main/packages/lexical-html/README.md) package.
 
 ### Lexical -> HTML
 When generating HTML from an editor you can pass in a selection object to narrow it down to a certain section or pass in null to convert the whole editor.
 ```js
-import {$generateHtmlFromNodes} from '@lexical/html';
+import {$generateHtmlFromNodes} from '@meogic/lexical-html';
 
 const htmlString = $generateHtmlFromNodes(editor, selection | null);
 ```
@@ -40,7 +40,7 @@ If the element property is null in the return value of exportDOM, that Node will
 ### HTML -> Lexical
 
 ```js
-import {$generateNodesFromDOM} from '@lexical/html';
+import {$generateNodesFromDOM} from '@meogic/lexical-html';
 
 editor.update(() => {
   // In the browser you can use the native DOMParser API to parse the HTML string.
@@ -61,8 +61,8 @@ editor.update(() => {
 If you are running in headless mode, you can do it this way using JSDOM:
 
 ```js
-import {createHeadlessEditor} from '@lexical/headless';
-import {$generateNodesFromDOM} from '@lexical/html';
+import {createHeadlessEditor} from '@meogic/lexical-headless';
+import {$generateNodesFromDOM} from '@meogic/lexical-html';
 
 // Once you've generated LexicalNodes from your HTML you can now initialize an editor instance with the parsed nodes.
 const editorNodes = [] // Any custom nodes you register on the editor
@@ -119,7 +119,7 @@ export type DOMChildConversion = (
 ) => LexicalNode | null | void;
 ```
 
-@lexical/code provides a good example of the usefulness of this design. GitHub uses HTML ```<table>``` elements to represent the structure of copied code in HTML. If we interpreted all HTML ```<table>``` elements as literal tables, then code pasted from GitHub would appear in Lexical as a Lexical TableNode. Instead, CodeNode specifies that it can handle ```<table>``` elements too:
+@meogic/lexical-code provides a good example of the usefulness of this design. GitHub uses HTML ```<table>``` elements to represent the structure of copied code in HTML. If we interpreted all HTML ```<table>``` elements as literal tables, then code pasted from GitHub would appear in Lexical as a Lexical TableNode. Instead, CodeNode specifies that it can handle ```<table>``` elements too:
 
 ```js
 class CodeNode extends ElementNode {
@@ -251,7 +251,7 @@ static importJSON(serializedNode: SerializedHeadingNode): HeadingNode {
 It's important to note that you should avoid making breaking changes to existing fields in your JSON object, especially if backwards compatibility is an important part of your editor. That's why we recommend using a version field to separate the different changes in your node as you add or change functionality of custom nodes. Here's the serialized type definition for Lexical's base `TextNode` class:
 
 ```js
-import type {Spread} from 'lexical';
+import type {Spread} from '@meogic/lexical';
 
 // Spread is a Typescript utility that allows us to spread the properties
 // over the base SerializedLexicalNode type.
@@ -329,7 +329,7 @@ import {
   NodeKey,
   TextNode,
   SerializedTextNode
-} from 'lexical';
+} from '@meogic/lexical';
 
 export class ExtendedTextNode extends TextNode {
   constructor(text: string, key?: NodeKey) {

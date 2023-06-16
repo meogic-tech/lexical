@@ -6,13 +6,13 @@
  *
  */
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
 import {
   $getSelection,
   $isRangeSelection,
   $setSelection,
   FOCUS_COMMAND,
-} from 'lexical';
+} from '@meogic/lexical';
 import {useEffect} from 'react';
 
 const COMMAND_PRIORITY_LOW = 1;

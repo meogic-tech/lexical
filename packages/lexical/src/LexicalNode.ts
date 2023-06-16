@@ -13,7 +13,7 @@ import type {
   NodeSelection,
   RangeSelection,
 } from './LexicalSelection';
-import type {Klass} from 'lexical';
+import type {Klass} from './';
 
 import invariant from 'shared/invariant';
 
@@ -766,7 +766,7 @@ export class LexicalNode {
    * Controls how the this node is serialized to HTML. This is important for
    * copy and paste between Lexical and non-Lexical editors, or Lexical editors with different namespaces,
    * in which case the primary transfer format is HTML. It's also important if you're serializing
-   * to HTML for any other reason via {@link @lexical/html!$generateHtmlFromNodes}. You could
+   * to HTML for any other reason via {@link @meogic/lexical-html!$generateHtmlFromNodes}. You could
    * also use this method to build your own HTML renderer.
    *
    * */

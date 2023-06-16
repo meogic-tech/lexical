@@ -6,10 +6,10 @@
  *
  */
 
-import type {HistoryState} from '@lexical/history';
-import type {LexicalEditor} from 'lexical';
+import type {HistoryState} from '@meogic/lexical-history';
+import type {LexicalEditor} from '@meogic/lexical';
 
-import {createEmptyHistoryState, registerHistory} from '@lexical/history';
+import {createEmptyHistoryState, registerHistory} from '@meogic/lexical-history';
 import {useEffect, useMemo} from 'react';
 
 export function useHistory(

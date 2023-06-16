@@ -6,15 +6,15 @@
  *
  */
 
-import type {ElementFormatType, NodeKey} from 'lexical';
+import type {ElementFormatType, NodeKey} from '@meogic/lexical';
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {$isDecoratorBlockNode} from '@lexical/react/LexicalDecoratorBlockNode';
-import {useLexicalNodeSelection} from '@lexical/react/useLexicalNodeSelection';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {$isDecoratorBlockNode} from '@meogic/lexical-react/LexicalDecoratorBlockNode';
+import {useLexicalNodeSelection} from '@meogic/lexical-react/useLexicalNodeSelection';
 import {
   $getNearestBlockElementAncestorOrThrow,
   mergeRegister,
-} from '@lexical/utils';
+} from '@meogic/lexical-utils';
 import {
   $getNodeByKey,
   $getSelection,
@@ -27,7 +27,7 @@ import {
   FORMAT_ELEMENT_COMMAND,
   KEY_BACKSPACE_COMMAND,
   KEY_DELETE_COMMAND,
-} from 'lexical';
+} from '@meogic/lexical';
 import * as React from 'react';
 import {ReactNode, useCallback, useEffect, useRef} from 'react';
 

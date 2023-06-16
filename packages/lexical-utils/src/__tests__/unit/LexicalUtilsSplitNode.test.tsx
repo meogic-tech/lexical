@@ -6,10 +6,10 @@
  *
  */
 
-import type {ElementNode, LexicalEditor} from 'lexical';
+import type {ElementNode, LexicalEditor} from '@meogic/lexical';
 
-import {$generateHtmlFromNodes, $generateNodesFromDOM} from '@lexical/html';
-import {$getRoot, $isElementNode} from 'lexical';
+import {$generateHtmlFromNodes, $generateNodesFromDOM} from '@meogic/lexical-html';
+import {$getRoot, $isElementNode} from '@meogic/lexical';
 import {createTestEditor} from 'lexical/src/__tests__/utils';
 
 import {$splitNode} from '../../index';

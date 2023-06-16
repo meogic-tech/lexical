@@ -9,10 +9,10 @@
 import {
   $insertDataTransferForPlainText,
   $insertDataTransferForRichText,
-} from '@lexical/clipboard';
-import {$createListItemNode, $createListNode} from '@lexical/list';
-import {registerTabIndentation} from '@lexical/react/LexicalTabIndentationPlugin';
-import {$createHeadingNode, registerRichText} from '@lexical/rich-text';
+} from '@meogic/lexical-clipboard';
+import {$createListItemNode, $createListNode} from '@meogic/lexical-list';
+import {registerTabIndentation} from '@meogic/lexical-react/LexicalTabIndentationPlugin';
+import {$createHeadingNode, registerRichText} from '@meogic/lexical-rich-text';
 import {
   $createParagraphNode,
   $createRangeSelection,
@@ -24,7 +24,7 @@ import {
   $isRangeSelection,
   $setSelection,
   KEY_TAB_COMMAND,
-} from 'lexical';
+} from '@meogic/lexical';
 
 import {
   DataTransferMock,

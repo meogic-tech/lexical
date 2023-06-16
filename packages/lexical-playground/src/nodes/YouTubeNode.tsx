@@ -16,13 +16,13 @@ import type {
   LexicalNode,
   NodeKey,
   Spread,
-} from 'lexical';
+} from '@meogic/lexical';
 
-import {BlockWithAlignableContents} from '@lexical/react/LexicalBlockWithAlignableContents';
+import {BlockWithAlignableContents} from '@meogic/lexical-react/LexicalBlockWithAlignableContents';
 import {
   DecoratorBlockNode,
   SerializedDecoratorBlockNode,
-} from '@lexical/react/LexicalDecoratorBlockNode';
+} from '@meogic/lexical-react/LexicalDecoratorBlockNode';
 import * as React from 'react';
 
 type YouTubeComponentProps = Readonly<{

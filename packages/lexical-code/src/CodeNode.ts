@@ -19,8 +19,8 @@ import type {
   SerializedElementNode,
   Spread,
   TabNode,
-} from 'lexical';
-import type {CodeHighlightNode} from '@lexical/code';
+} from '@meogic/lexical';
+import type {CodeHighlightNode} from '@meogic/lexical-code';
 
 import 'prismjs/components/prism-clike';
 import 'prismjs/components/prism-javascript';
@@ -37,7 +37,7 @@ import 'prismjs/components/prism-typescript';
 import 'prismjs/components/prism-java';
 import 'prismjs/components/prism-cpp';
 
-import {addClassNamesToElement, isHTMLElement} from '@lexical/utils';
+import {addClassNamesToElement, isHTMLElement} from '@meogic/lexical-utils';
 import {
   $applyNodeReplacement,
   $createLineBreakNode,
@@ -45,7 +45,7 @@ import {
   ElementNode,
   $isTabNode,
   $createTabNode,
-} from 'lexical';
+} from '@meogic/lexical';
 import {
   $isCodeHighlightNode,
   $createCodeHighlightNode,

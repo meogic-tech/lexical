@@ -7,9 +7,9 @@
  */
 import './index.css';
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {eventFiles} from '@lexical/rich-text';
-import {mergeRegister} from '@lexical/utils';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {eventFiles} from '@meogic/lexical-rich-text';
+import {mergeRegister} from '@meogic/lexical-utils';
 import {
   $getNearestNodeFromDOMNode,
   $getNodeByKey,
@@ -19,7 +19,7 @@ import {
   DRAGOVER_COMMAND,
   DROP_COMMAND,
   LexicalEditor,
-} from 'lexical';
+} from '@meogic/lexical';
 import * as React from 'react';
 import {DragEvent as ReactDragEvent, useEffect, useRef, useState} from 'react';
 import {createPortal} from 'react-dom';

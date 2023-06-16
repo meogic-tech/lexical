@@ -6,8 +6,8 @@
  *
  */
 
-import {ListItemNode, ListNode} from '@lexical/list';
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
+import {ListItemNode, ListNode} from '@meogic/lexical-list';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
 import {useEffect} from 'react';
 
 import {useList} from './shared/useList';

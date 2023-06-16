@@ -1,4 +1,4 @@
-/** @module @lexical/selection */
+/** @module @meogic/lexical-selection */
 /**
  * Copyright (c) Meta Platforms, Inc. and affiliates.
  *

@@ -14,17 +14,17 @@ Lexical doesn't directly concern itself with things that monolithic editors tend
 the logic for those features can be included via a plugin interface and used as and when they're needed. This ensures great extensibility and keeps code-sizes
 to a minimal – ensuring apps only pay the cost for what they actually import.
 
-For React apps, Lexical has tight integration with React 18+ via the optional `@lexical/react` package. This package provides
+For React apps, Lexical has tight integration with React 18+ via the optional `@meogic/lexical-react` package. This package provides
 production-ready utility functions, helpers and React hooks that make it seemless to create text editors within React.
 
 ## Usage
 
-The `lexical` package contains only the core Lexical engine and nodes. This package is intended to be used in conjunction with packages that wire Lexical up to applications, such as `@lexical/react`.
+The `lexical` package contains only the core Lexical engine and nodes. This package is intended to be used in conjunction with packages that wire Lexical up to applications, such as `@meogic/lexical-react`.
 
 ## Working with Lexical
 
 This section covers how to use Lexical, independently of any framework or library. For those intending to use Lexical in their React applications,
-it's advisable to [check out the source-code for the hooks that are shipped in `@lexical/react`](https://github.com/facebook/lexical/tree/main/packages/lexical-react/src).
+it's advisable to [check out the source-code for the hooks that are shipped in `@meogic/lexical-react`](https://github.com/facebook/lexical/tree/main/packages/lexical-react/src).
 
 ### Creating an editor and using it
 
@@ -34,7 +34,7 @@ for wiring up an EditorState with the DOM. The editor is also the place where yo
 An editor instance can be created from the `lexical` package and accepts an optional configuration object that allows for theming and other options:
 
 ```js
-import {createEditor} from 'lexical';
+import {createEditor} from '@meogic/lexical';
 
 const config = {
   namespace: 'MyEditor',
@@ -109,7 +109,7 @@ based on the changes from the update.
 Here's an example of how you can update an editor instance:
 
 ```js
-import {$getRoot, $getSelection} from 'lexical';
+import {$getRoot, $getSelection} from '@meogic/lexical';
 import {$createParagraphNode} from 'lexical/PargraphNode';
 
 // Inside the `editor.update` you can use special $ prefixed helper functions.

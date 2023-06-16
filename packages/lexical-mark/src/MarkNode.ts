@@ -15,18 +15,18 @@ import type {
   RangeSelection,
   SerializedElementNode,
   Spread,
-} from 'lexical';
+} from '@meogic/lexical';
 
 import {
   addClassNamesToElement,
   removeClassNamesFromElement,
-} from '@lexical/utils';
+} from '@meogic/lexical-utils';
 import {
   $applyNodeReplacement,
   $isElementNode,
   $isRangeSelection,
   ElementNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
 export type SerializedMarkNode = Spread<
   {

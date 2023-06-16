@@ -6,7 +6,7 @@
  *
  */
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
 import * as React from 'react';
 import {useCallback, useState} from 'react';
 import useLayoutEffect from 'shared/useLayoutEffect';

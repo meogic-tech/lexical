@@ -25,7 +25,7 @@ const dryRun = argv['dry-run'];
 // }
 
 async function publish() {
-  const pkgs = ['lexical-markdown'];
+  const pkgs = [LEXICAL_PKG, ...DEFAULT_PKGS];
   if (!nonInteractive) {
     console.info(
       `You're about to publish:
@@ -39,13 +39,17 @@ async function publish() {
   for (let i = 0; i < pkgs.length; i++) {
     const pkg = pkgs[i];
     console.info(`Publishing ${pkg}...`);
-    if (dryRun === undefined || dryRun === 0) {
-      await exec(
-        `cd ./packages/${pkg}/npm && npm publish --access public`,
-      );
-      console.info(`Done!`);
-    } else {
-      console.info(`Dry run - skipping publish step.`);
+    try{
+      if (dryRun === undefined || dryRun === 0) {
+        await exec(
+            `cd ./packages/${pkg}/npm && npm publish --access public`,
+        );
+        console.info(`Done!`);
+      } else {
+        console.info(`Dry run - skipping publish step.`);
+      }
+    } catch (e) {
+      console.error(e)
     }
   }
 }

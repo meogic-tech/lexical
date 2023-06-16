@@ -15,7 +15,7 @@ import type {
   RangeSelection,
   NodeSelection,
   GridSelection,
-} from 'lexical';
+} from '@meogic/lexical';
 
 export type FindCachedParentDOMNode = (
   node: Node,

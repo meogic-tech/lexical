@@ -1,4 +1,4 @@
-/** @module @lexical/html */
+/** @module @meogic/lexical-html */
 /**
  * Copyright (c) Meta Platforms, Inc. and affiliates.
  *
@@ -16,13 +16,13 @@ import type {
   LexicalNode,
   NodeSelection,
   RangeSelection,
-} from 'lexical';
+} from '@meogic/lexical';
 
 import {
   $cloneWithProperties,
   $sliceSelectedTextNodeContent,
-} from '@lexical/selection';
-import {$getRoot, $isElementNode, $isTextNode} from 'lexical';
+} from '@meogic/lexical-selection';
+import {$getRoot, $isElementNode, $isTextNode} from '@meogic/lexical';
 
 /**
  * How you parse your html string to get a document is left up to you. In the browser you can use the native

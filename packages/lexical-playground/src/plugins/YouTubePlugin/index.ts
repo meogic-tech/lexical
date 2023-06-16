@@ -6,9 +6,9 @@
  *
  */
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {$insertNodeToNearestRoot} from '@lexical/utils';
-import {COMMAND_PRIORITY_EDITOR, createCommand, LexicalCommand} from 'lexical';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {$insertNodeToNearestRoot} from '@meogic/lexical-utils';
+import {COMMAND_PRIORITY_EDITOR, createCommand, LexicalCommand} from '@meogic/lexical';
 import {useEffect} from 'react';
 
 import {$createYouTubeNode, YouTubeNode} from '../../nodes/YouTubeNode';

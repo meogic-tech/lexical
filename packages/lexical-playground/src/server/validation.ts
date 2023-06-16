@@ -6,10 +6,10 @@
  *
  */
 
-import {createHeadlessEditor} from '@lexical/headless';
-import {$isMarkNode, $unwrapMarkNode} from '@lexical/mark';
+import {createHeadlessEditor} from '@meogic/lexical-headless';
+import {$isMarkNode, $unwrapMarkNode} from '@meogic/lexical-mark';
 import * as http from 'http';
-import {$getRoot, $isElementNode, LexicalNode} from 'lexical';
+import {$getRoot, $isElementNode, LexicalNode} from '@meogic/lexical';
 import * as url from 'url';
 
 import PlaygroundNodes from '../nodes/PlaygroundNodes';

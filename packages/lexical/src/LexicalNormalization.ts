@@ -11,7 +11,7 @@ import type {PointType} from './LexicalSelection';
 
 import {$isElementNode, $isMergeableNode, $isTextNode, LexicalNode} from '.';
 import {getActiveEditor} from './LexicalUpdates';
-import {MergeableNode} from './nodes/LexicalMergeableNode';
+import {LexicalMergeableNode, MergeableNode} from './nodes/LexicalMergeableNode';
 
 function $canSimpleTextNodesBeMerged(
   node1: TextNode,
@@ -40,8 +40,8 @@ function $mergeTextNodes(node1: TextNode, node2: TextNode): TextNode {
   return writableNode1;
 }
 
-function $mergeMergeableNodes(node1: MergeableNode<unknown>, node2: MergeableNode<unknown>): MergeableNode<unknown> {
-  const writableNode1 = node1.mergeWithSibling(node2);
+function $mergeMergeableNodes(node1: LexicalMergeableNode, node2: LexicalMergeableNode): LexicalMergeableNode {
+  const writableNode1 = node1.mergeWithSibling(node2) as LexicalMergeableNode;
 
   const normalizedNodes = getActiveEditor()._normalizedNodes;
 
@@ -98,12 +98,10 @@ export function $normalizeTextNode(textNode: TextNode): void {
 }
 
 export function $normalizeMergeableNode(mergeableNode: MergeableNode<unknown>): void {
-  type LexicalMergeableNode = MergeableNode<unknown> & LexicalNode
   let node = mergeableNode as LexicalMergeableNode;
 
   // Backward
   let previousNode;
-  console.log('node.getPreviousSibling()', node.getPreviousSibling());
 
   if (
       (previousNode = node.getPreviousSibling()) !== null &&

@@ -10,7 +10,7 @@ import {
   $createOverflowNode,
   $isOverflowNode,
   OverflowNode,
-} from '@lexical/overflow';
+} from '@meogic/lexical-overflow';
 import {
   $createParagraphNode,
   $createTextNode,
@@ -21,7 +21,7 @@ import {
   LexicalEditor,
   NodeKey,
   ParagraphNode,
-} from 'lexical';
+} from '@meogic/lexical';
 import {initializeUnitTest} from 'lexical/src/__tests__/utils';
 
 import {mergePrevious} from '../../shared/useCharacterLimit';

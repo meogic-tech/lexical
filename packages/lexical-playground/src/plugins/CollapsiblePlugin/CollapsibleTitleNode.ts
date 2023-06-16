@@ -18,7 +18,7 @@ import {
   LexicalNode,
   RangeSelection,
   SerializedElementNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
 import {$isCollapsibleContainerNode} from './CollapsibleContainerNode';
 import {$isCollapsibleContentNode} from './CollapsibleContentNode';

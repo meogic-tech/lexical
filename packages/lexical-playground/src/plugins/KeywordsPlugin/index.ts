@@ -6,10 +6,10 @@
  *
  */
 
-import type {TextNode} from 'lexical';
+import type {TextNode} from '@meogic/lexical';
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {useLexicalTextEntity} from '@lexical/react/useLexicalTextEntity';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {useLexicalTextEntity} from '@meogic/lexical-react/useLexicalTextEntity';
 import {useCallback, useEffect} from 'react';
 
 import {$createKeywordNode, KeywordNode} from '../../nodes/KeywordNode';

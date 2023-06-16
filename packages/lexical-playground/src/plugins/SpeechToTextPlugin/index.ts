@@ -6,9 +6,9 @@
  *
  */
 
-import type {LexicalCommand, LexicalEditor, RangeSelection} from 'lexical';
+import type {LexicalCommand, LexicalEditor, RangeSelection} from '@meogic/lexical';
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
 import {
   $getSelection,
   $isRangeSelection,
@@ -16,7 +16,7 @@ import {
   createCommand,
   REDO_COMMAND,
   UNDO_COMMAND,
-} from 'lexical';
+} from '@meogic/lexical';
 import {useEffect, useRef, useState} from 'react';
 
 import useReport from '../../hooks/useReport';

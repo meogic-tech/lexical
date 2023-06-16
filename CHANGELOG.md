@@ -64,7 +64,7 @@
 
 ### Breaking Changes
 
-@lexical/link will now sanitize anchor tag hrefs before rendering them to the DOM. This provides a measure of protection against XSS attacks
+@meogic/lexical-link will now sanitize anchor tag hrefs before rendering them to the DOM. This provides a measure of protection against XSS attacks
 that rely on inlining javascript in that attribute. However, it means that links using less common protocols will now be sanitized (converted to about:blank),
 which will be a breaking change for any existing links.
 
@@ -75,7 +75,7 @@ Like most other node-based logic in Lexical, the sanitization logic can be overr
 - Table feature: background color (#4345) Gerard Rovira
 - Add @react/LexicalClickableLinkPlugin (#4316) Gerard Rovira
 - TablePlugin feature: cell merge (#4343) Gerard Rovira
-- Ban javascript URLs in @lexical/link (#4342) Acy Watson
+- Ban javascript URLs in @meogic/lexical-link (#4342) Acy Watson
 - Table Cell Background Color (#4306) Gerard Rovira
 - ExportDOM in Debug Tree View (#4307) Ivaylo Pavlov
 
@@ -249,8 +249,8 @@ Like most other node-based logic in Lexical, the sanitization logic can be overr
 ## v0.8.0 (2023-02-09)
 
 This release includes some breaking changes, including:
-    - Remove of `indentList` and `outdentList` from `@lexical/list`.
-    - Refactor of the `LexicalContentEditable` types from `@lexical/react` to make them more accurate with `HTMLDivElement` attributes.
+    - Remove of `indentList` and `outdentList` from `@meogic/lexical-list`.
+    - Refactor of the `LexicalContentEditable` types from `@meogic/lexical-react` to make them more accurate with `HTMLDivElement` attributes.
 
 This release adds functionality to apply node transforms to node replacements, it allows users to specify tab indentation sizes, and improved support for tracking the origin of YJS updates for collaborative editing.
 
@@ -405,7 +405,7 @@ Contains several small bug fixes from the Lexical 0.7.0 release.
 ## v0.7.0 (2022-12-09)
 
 Lexical 0.7 includes some breaking changes, including:
-- Removal of `$cloneContents` from `@lexical/selection`
+- Removal of `$cloneContents` from `@meogic/lexical-selection`
 - Changes to `PlainTextPlugin` and `RichTextPlugin` with regards to how placeholders are handled
 - Pressing tab with the `RichTextPlugin` no longer indents by default, use the `LexicalTabIndentationPlugin` for this behavior.
 - The unstable helper function `unstable_convertLegacyJSONEditorState` has been removed. This was always meant to be a temporary work-around to allow developers to convert their formats to the new JSON format rather than using the actual editor state internals directly.
@@ -481,7 +481,7 @@ of content by providing an emulated cursor (make sure you add a `blockCursor` th
 
 - Apply event propagation between all event types (#3401) Dominic Gannaway
 - Fix selection bug in code highlighting transform (#3405) Dominic Gannaway
-- Exports SerializedNodes from @lexical/table (#3393) tolkienfan2
+- Exports SerializedNodes from @meogic/lexical-table (#3393) tolkienfan2
 - Ensure we do not render br after non inline decorators (#3406) Dominic Gannaway
 - Fix collapsible bugs (#3404) Maksim Horbachevsky
 - Add more invariants around insertion of text nodes into root (#3399) Dominic Gannaway
@@ -490,7 +490,7 @@ of content by providing an emulated cursor (make sure you add a `blockCursor` th
 - Fix element indent duplication (#3398) Dominic Gannaway
 - Fix bug in scrollIntoViewIfNeeded (#3397) Dominic Gannaway
 - Fix md links regexp (#3395) Maksim Horbachevsky
-- Add LexicalNodeEventPlugin to @lexical/react (#3392) Dominic Gannaway
+- Add LexicalNodeEventPlugin to @meogic/lexical-react (#3392) Dominic Gannaway
 - Add rel noopener by default (#3386) Acy Watson
 - Fix selection bugs with decorators (#3391) Dominic Gannaway
 - Fix experimental tables (#3390) Dominic Gannaway
@@ -556,7 +556,7 @@ of content by providing an emulated cursor (make sure you add a `blockCursor` th
 - pref(lexical-playground): reduce rendering consumption by creating compositing layers (#3069) 子瞻 Luci
 - chore: add new `eslint-plugin` with rule `no-optional-chaining` locally (#3233) Shanmughapriyan S
 - Handle left part of match (#3245) Clément Bacouelle
-- Expose Tokenizer interface to accept custom tokenizer other than Prism at @lexical/code (#3243) mizuno
+- Expose Tokenizer interface to accept custom tokenizer other than Prism at @meogic/lexical-code (#3243) mizuno
 - fix list paste issue (#3239) Acy Watson
 - Fix typos in Markdown documentation (#3236) Mikko Tirronen
 - allow overriding mark node create fn (#3229) Acy Watson
@@ -591,7 +591,7 @@ of content by providing an emulated cursor (make sure you add a `blockCursor` th
 - Fix flow types for root.select() (#3168) Maksim Horbachevsky
 - Fix linting error (#3165) John Flockton
 - Check if DOM is accessible when calling `getSelection` (#3162) Lee Sanghyeon
-- ref(selection): separate @lexical/selection/index into multiple files (#3145) quochuy
+- ref(selection): separate @meogic/lexical-selection/index into multiple files (#3145) quochuy
 - Ignore empty class names in addClassNamesToElement (#3159) Acy Watson
 - remove repeated comments (#3154) Zuckjet
 - FF Node/Grid copy-paste support (#3147) Gerard Rovira
@@ -883,7 +883,7 @@ Commits:
 - Fix VALID_TWITTER_URL to allow underscores. (#2690) hiraoka
 - fix: path to icons (#2683) Adithya Vardhan
 - Fixed typo (#2678) SalvadorLekan
-- Separate `@lexical/code` into more atomic modules (#2673) John Flockton
+- Separate `@meogic/lexical-code` into more atomic modules (#2673) John Flockton
 - fix(lexical-list): remove list breaks if selection in empty (#2672) 子瞻 Luci
 - Conditionally utilize `startTransition` if it's present (#2676) Jack Hanford
 - chore(lexical-playground): make directory clear (#2674) 子瞻 Luci
@@ -944,14 +944,14 @@ Lots of bug fixes and polish. Notably, the full text of minifed Lexical error co
 - Add missing dependencies (#2585) John Flockton
 - Website error codes - lexical.dev/error/<code> (#2574) Gerard Rovira
 - Use Vite server for E2E tests in CI (Fix windows CI failures) (#2584) Acy Watson
-- feat(lexical-playground): copy button for @lexical/code (#2396) 子瞻 Luci
+- feat(lexical-playground): copy button for @meogic/lexical-code (#2396) 子瞻 Luci
 - fix: commenting issue after ts migration (#2558) Adithya Vardhan
 - npm run changelog (#2561) Gerard Rovira
 - fix: typo edtior to editor (#2560) Florent DUVEAU
 
 ## 0.3.6 (June 29, 2022)
 
-lexical & @lexical/ packages:
+lexical & @meogic/lexical- packages:
 - fix(lexical): Text with underline format is stripped out on paste (#2555) 子瞻 Luci
 - Trigger readonly listener only when value has changed (#2550) Maksim Horbachevsky
 - fix(lexical): deselecting a decorator node by clicking (#2554) 子瞻 Luci
@@ -1089,7 +1089,7 @@ Playground
 - 4e81bd30 Alter sequence for commitPendingUpdates (#2262)
 - a0f7c0d2 Fix bug in trimTextContentFromAnchor (#2265)
 - 018083f8 Check for frozen selection only on dev env (#2264)
-- 82f4365a Move HTML<->Lexical functions to new package, @lexical/html. (#2246)
+- 82f4365a Move HTML<->Lexical functions to new package, @meogic/lexical-html. (#2246)
 - e0ad392f Expose $parseSerializedNode (#2253)
 - 584b8460 feat: drop down keyboard navigation (#1985)
 - 90aad493 Add MaxLengthPlugin (#2254)
@@ -1209,15 +1209,15 @@ Playground
 
 ## 0.1.20 (April 7, 2022)
 
-- Fix build issue with @lexical/code
+- Fix build issue with @meogic/lexical-code
 - Add $getNearestBlockElementAncestorOrThrow helper
 - Fix issues related to getting the wrong element ancestor in certain rich text features
 - Improve table resizing
 
 ## 0.1.19 (April 7, 2022)
 
-- Fix import issue in @lexical/list
-- Fix incorrect types in @lexical/dragon
+- Fix import issue in @meogic/lexical-list
+- Fix incorrect types in @meogic/lexical-dragon
 
 ## 0.1.18 (April 6, 2022)
 
@@ -1231,8 +1231,8 @@ Playground
 - Add support for keyboard selection in Tables.
 - Rename add* APIs to register* (e.g., addUpdateListener -> registerUpdateListener)
 - Deprecate editor prop in Lexical Composer
-- Reorganize code, creating several new packages: @lexical/code, rich-text, plain-text, dragon, history, link, overflow, markdown
-- Move withSubscription to @lexical/utils
+- Reorganize code, creating several new packages: @meogic/lexical-code, rich-text, plain-text, dragon, history, link, overflow, markdown
+- Move withSubscription to @meogic/lexical-utils
 - Move command types out of listener callbacks and makes them an argument to registerCommand
 - Add createCommand for better command payload typing
 - Rename execCommand to dispatchCommand
@@ -1263,16 +1263,16 @@ Playground
 
 ## 0.1.13 (March 02, 2022)
 
-- Moved appropriate NPM peer dependencies to dependencies. I.e. @lexical/clipboard will now be fetched automatically when using @lexical/react.
+- Moved appropriate NPM peer dependencies to dependencies. I.e. @meogic/lexical-clipboard will now be fetched automatically when using @meogic/lexical-react.
 - Simplified LexicalNestedComposer props to inherit parent when possible.
 - SSR fixes.
 
 ## 0.1.12 (February 28, 2022)
 
-- Added TypeScript definitions for lexical and @lexical/react
+- Added TypeScript definitions for lexical and @meogic/lexical-react
 - LexicalComposer and createEditor now take a mandatory onError prop.
 - createEditor can now take an optional readOnly prop.
-- Moved LexicalEventHelpers to @lexical/clipboard.
+- Moved LexicalEventHelpers to @meogic/lexical-clipboard.
 - Minor selection fixes.
 
 ## 0.1.11 (February 24, 2022)
@@ -1293,7 +1293,7 @@ Playground
 
 - Added `registerListener('mutation', Class<LexicalNode>, Map<NodeKey, NodeMutation>)` to track created/destroyed nodes. `NodeMutation = 'created' | 'destroyed'`
 - Removed `$log()`.
-- Moved TableNode/Row/Cell to its own `@lexical/table` package.
+- Moved TableNode/Row/Cell to its own `@meogic/lexical-table` package.
 - Composition fixes.
 
 ## 0.1.8 (February 11, 2022)

@@ -6,22 +6,22 @@
  *
  */
 
-import type {LexicalEditor, LexicalNode} from 'lexical';
+import type {LexicalEditor, LexicalNode} from '@meogic/lexical';
 
 import {
   $createOverflowNode,
   $isOverflowNode,
   OverflowNode,
-} from '@lexical/overflow';
-import {$rootTextContent} from '@lexical/text';
-import {$dfs, mergeRegister} from '@lexical/utils';
+} from '@meogic/lexical-overflow';
+import {$rootTextContent} from '@meogic/lexical-text';
+import {$dfs, mergeRegister} from '@meogic/lexical-utils';
 import {
   $getSelection,
   $isLeafNode,
   $isRangeSelection,
   $isTextNode,
   $setSelection,
-} from 'lexical';
+} from '@meogic/lexical';
 import {useEffect} from 'react';
 import invariant from 'shared/invariant';
 

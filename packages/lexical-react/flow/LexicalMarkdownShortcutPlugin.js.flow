@@ -7,7 +7,7 @@
  * @flow strict
  */
 
-import type {Transformer} from '@lexical/markdown';
+import type {Transformer} from '@meogic/lexical-markdown';
 
 declare export var DEFAULT_TRANSFORMERS: Array<Transformer>;
 

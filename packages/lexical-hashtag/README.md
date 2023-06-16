@@ -1,4 +1,4 @@
-# `@lexical/hashtag`
+# `@meogic/lexical-hashtag`
 
 This package contains the functionality for Lexical hashtags.
 

@@ -6,12 +6,12 @@
  *
  */
 
-import {$createLinkNode} from '@lexical/link';
-import {$createHeadingNode} from '@lexical/rich-text';
+import {$createLinkNode} from '@meogic/lexical-link';
+import {$createHeadingNode} from '@meogic/lexical-rich-text';
 import {
   $getSelectionStyleValueForProperty,
   $patchStyleText,
-} from '@lexical/selection';
+} from '@meogic/lexical-selection';
 import {
   $createParagraphNode,
   $createTextNode,
@@ -23,7 +23,7 @@ import {
   $isRangeSelection,
   RangeSelection,
   TextNode,
-} from 'lexical';
+} from '@meogic/lexical';
 import {
   $createTestDecoratorNode,
   $createTestElementNode,

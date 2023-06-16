@@ -1,4 +1,4 @@
-/** @module @lexical/plain-text */
+/** @module @meogic/lexical-plain-text */
 /**
  * Copyright (c) Meta Platforms, Inc. and affiliates.
  *
@@ -7,17 +7,17 @@
  *
  */
 
-import type {CommandPayloadType, LexicalEditor} from 'lexical';
+import type {CommandPayloadType, LexicalEditor} from '@meogic/lexical';
 
 import {
   $getHtmlContent,
   $insertDataTransferForPlainText,
-} from '@lexical/clipboard';
+} from '@meogic/lexical-clipboard';
 import {
   $moveCharacter,
   $shouldOverrideDefaultCharacterSelection,
-} from '@lexical/selection';
-import {mergeRegister} from '@lexical/utils';
+} from '@meogic/lexical-selection';
+import {mergeRegister} from '@meogic/lexical-utils';
 import {
   $getSelection,
   $isRangeSelection,
@@ -39,7 +39,7 @@ import {
   KEY_ENTER_COMMAND,
   PASTE_COMMAND,
   REMOVE_TEXT_COMMAND,
-} from 'lexical';
+} from '@meogic/lexical';
 import {
   CAN_USE_BEFORE_INPUT,
   IS_APPLE_WEBKIT,

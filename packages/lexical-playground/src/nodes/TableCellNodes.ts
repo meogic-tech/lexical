@@ -6,13 +6,13 @@
  *
  */
 
-import type {Klass, LexicalNode} from 'lexical';
+import type {Klass, LexicalNode} from '@meogic/lexical';
 
-import {CodeHighlightNode, CodeNode} from '@lexical/code';
-import {HashtagNode} from '@lexical/hashtag';
-import {AutoLinkNode, LinkNode} from '@lexical/link';
-import {ListItemNode, ListNode} from '@lexical/list';
-import {HeadingNode, QuoteNode} from '@lexical/rich-text';
+import {CodeHighlightNode, CodeNode} from '@meogic/lexical-code';
+import {HashtagNode} from '@meogic/lexical-hashtag';
+import {AutoLinkNode, LinkNode} from '@meogic/lexical-link';
+import {ListItemNode, ListNode} from '@meogic/lexical-list';
+import {HeadingNode, QuoteNode} from '@meogic/lexical-rich-text';
 
 import {AutocompleteNode} from './AutocompleteNode';
 import {EmojiNode} from './EmojiNode';

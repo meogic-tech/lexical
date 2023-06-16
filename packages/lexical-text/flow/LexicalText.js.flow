@@ -6,7 +6,7 @@
  *
  * @flow strict
  */
-import type {ElementNode, LexicalEditor, RootNode, TextNode} from 'lexical';
+import type {ElementNode, LexicalEditor, RootNode, TextNode} from '@meogic/lexical';
 export type TextNodeWithOffset = {
   node: TextNode,
   offset: number,

@@ -1,4 +1,4 @@
-/** @module @lexical/mark */
+/** @module @meogic/lexical-mark */
 /**
  * Copyright (c) Meta Platforms, Inc. and affiliates.
  *
@@ -8,9 +8,9 @@
  */
 
 import type {SerializedMarkNode} from './MarkNode';
-import type {LexicalNode, RangeSelection, TextNode} from 'lexical';
+import type {LexicalNode, RangeSelection, TextNode} from '@meogic/lexical';
 
-import {$isElementNode, $isTextNode} from 'lexical';
+import {$isElementNode, $isTextNode} from '@meogic/lexical';
 
 import {$createMarkNode, $isMarkNode, MarkNode} from './MarkNode';
 

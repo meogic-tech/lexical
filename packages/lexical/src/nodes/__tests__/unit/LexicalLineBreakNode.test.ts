@@ -6,7 +6,7 @@
  *
  */
 
-import {$createLineBreakNode, $isLineBreakNode} from 'lexical';
+import {$createLineBreakNode, $isLineBreakNode} from '@meogic/lexical';
 
 import {initializeUnitTest} from '../../../__tests__/utils';
 

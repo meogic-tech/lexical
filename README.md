@@ -44,25 +44,25 @@ Here are some examples of what you can do with Lexical:
 
 > Note: Lexical is not only limited to React. Lexical can support any underlying DOM based library once bindings for that library have been created.
 
-Install `lexical` and `@lexical/react`:
+Install `lexical` and `@meogic/lexical-react`:
 
 ```
-npm install --save lexical @lexical/react
+npm install --save lexical @meogic/lexical-react
 ```
 
-Below is an example of a basic plain text editor using `lexical` and `@lexical/react` ([try it yourself](https://codesandbox.io/s/lexical-plain-text-example-g932e)).
+Below is an example of a basic plain text editor using `lexical` and `@meogic/lexical-react` ([try it yourself](https://codesandbox.io/s/lexical-plain-text-example-g932e)).
 
 ```jsx
-import {$getRoot, $getSelection} from 'lexical';
+import {$getRoot, $getSelection} from '@meogic/lexical';
 import {useEffect} from 'react';
 
-import {LexicalComposer} from '@lexical/react/LexicalComposer';
-import {PlainTextPlugin} from '@lexical/react/LexicalPlainTextPlugin';
-import {ContentEditable} from '@lexical/react/LexicalContentEditable';
-import {HistoryPlugin} from '@lexical/react/LexicalHistoryPlugin';
-import {OnChangePlugin} from '@lexical/react/LexicalOnChangePlugin';
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import LexicalErrorBoundary from '@lexical/react/LexicalErrorBoundary';
+import {LexicalComposer} from '@meogic/lexical-react/LexicalComposer';
+import {PlainTextPlugin} from '@meogic/lexical-react/LexicalPlainTextPlugin';
+import {ContentEditable} from '@meogic/lexical-react/LexicalContentEditable';
+import {HistoryPlugin} from '@meogic/lexical-react/LexicalHistoryPlugin';
+import {OnChangePlugin} from '@meogic/lexical-react/LexicalOnChangePlugin';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import LexicalErrorBoundary from '@meogic/lexical-react/LexicalErrorBoundary';
 
 const theme = {
   // Theme styling goes here
@@ -134,7 +134,7 @@ editor surfaces. Lexical has a few concepts that are worth exploring:
 
 Editor instances are the core thing that wires everything together. You can attach a contenteditable DOM element to editor instances, and also
 register listeners and commands. Most importantly, the editor allows for updates to its `EditorState`. You can create an editor instance
-using the `createEditor()` API, however you normally don't have to worry when using framework bindings such as `@lexical/react` as this
+using the `createEditor()` API, however you normally don't have to worry when using framework bindings such as `@meogic/lexical-react` as this
 is handled for you.
 
 ### Editor States
@@ -189,7 +189,7 @@ propagated through all handlers by priority until a handler stops the propagatio
 ## Working with Lexical
 
 This section covers how to use Lexical, independently of any framework or library. For those intending to use Lexical in their React applications,
-it's advisable to [check out the source-code for the hooks that are shipped in `@lexical/react`](https://github.com/facebook/lexical/tree/main/packages/lexical-react/src).
+it's advisable to [check out the source-code for the hooks that are shipped in `@meogic/lexical-react`](https://github.com/facebook/lexical/tree/main/packages/lexical-react/src).
 
 ### Creating an editor and using it
 
@@ -199,7 +199,7 @@ for wiring up an EditorState with the DOM. The editor is also the place where yo
 An editor instance can be created from the `lexical` package and accepts an optional configuration object that allows for theming and other options:
 
 ```js
-import {createEditor} from 'lexical';
+import {createEditor} from '@meogic/lexical';
 
 const config = {
   namespace: 'MyEditor',
@@ -262,7 +262,7 @@ based on the changes from the update.
 Here's an example of how you can update an editor instance:
 
 ```js
-import {$getRoot, $getSelection, $createParagraphNode} from 'lexical';
+import {$getRoot, $getSelection, $createParagraphNode} from '@meogic/lexical';
 
 // Inside the `editor.update` you can use special $ prefixed helper functions.
 // These functions cannot be used outside the closure, and will error if you try.

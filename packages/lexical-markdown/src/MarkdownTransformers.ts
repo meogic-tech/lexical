@@ -6,11 +6,11 @@
  *
  */
 
-import type {ListType} from '@lexical/list';
-import type {HeadingTagType} from '@lexical/rich-text';
+import type {ListType} from '@meogic/lexical-list';
+import type {HeadingTagType} from '@meogic/lexical-rich-text';
 
-import {$createCodeNode, $isCodeNode, CodeNode} from '@lexical/code';
-import {$createLinkNode, $isLinkNode, LinkNode} from '@lexical/link';
+import {$createCodeNode, $isCodeNode, CodeNode} from '@meogic/lexical-code';
+import {$createLinkNode, $isLinkNode, LinkNode} from '@meogic/lexical-link';
 import {
   $createListItemNode,
   $createListNode,
@@ -18,7 +18,7 @@ import {
   $isListNode,
   ListItemNode,
   ListNode,
-} from '@lexical/list';
+} from '@meogic/lexical-list';
 import {
   $createHeadingNode,
   $createQuoteNode,
@@ -26,7 +26,7 @@ import {
   $isQuoteNode,
   HeadingNode,
   QuoteNode,
-} from '@lexical/rich-text';
+} from '@meogic/lexical-rich-text';
 import {
   $createLineBreakNode,
   $createTextNode,
@@ -36,7 +36,7 @@ import {
   LexicalNode,
   TextFormatType,
   TextNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
 export type Transformer =
   | ElementTransformer

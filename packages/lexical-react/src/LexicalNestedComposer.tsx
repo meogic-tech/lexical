@@ -6,14 +6,14 @@
  *
  */
 
-import type {LexicalComposerContextType} from '@lexical/react/LexicalComposerContext';
+import type {LexicalComposerContextType} from '@meogic/lexical-react/LexicalComposerContext';
 
-import {useCollaborationContext} from '@lexical/react/LexicalCollaborationContext';
+import {useCollaborationContext} from '@meogic/lexical-react/LexicalCollaborationContext';
 import {
   createLexicalComposerContext,
   LexicalComposerContext,
-} from '@lexical/react/LexicalComposerContext';
-import {EditorThemeClasses, Klass, LexicalEditor, LexicalNode} from 'lexical';
+} from '@meogic/lexical-react/LexicalComposerContext';
+import {EditorThemeClasses, Klass, LexicalEditor, LexicalNode} from '@meogic/lexical';
 import * as React from 'react';
 import {ReactNode, useContext, useEffect, useMemo, useRef} from 'react';
 import invariant from 'shared/invariant';

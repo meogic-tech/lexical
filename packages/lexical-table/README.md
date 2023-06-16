@@ -1,4 +1,4 @@
-# `@lexical/table`
+# `@meogic/lexical-table`
 
 This package contains the functionality for the Tables feature of Lexical.
 

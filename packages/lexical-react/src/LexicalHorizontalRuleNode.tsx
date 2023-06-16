@@ -14,11 +14,11 @@ import type {
   LexicalNode, MergeableNode,
   NodeKey,
   SerializedLexicalNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {useLexicalNodeSelection} from '@lexical/react/useLexicalNodeSelection';
-import {mergeRegister} from '@lexical/utils';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {useLexicalNodeSelection} from '@meogic/lexical-react/useLexicalNodeSelection';
+import {mergeRegister} from '@meogic/lexical-utils';
 import {
   $applyNodeReplacement,
   $getNodeByKey,
@@ -30,7 +30,7 @@ import {
   DecoratorNode,
   KEY_BACKSPACE_COMMAND,
   KEY_DELETE_COMMAND,
-} from 'lexical';
+} from '@meogic/lexical';
 import * as React from 'react';
 import {useCallback, useEffect} from 'react';
 
@@ -145,7 +145,12 @@ export class HorizontalRuleNode extends DecoratorNode<JSX.Element> implements Me
 
   constructor(key?: NodeKey, count?: number) {
     super(key);
-    this.__count = count ?? 1;
+    if (count === undefined) {
+      this.__count = 1;
+    } else {
+      this.__count = count;
+    }
+
   }
 
   exportJSON(): SerializedLexicalNode {
@@ -183,7 +188,6 @@ export class HorizontalRuleNode extends DecoratorNode<JSX.Element> implements Me
   mergeWithSibling(target: HorizontalRuleNode): HorizontalRuleNode {
     const writableSelf = this.getWritable();
     writableSelf.__count = this.getCount() + target.getCount()
-    console.log('newCount', writableSelf.__count, 'add from', this.getCount(), target.getCount())
     target.remove();
     return writableSelf;
   }

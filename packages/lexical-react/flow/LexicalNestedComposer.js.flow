@@ -7,7 +7,7 @@
  * @flow strict
  */
 
-import type {LexicalEditor, EditorThemeClasses, LexicalNode} from 'lexical';
+import type {LexicalEditor, EditorThemeClasses, LexicalNode} from '@meogic/lexical';
 
 declare export function LexicalNestedComposer({
   children: React$Node,

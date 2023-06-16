@@ -6,8 +6,8 @@
  *
  */
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import useLexicalEditable from '@lexical/react/useLexicalEditable';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import useLexicalEditable from '@meogic/lexical-react/useLexicalEditable';
 import * as React from 'react';
 
 import {useCanShowPlaceholder} from './shared/useCanShowPlaceholder';

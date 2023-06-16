@@ -6,10 +6,10 @@
  *
  */
 
-import type {LexicalEditor} from 'lexical';
+import type {LexicalEditor} from '@meogic/lexical';
 
-import {$canShowPlaceholderCurry} from '@lexical/text';
-import {mergeRegister} from '@lexical/utils';
+import {$canShowPlaceholderCurry} from '@meogic/lexical-text';
+import {mergeRegister} from '@meogic/lexical-utils';
 import {useState} from 'react';
 import useLayoutEffect from 'shared/useLayoutEffect';
 

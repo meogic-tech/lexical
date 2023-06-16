@@ -11,7 +11,7 @@ import type {
   NodeKey,
   SerializedElementNode,
   Spread,
-} from 'lexical';
+} from '../';
 
 import {ElementNode} from './LexicalElementNode';
 

@@ -6,7 +6,7 @@
  *
  */
 
-import {$getNearestNodeOfType} from '@lexical/utils';
+import {$getNearestNodeOfType} from '@meogic/lexical-utils';
 import {
   $createParagraphNode,
   $getSelection,
@@ -21,7 +21,7 @@ import {
   LexicalNode,
   NodeKey,
   ParagraphNode,
-} from 'lexical';
+} from '@meogic/lexical';
 import invariant from 'shared/invariant';
 
 import {

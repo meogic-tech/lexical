@@ -6,9 +6,9 @@
  *
  */
 
-import type {Spread} from 'lexical';
+import type {Spread} from '@meogic/lexical';
 
-import {addClassNamesToElement} from '@lexical/utils';
+import {addClassNamesToElement} from '@meogic/lexical-utils';
 import {
   $applyNodeReplacement,
   DEPRECATED_GridRowNode,
@@ -18,7 +18,7 @@ import {
   LexicalNode,
   NodeKey,
   SerializedElementNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
 import {PIXEL_VALUE_REG_EXP} from './constants';
 

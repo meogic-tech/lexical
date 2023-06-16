@@ -6,13 +6,13 @@
  *
  */
 
-import {CodeNode} from '@lexical/code';
-import {createHeadlessEditor} from '@lexical/headless';
-import {$generateHtmlFromNodes, $generateNodesFromDOM} from '@lexical/html';
-import {LinkNode} from '@lexical/link';
-import {ListItemNode, ListNode} from '@lexical/list';
-import {HeadingNode, QuoteNode} from '@lexical/rich-text';
-import {$getRoot, $insertNodes} from 'lexical';
+import {CodeNode} from '@meogic/lexical-code';
+import {createHeadlessEditor} from '@meogic/lexical-headless';
+import {$generateHtmlFromNodes, $generateNodesFromDOM} from '@meogic/lexical-html';
+import {LinkNode} from '@meogic/lexical-link';
+import {ListItemNode, ListNode} from '@meogic/lexical-list';
+import {HeadingNode, QuoteNode} from '@meogic/lexical-rich-text';
+import {$getRoot, $insertNodes} from '@meogic/lexical';
 
 import {
   $convertFromMarkdownString,

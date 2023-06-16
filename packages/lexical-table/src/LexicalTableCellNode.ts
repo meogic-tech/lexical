@@ -16,16 +16,16 @@ import type {
   NodeKey,
   SerializedGridCellNode,
   Spread,
-} from 'lexical';
+} from '@meogic/lexical';
 
-import {addClassNamesToElement} from '@lexical/utils';
+import {addClassNamesToElement} from '@meogic/lexical-utils';
 import {
   $applyNodeReplacement,
   $createParagraphNode,
   $isElementNode,
   $isLineBreakNode,
   DEPRECATED_GridCellNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
 import {PIXEL_VALUE_REG_EXP} from './constants';
 

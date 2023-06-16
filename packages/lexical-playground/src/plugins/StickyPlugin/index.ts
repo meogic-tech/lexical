@@ -6,7 +6,7 @@
  *
  */
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
 import {useEffect} from 'react';
 
 import {StickyNode} from '../../nodes/StickyNode';

@@ -16,12 +16,12 @@ import {
   TEXT_MATCH_TRANSFORMERS,
   TextMatchTransformer,
   Transformer,
-} from '@lexical/markdown';
+} from '@meogic/lexical-markdown';
 import {
   $createHorizontalRuleNode,
   $isHorizontalRuleNode,
   HorizontalRuleNode,
-} from '@lexical/react/LexicalHorizontalRuleNode';
+} from '@meogic/lexical-react/LexicalHorizontalRuleNode';
 import {
   $createTableCellNode,
   $createTableNode,
@@ -33,13 +33,13 @@ import {
   TableCellNode,
   TableNode,
   TableRowNode,
-} from '@lexical/table';
+} from '@meogic/lexical-table';
 import {
   $createTextNode,
   $isParagraphNode,
   $isTextNode,
   LexicalNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
 import {
   $createEquationNode,

@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  *
  */
-import {$createParagraphNode, $getRoot} from 'lexical';
+import {$createParagraphNode, $getRoot} from '@meogic/lexical';
 import {initializeUnitTest} from 'lexical/src/__tests__/utils';
 
 import {$createListItemNode, $createListNode} from '../..';

@@ -6,30 +6,30 @@
  *
  */
 
-import {$createCodeNode} from '@lexical/code';
+import {$createCodeNode} from '@meogic/lexical-code';
 import {
   INSERT_CHECK_LIST_COMMAND,
   INSERT_ORDERED_LIST_COMMAND,
   INSERT_UNORDERED_LIST_COMMAND,
-} from '@lexical/list';
-import {INSERT_EMBED_COMMAND} from '@lexical/react/LexicalAutoEmbedPlugin';
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {INSERT_HORIZONTAL_RULE_COMMAND} from '@lexical/react/LexicalHorizontalRuleNode';
+} from '@meogic/lexical-list';
+import {INSERT_EMBED_COMMAND} from '@meogic/lexical-react/LexicalAutoEmbedPlugin';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {INSERT_HORIZONTAL_RULE_COMMAND} from '@meogic/lexical-react/LexicalHorizontalRuleNode';
 import {
   LexicalTypeaheadMenuPlugin,
   MenuOption,
   useBasicTypeaheadTriggerMatch,
-} from '@lexical/react/LexicalTypeaheadMenuPlugin';
-import {$createHeadingNode, $createQuoteNode} from '@lexical/rich-text';
-import {$setBlocksType} from '@lexical/selection';
-import {INSERT_TABLE_COMMAND} from '@lexical/table';
+} from '@meogic/lexical-react/LexicalTypeaheadMenuPlugin';
+import {$createHeadingNode, $createQuoteNode} from '@meogic/lexical-rich-text';
+import {$setBlocksType} from '@meogic/lexical-selection';
+import {INSERT_TABLE_COMMAND} from '@meogic/lexical-table';
 import {
   $createParagraphNode,
   $getSelection,
   $isRangeSelection,
   FORMAT_ELEMENT_COMMAND,
   TextNode,
-} from 'lexical';
+} from '@meogic/lexical';
 import {useCallback, useMemo, useState} from 'react';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';

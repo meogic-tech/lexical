@@ -8,7 +8,7 @@
  *
  */
 
-import type {LexicalEditor} from 'lexical';
+import type {LexicalEditor} from '@meogic/lexical';
 
 declare export function importFile(editor: LexicalEditor): void;
 declare export function exportFile(

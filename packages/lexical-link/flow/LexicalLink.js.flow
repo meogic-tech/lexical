@@ -13,9 +13,9 @@ import type {
   NodeKey,
   RangeSelection,
   LexicalCommand,
-} from 'lexical';
-import {addClassNamesToElement} from '@lexical/utils';
-import {$isElementNode, ElementNode} from 'lexical';
+} from '@meogic/lexical';
+import {addClassNamesToElement} from '@meogic/lexical-utils';
+import {$isElementNode, ElementNode} from '@meogic/lexical';
 export type LinkAttributes = {
   rel?: null | string,
   target?: null | string,

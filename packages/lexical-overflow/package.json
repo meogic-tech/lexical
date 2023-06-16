@@ -1,5 +1,5 @@
 {
-  "name": "@lexical/overflow",
+  "name": "@meogic/lexical-overflow",
   "description": "This package contains selection overflow helpers and nodes for Lexical.",
   "keywords": [
     "lexical",
@@ -8,10 +8,10 @@
     "overflow"
   ],
   "license": "MIT",
-  "version": "0.11.1",
+  "version": "0.11.1-mod5",
   "main": "LexicalOverflow.js",
   "peerDependencies": {
-    "lexical": "0.11.1"
+    "@meogic/lexical": "0.11.1-mod5"
   },
   "repository": {
     "type": "git",

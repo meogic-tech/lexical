@@ -5,13 +5,13 @@
  * LICENSE file in the root directory of this source tree.
  *
  */
-import type {Cell} from '@lexical/table';
-import type {LexicalEditor} from 'lexical';
+import type {Cell} from '@meogic/lexical-table';
+import type {LexicalEditor} from '@meogic/lexical';
 
 import './index.css';
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import useLexicalEditable from '@lexical/react/useLexicalEditable';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import useLexicalEditable from '@meogic/lexical-react/useLexicalEditable';
 import {
   $getTableColumnIndexFromTableCellNode,
   $getTableNodeFromLexicalNodeOrThrow,
@@ -19,14 +19,14 @@ import {
   $isTableCellNode,
   $isTableRowNode,
   getCellFromTarget,
-} from '@lexical/table';
+} from '@meogic/lexical-table';
 import {
   $getNearestNodeFromDOMNode,
   $getSelection,
   COMMAND_PRIORITY_HIGH,
   DEPRECATED_$isGridSelection,
   SELECTION_CHANGE_COMMAND,
-} from 'lexical';
+} from '@meogic/lexical';
 import * as React from 'react';
 import {
   MouseEventHandler,

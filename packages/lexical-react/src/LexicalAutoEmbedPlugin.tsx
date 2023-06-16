@@ -5,16 +5,16 @@
  * LICENSE file in the root directory of this source tree.
  *
  */
-import type {LexicalNode, MutationListener} from 'lexical';
+import type {LexicalNode, MutationListener} from '@meogic/lexical';
 
-import {$isLinkNode, AutoLinkNode, LinkNode} from '@lexical/link';
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
+import {$isLinkNode, AutoLinkNode, LinkNode} from '@meogic/lexical-link';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
 import {
   LexicalNodeMenuPlugin,
   MenuOption,
   MenuRenderFn,
-} from '@lexical/react/LexicalNodeMenuPlugin';
-import {mergeRegister} from '@lexical/utils';
+} from '@meogic/lexical-react/LexicalNodeMenuPlugin';
+import {mergeRegister} from '@meogic/lexical-utils';
 import {
   $getNodeByKey,
   $getSelection,
@@ -24,7 +24,7 @@ import {
   LexicalEditor,
   NodeKey,
   TextNode,
-} from 'lexical';
+} from '@meogic/lexical';
 import {useCallback, useEffect, useMemo, useState} from 'react';
 import * as React from 'react';
 

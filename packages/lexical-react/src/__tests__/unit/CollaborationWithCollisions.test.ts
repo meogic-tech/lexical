@@ -17,7 +17,7 @@ import {
   LexicalNode,
   NodeSelection,
   RangeSelection,
-} from 'lexical';
+} from '@meogic/lexical';
 
 import {
   connectClients,

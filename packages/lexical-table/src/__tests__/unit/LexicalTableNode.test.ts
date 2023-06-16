@@ -6,7 +6,7 @@
  *
  */
 
-import {$createTableNode} from '@lexical/table';
+import {$createTableNode} from '@meogic/lexical-table';
 import {initializeUnitTest} from 'lexical/src/__tests__/utils';
 
 const editorConfig = Object.freeze({

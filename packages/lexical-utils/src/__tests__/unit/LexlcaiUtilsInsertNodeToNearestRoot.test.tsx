@@ -6,10 +6,10 @@
  *
  */
 
-import type {LexicalEditor, LexicalNode} from 'lexical';
+import type {LexicalEditor, LexicalNode} from '@meogic/lexical';
 
-import {$generateHtmlFromNodes, $generateNodesFromDOM} from '@lexical/html';
-import {$getRoot, $isElementNode, $setSelection} from 'lexical';
+import {$generateHtmlFromNodes, $generateNodesFromDOM} from '@meogic/lexical-html';
+import {$getRoot, $isElementNode, $setSelection} from '@meogic/lexical';
 import {$createRangeSelection} from 'lexical/src';
 import {
   $createTestDecoratorNode,

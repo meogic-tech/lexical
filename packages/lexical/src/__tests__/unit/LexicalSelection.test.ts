@@ -6,14 +6,14 @@
  *
  */
 
-import {$createLinkNode} from '@lexical/link';
+import {$createLinkNode} from '@meogic/lexical-link';
 import {
   $createParagraphNode,
   $createTextNode,
   $getRoot,
   LexicalEditor,
   RangeSelection,
-} from 'lexical';
+} from '@meogic/lexical';
 
 import {initializeUnitTest} from '../utils';
 

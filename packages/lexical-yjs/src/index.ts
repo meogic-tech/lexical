@@ -1,4 +1,4 @@
-/** @module @lexical/yjs */
+/** @module @meogic/lexical-yjs */
 /**
  * Copyright (c) Meta Platforms, Inc. and affiliates.
  *
@@ -8,10 +8,10 @@
  */
 
 import type {Binding} from './Bindings';
-import type {LexicalCommand} from 'lexical';
+import type {LexicalCommand} from '@meogic/lexical';
 import type {Doc, RelativePosition, UndoManager, XmlText} from 'yjs';
 
-import {createCommand} from 'lexical';
+import {createCommand} from '@meogic/lexical';
 import {UndoManager as YjsUndoManager} from 'yjs';
 
 export type UserState = {

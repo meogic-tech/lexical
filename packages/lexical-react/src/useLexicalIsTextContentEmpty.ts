@@ -6,9 +6,9 @@
  *
  */
 
-import type {LexicalEditor} from 'lexical';
+import type {LexicalEditor} from '@meogic/lexical';
 
-import {$isRootTextContentEmptyCurry} from '@lexical/text';
+import {$isRootTextContentEmptyCurry} from '@meogic/lexical-text';
 import {useState} from 'react';
 import useLayoutEffect from 'shared/useLayoutEffect';
 

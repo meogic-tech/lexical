@@ -11,11 +11,11 @@ import type {
   NodeKey,
   NodeSelection,
   RangeSelection,
-} from 'lexical';
+} from '@meogic/lexical';
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {$isAtNodeEnd} from '@lexical/selection';
-import {mergeRegister} from '@lexical/utils';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {$isAtNodeEnd} from '@meogic/lexical-selection';
+import {mergeRegister} from '@meogic/lexical-utils';
 import {
   $createTextNode,
   $getNodeByKey,
@@ -26,7 +26,7 @@ import {
   COMMAND_PRIORITY_LOW,
   KEY_ARROW_RIGHT_COMMAND,
   KEY_TAB_COMMAND,
-} from 'lexical';
+} from '@meogic/lexical';
 import {useCallback, useEffect} from 'react';
 
 import {useSharedAutocompleteContext} from '../../context/SharedAutocompleteContext';

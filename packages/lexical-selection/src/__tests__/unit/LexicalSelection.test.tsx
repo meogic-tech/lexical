@@ -6,20 +6,20 @@
  *
  */
 
-import {$createLinkNode} from '@lexical/link';
-import {$createListItemNode, $createListNode} from '@lexical/list';
-import {useLexicalComposerContext} from '@lexical/react/src/LexicalComposerContext';
-import {ContentEditable} from '@lexical/react/src/LexicalContentEditable';
-import LexicalErrorBoundary from '@lexical/react/src/LexicalErrorBoundary';
-import {HistoryPlugin} from '@lexical/react/src/LexicalHistoryPlugin';
-import {RichTextPlugin} from '@lexical/react/src/LexicalRichTextPlugin';
-import {$createHeadingNode} from '@lexical/rich-text';
+import {$createLinkNode} from '@meogic/lexical-link';
+import {$createListItemNode, $createListNode} from '@meogic/lexical-list';
+import {useLexicalComposerContext} from '@meogic/lexical-react/src/LexicalComposerContext';
+import {ContentEditable} from '@meogic/lexical-react/src/LexicalContentEditable';
+import LexicalErrorBoundary from '@meogic/lexical-react/src/LexicalErrorBoundary';
+import {HistoryPlugin} from '@meogic/lexical-react/src/LexicalHistoryPlugin';
+import {RichTextPlugin} from '@meogic/lexical-react/src/LexicalRichTextPlugin';
+import {$createHeadingNode} from '@meogic/lexical-rich-text';
 import {
   $addNodeStyle,
   $getSelectionStyleValueForProperty,
   $setBlocksType,
-} from '@lexical/selection';
-import {$createTableNodeWithDimensions} from '@lexical/table';
+} from '@meogic/lexical-selection';
+import {$createTableNodeWithDimensions} from '@meogic/lexical-table';
 import {
   $createLineBreakNode,
   $createParagraphNode,
@@ -29,7 +29,7 @@ import {
   $isNodeSelection,
   $isRangeSelection,
   ParagraphNode,
-} from 'lexical';
+} from '@meogic/lexical';
 import {$createRangeSelection, $setSelection} from 'lexical/src';
 import {
   $assertRangeSelection,

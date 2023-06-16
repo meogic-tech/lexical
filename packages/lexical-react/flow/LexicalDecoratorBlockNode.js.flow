@@ -12,9 +12,9 @@ import type {
   LexicalNode,
   LexicalCommand,
   NodeKey,
-} from 'lexical';
+} from '@meogic/lexical';
 
-import {DecoratorNode} from 'lexical';
+import {DecoratorNode} from '@meogic/lexical';
 
 declare export class DecoratorBlockNode<T> extends DecoratorNode<T> {
   __format: ?ElementFormatType;

@@ -6,7 +6,7 @@
  *
  */
 
-import type {LexicalEditor} from 'lexical';
+import type {LexicalEditor} from '@meogic/lexical';
 
 import {
   $handleListInsertParagraph,
@@ -15,9 +15,9 @@ import {
   insertList,
   REMOVE_LIST_COMMAND,
   removeList,
-} from '@lexical/list';
-import {mergeRegister} from '@lexical/utils';
-import {COMMAND_PRIORITY_LOW, INSERT_PARAGRAPH_COMMAND} from 'lexical';
+} from '@meogic/lexical-list';
+import {mergeRegister} from '@meogic/lexical-utils';
+import {COMMAND_PRIORITY_LOW, INSERT_PARAGRAPH_COMMAND} from '@meogic/lexical';
 import {useEffect} from 'react';
 
 export function useList(editor: LexicalEditor): void {

@@ -17,14 +17,14 @@ import type {
   LexicalNode,
   NodeKey,
   SerializedElementNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
-import {addClassNamesToElement} from '@lexical/utils';
+import {addClassNamesToElement} from '@meogic/lexical-utils';
 import {
   $applyNodeReplacement,
   $getNearestNodeFromDOMNode,
   DEPRECATED_GridNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
 import {$isTableCellNode} from './LexicalTableCellNode';
 import {$isTableRowNode, TableRowNode} from './LexicalTableRowNode';

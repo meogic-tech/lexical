@@ -46,27 +46,27 @@ const closureOptions = {
 };
 
 const wwwMappings = {
-  '@lexical/clipboard': 'LexicalClipboard',
-  '@lexical/code': 'LexicalCode',
-  '@lexical/dragon': 'LexicalDragon',
-  '@lexical/file': 'LexicalFile',
-  '@lexical/hashtag': 'LexicalHashtag',
-  '@lexical/headless': 'LexicalHeadless',
-  '@lexical/history': 'LexicalHistory',
-  '@lexical/html': 'LexicalHtml',
-  '@lexical/link': 'LexicalLink',
-  '@lexical/list': 'LexicalList',
-  '@lexical/mark': 'LexicalMark',
-  '@lexical/markdown': 'LexicalMarkdown',
-  '@lexical/offset': 'LexicalOffset',
-  '@lexical/overflow': 'LexicalOverflow',
-  '@lexical/plain-text': 'LexicalPlainText',
-  '@lexical/rich-text': 'LexicalRichText',
-  '@lexical/selection': 'LexicalSelection',
-  '@lexical/table': 'LexicalTable',
-  '@lexical/text': 'LexicalText',
-  '@lexical/utils': 'LexicalUtils',
-  '@lexical/yjs': 'LexicalYjs',
+  '@meogic/lexical-clipboard': 'LexicalClipboard',
+  '@meogic/lexical-code': 'LexicalCode',
+  '@meogic/lexical-dragon': 'LexicalDragon',
+  '@meogic/lexical-file': 'LexicalFile',
+  '@meogic/lexical-hashtag': 'LexicalHashtag',
+  '@meogic/lexical-headless': 'LexicalHeadless',
+  '@meogic/lexical-history': 'LexicalHistory',
+  '@meogic/lexical-html': 'LexicalHtml',
+  '@meogic/lexical-link': 'LexicalLink',
+  '@meogic/lexical-list': 'LexicalList',
+  '@meogic/lexical-mark': 'LexicalMark',
+  '@meogic/lexical-markdown': 'LexicalMarkdown',
+  '@meogic/lexical-offset': 'LexicalOffset',
+  '@meogic/lexical-overflow': 'LexicalOverflow',
+  '@meogic/lexical-plain-text': 'LexicalPlainText',
+  '@meogic/lexical-rich-text': 'LexicalRichText',
+  '@meogic/lexical-selection': 'LexicalSelection',
+  '@meogic/lexical-table': 'LexicalTable',
+  '@meogic/lexical-text': 'LexicalText',
+  '@meogic/lexical-utils': 'LexicalUtils',
+  '@meogic/lexical-yjs': 'LexicalYjs',
   lexical: 'Lexical',
   'prismjs/components/prism-core': 'prismjs',
   'react-dom': 'ReactDOMComet',
@@ -83,13 +83,13 @@ const lexicalReactModules = fs
 
 const lexicalReactModuleExternals = lexicalReactModules.map((module) => {
   const basename = path.basename(path.basename(module, '.ts'), '.tsx');
-  const external = `@lexical/react/${basename}`;
+  const external = `@meogic/lexical-react/${basename}`;
   wwwMappings[external] = basename;
   return external;
 });
 
 const externals = [
-  'lexical',
+  '@meogic/lexical',
   'prismjs/components/prism-core',
   'prismjs/components/prism-clike',
   'prismjs/components/prism-javascript',
@@ -105,27 +105,27 @@ const externals = [
   'prismjs/components/prism-typescript',
   'prismjs/components/prism-java',
   'prismjs/components/prism-cpp',
-  '@lexical/list',
-  '@lexical/table',
-  '@lexical/file',
-  '@lexical/clipboard',
-  '@lexical/hashtag',
-  '@lexical/headless',
-  '@lexical/html',
-  '@lexical/history',
-  '@lexical/selection',
-  '@lexical/text',
-  '@lexical/offset',
-  '@lexical/utils',
-  '@lexical/code',
-  '@lexical/yjs',
-  '@lexical/plain-text',
-  '@lexical/rich-text',
-  '@lexical/mark',
-  '@lexical/dragon',
-  '@lexical/overflow',
-  '@lexical/link',
-  '@lexical/markdown',
+  '@meogic/lexical-list',
+  '@meogic/lexical-table',
+  '@meogic/lexical-file',
+  '@meogic/lexical-clipboard',
+  '@meogic/lexical-hashtag',
+  '@meogic/lexical-headless',
+  '@meogic/lexical-html',
+  '@meogic/lexical-history',
+  '@meogic/lexical-selection',
+  '@meogic/lexical-text',
+  '@meogic/lexical-offset',
+  '@meogic/lexical-utils',
+  '@meogic/lexical-code',
+  '@meogic/lexical-yjs',
+  '@meogic/lexical-plain-text',
+  '@meogic/lexical-rich-text',
+  '@meogic/lexical-mark',
+  '@meogic/lexical-dragon',
+  '@meogic/lexical-overflow',
+  '@meogic/lexical-link',
+  '@meogic/lexical-markdown',
   'react-dom',
   'react',
   'yjs',
@@ -300,7 +300,8 @@ const packages = [
     ],
     name: 'Lexical Core',
     outputPath: './packages/lexical/dist/',
-    packageName: 'lexical',
+    packageName: '@meogic/lexical',
+    directoryName: 'lexical',
     sourcePath: './packages/lexical/src/',
   },
   {
@@ -312,7 +313,8 @@ const packages = [
     ],
     name: 'Lexical List',
     outputPath: './packages/lexical-list/dist/',
-    packageName: 'lexical-list',
+    packageName: '@meogic/lexical-list',
+    directoryName: 'lexical-list',
     sourcePath: './packages/lexical-list/src/',
   },
   {
@@ -324,7 +326,8 @@ const packages = [
     ],
     name: 'Lexical Table',
     outputPath: './packages/lexical-table/dist/',
-    packageName: 'lexical-table',
+    packageName: '@meogic/lexical-table',
+    directoryName: 'lexical-table',
     sourcePath: './packages/lexical-table/src/',
   },
   {
@@ -336,7 +339,8 @@ const packages = [
     ],
     name: 'Lexical File',
     outputPath: './packages/lexical-file/dist/',
-    packageName: 'lexical-file',
+    packageName: '@meogic/lexical-file',
+    directoryName: 'lexical-file',
     sourcePath: './packages/lexical-file/src/',
   },
   {
@@ -348,7 +352,8 @@ const packages = [
     ],
     name: 'Lexical File',
     outputPath: './packages/lexical-clipboard/dist/',
-    packageName: 'lexical-clipboard',
+    packageName: '@meogic/lexical-clipboard',
+    directoryName: 'lexical-clipboard',
     sourcePath: './packages/lexical-clipboard/src/',
   },
   {
@@ -360,7 +365,8 @@ const packages = [
     ],
     name: 'Lexical Hashtag',
     outputPath: './packages/lexical-hashtag/dist/',
-    packageName: 'lexical-hashtag',
+    packageName: '@meogic/lexical-hashtag',
+    directoryName: 'lexical-hashtag',
     sourcePath: './packages/lexical-hashtag/src/',
   },
   {
@@ -372,7 +378,8 @@ const packages = [
     ],
     name: 'Lexical History',
     outputPath: './packages/lexical-history/dist/',
-    packageName: 'lexical-history',
+    packageName: '@meogic/lexical-history',
+    directoryName: 'lexical-history',
     sourcePath: './packages/lexical-history/src/',
   },
   {
@@ -384,7 +391,8 @@ const packages = [
     ],
     name: 'Lexical Selection',
     outputPath: './packages/lexical-selection/dist/',
-    packageName: 'lexical-selection',
+    packageName: '@meogic/lexical-selection',
+    directoryName: 'lexical-selection',
     sourcePath: './packages/lexical-selection/src/',
   },
   {
@@ -396,7 +404,8 @@ const packages = [
     ],
     name: 'Lexical Text',
     outputPath: './packages/lexical-text/dist/',
-    packageName: 'lexical-text',
+    packageName: '@meogic/lexical-text',
+    directoryName: 'lexical-text',
     sourcePath: './packages/lexical-text/src/',
   },
   {
@@ -408,7 +417,8 @@ const packages = [
     ],
     name: 'Lexical Offset',
     outputPath: './packages/lexical-offset/dist/',
-    packageName: 'lexical-offset',
+    packageName: '@meogic/lexical-offset',
+    directoryName: 'lexical-offset',
     sourcePath: './packages/lexical-offset/src/',
   },
   {
@@ -420,7 +430,8 @@ const packages = [
     ],
     name: 'Lexical Utils',
     outputPath: './packages/lexical-utils/dist/',
-    packageName: 'lexical-utils',
+    packageName: '@meogic/lexical-utils',
+    directoryName: 'lexical-utils',
     sourcePath: './packages/lexical-utils/src/',
   },
   {
@@ -432,7 +443,8 @@ const packages = [
     ],
     name: 'Lexical Code',
     outputPath: './packages/lexical-code/dist/',
-    packageName: 'lexical-code',
+    packageName: '@meogic/lexical-code',
+    directoryName: 'lexical-code',
     sourcePath: './packages/lexical-code/src/',
   },
   {
@@ -444,7 +456,8 @@ const packages = [
     ],
     name: 'Lexical Dragon',
     outputPath: './packages/lexical-dragon/dist/',
-    packageName: 'lexical-dragon',
+    packageName: '@meogic/lexical-dragon',
+    directoryName: 'lexical-dragon',
     sourcePath: './packages/lexical-dragon/src/',
   },
   {
@@ -456,7 +469,8 @@ const packages = [
     ],
     name: 'Lexical Link',
     outputPath: './packages/lexical-link/dist/',
-    packageName: 'lexical-link',
+    packageName: '@meogic/lexical-link',
+    directoryName: 'lexical-link',
     sourcePath: './packages/lexical-link/src/',
   },
   {
@@ -468,7 +482,8 @@ const packages = [
     ],
     name: 'Lexical Overflow',
     outputPath: './packages/lexical-overflow/dist/',
-    packageName: 'lexical-overflow',
+    packageName: '@meogic/lexical-overflow',
+    directoryName: 'lexical-overflow',
     sourcePath: './packages/lexical-overflow/src/',
   },
   {
@@ -480,7 +495,8 @@ const packages = [
     ],
     name: 'Lexical Plain Text',
     outputPath: './packages/lexical-plain-text/dist/',
-    packageName: 'lexical-plain-text',
+    packageName: '@meogic/lexical-plain-text',
+    directoryName: 'lexical-plain-text',
     sourcePath: './packages/lexical-plain-text/src/',
   },
   {
@@ -492,7 +508,8 @@ const packages = [
     ],
     name: 'Lexical Rich Text',
     outputPath: './packages/lexical-rich-text/dist/',
-    packageName: 'lexical-rich-text',
+    packageName: '@meogic/lexical-rich-text',
+    directoryName: 'lexical-rich-text',
     sourcePath: './packages/lexical-rich-text/src/',
   },
   {
@@ -504,7 +521,8 @@ const packages = [
     ],
     name: 'Lexical Markdown',
     outputPath: './packages/lexical-markdown/dist/',
-    packageName: 'lexical-markdown',
+    packageName: '@meogic/lexical-markdown',
+    directoryName: 'lexical-markdown',
     sourcePath: './packages/lexical-markdown/src/',
   },
   {
@@ -516,7 +534,8 @@ const packages = [
     ],
     name: 'Lexical Headless',
     outputPath: './packages/lexical-headless/dist/',
-    packageName: 'lexical-headless',
+    packageName: '@meogic/lexical-headless',
+    directoryName: 'lexical-headless',
     sourcePath: './packages/lexical-headless/src/',
   },
   {
@@ -528,7 +547,8 @@ const packages = [
     ],
     name: 'Lexical HTML',
     outputPath: './packages/lexical-html/dist/',
-    packageName: 'lexical-html',
+    packageName: '@meogic/lexical-html',
+    directoryName: 'lexical-html',
     sourcePath: './packages/lexical-html/src/',
   },
   {
@@ -540,7 +560,8 @@ const packages = [
     ],
     name: 'Lexical Mark',
     outputPath: './packages/lexical-mark/dist/',
-    packageName: 'lexical-mark',
+    packageName: '@meogic/lexical-mark',
+    directoryName: 'lexical-mark',
     sourcePath: './packages/lexical-mark/src/',
   },
   {
@@ -567,7 +588,8 @@ const packages = [
       }),
     name: 'Lexical React',
     outputPath: './packages/lexical-react/dist/',
-    packageName: 'lexical-react',
+    packageName: '@meogic/lexical-react',
+    directoryName: 'lexical-react',
     sourcePath: './packages/lexical-react/src/',
   },
   {
@@ -579,7 +601,8 @@ const packages = [
     ],
     name: 'Lexical Yjs',
     outputPath: './packages/lexical-yjs/dist/',
-    packageName: 'lexical-yjs',
+    packageName: '@meogic/lexical-yjs',
+    directoryName: 'lexical-yjs',
     sourcePath: './packages/lexical-yjs/src/',
   },
 ];
@@ -588,8 +611,8 @@ async function buildTSDeclarationFiles(packageName, outputPath) {
   await exec('tsc -p ./tsconfig.build.json');
 }
 
-async function moveTSDeclarationFilesIntoDist(packageName, outputPath) {
-  await fs.copy(`./.ts-temp/${packageName}/src`, outputPath);
+async function moveTSDeclarationFilesIntoDist(directoryName, outputPath) {
+  await fs.copy(`./.ts-temp/${directoryName}/src`, outputPath);
 }
 
 function buildForkModule(outputPath, outputFileName) {
@@ -612,7 +635,7 @@ async function buildAll() {
   }
 
   for (const pkg of packages) {
-    const {name, sourcePath, outputPath, packageName, modules} = pkg;
+    const {name, sourcePath, outputPath, packageName, directoryName, modules} = pkg;
 
     for (const module of modules) {
       const {sourceFileName, outputFileName} = module;
@@ -645,7 +668,7 @@ async function buildAll() {
     }
 
     if (!isWWW && (isRelease || isProduction)) {
-      await moveTSDeclarationFilesIntoDist(packageName, outputPath);
+      await moveTSDeclarationFilesIntoDist(directoryName, outputPath);
     }
   }
 }

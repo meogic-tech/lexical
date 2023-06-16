@@ -6,14 +6,14 @@
  *
  */
 
-import type {Provider} from '@lexical/yjs';
+import type {Provider} from '@meogic/lexical-yjs';
 import type {
   EditorState,
   LexicalCommand,
   LexicalEditor,
   NodeKey,
   RangeSelection,
-} from 'lexical';
+} from '@meogic/lexical';
 import type {Doc} from 'yjs';
 
 import './index.css';
@@ -25,19 +25,19 @@ import {
   $unwrapMarkNode,
   $wrapSelectionInMarkNode,
   MarkNode,
-} from '@lexical/mark';
-import {AutoFocusPlugin} from '@lexical/react/LexicalAutoFocusPlugin';
-import {ClearEditorPlugin} from '@lexical/react/LexicalClearEditorPlugin';
-import {useCollaborationContext} from '@lexical/react/LexicalCollaborationContext';
-import {LexicalComposer} from '@lexical/react/LexicalComposer';
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import LexicalErrorBoundary from '@lexical/react/LexicalErrorBoundary';
-import {HistoryPlugin} from '@lexical/react/LexicalHistoryPlugin';
-import {OnChangePlugin} from '@lexical/react/LexicalOnChangePlugin';
-import {PlainTextPlugin} from '@lexical/react/LexicalPlainTextPlugin';
-import {createDOMRange, createRectsFromDOMRange} from '@lexical/selection';
-import {$isRootTextContentEmpty, $rootTextContent} from '@lexical/text';
-import {mergeRegister, registerNestedElementResolver} from '@lexical/utils';
+} from '@meogic/lexical-mark';
+import {AutoFocusPlugin} from '@meogic/lexical-react/LexicalAutoFocusPlugin';
+import {ClearEditorPlugin} from '@meogic/lexical-react/LexicalClearEditorPlugin';
+import {useCollaborationContext} from '@meogic/lexical-react/LexicalCollaborationContext';
+import {LexicalComposer} from '@meogic/lexical-react/LexicalComposer';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import LexicalErrorBoundary from '@meogic/lexical-react/LexicalErrorBoundary';
+import {HistoryPlugin} from '@meogic/lexical-react/LexicalHistoryPlugin';
+import {OnChangePlugin} from '@meogic/lexical-react/LexicalOnChangePlugin';
+import {PlainTextPlugin} from '@meogic/lexical-react/LexicalPlainTextPlugin';
+import {createDOMRange, createRectsFromDOMRange} from '@meogic/lexical-selection';
+import {$isRootTextContentEmpty, $rootTextContent} from '@meogic/lexical-text';
+import {mergeRegister, registerNestedElementResolver} from '@meogic/lexical-utils';
 import {
   $getNodeByKey,
   $getSelection,
@@ -47,7 +47,7 @@ import {
   COMMAND_PRIORITY_EDITOR,
   createCommand,
   KEY_ESCAPE_COMMAND,
-} from 'lexical';
+} from '@meogic/lexical';
 import {useCallback, useEffect, useMemo, useRef, useState} from 'react';
 import * as React from 'react';
 import {createPortal} from 'react-dom';

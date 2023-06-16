@@ -9,7 +9,7 @@
 import type {LexicalEditor} from '../LexicalEditor';
 import type {NodeKey} from '../LexicalNode';
 
-import {EditorConfig} from 'lexical';
+import {EditorConfig} from '@meogic/lexical';
 import invariant from 'shared/invariant';
 
 import {LexicalNode} from '../LexicalNode';

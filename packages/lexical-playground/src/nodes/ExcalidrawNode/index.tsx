@@ -16,9 +16,9 @@ import type {
   NodeKey,
   SerializedLexicalNode,
   Spread,
-} from 'lexical';
+} from '@meogic/lexical';
 
-import {DecoratorNode} from 'lexical';
+import {DecoratorNode} from '@meogic/lexical';
 import * as React from 'react';
 import {Suspense} from 'react';
 

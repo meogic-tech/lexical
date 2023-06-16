@@ -7,7 +7,7 @@
  * @flow strict
  */
 
-import type {TextNode} from 'lexical';
+import type {TextNode} from '@meogic/lexical';
 
 export type EntityMatch = {end: number, start: number};
 

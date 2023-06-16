@@ -70,7 +70,7 @@ and `set*()` methods on your node for this property. Inside these methods, you'l
 that ensure consistency with Lexical's internal immutable system. These methods are `getWritable()` and `getLatest()`.
 
 ```js
-import type {NodeKey} from 'lexical';
+import type {NodeKey} from '@meogic/lexical';
 
 class MyCustomNode extends SomeOtherNode {
   __foo: string;
@@ -149,7 +149,7 @@ As mentioned above, Lexical exposes three base nodes that can be extended.
 Below is an example of how you might extend `ElementNode`:
 
 ```js
-import {ElementNode} from 'lexical';
+import {ElementNode} from '@meogic/lexical';
 
 export class CustomParagraph extends ElementNode {
   static getType(): string {

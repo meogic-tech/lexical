@@ -14,7 +14,7 @@ import type {
   Point,
   RangeSelection,
   TextNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
 import {
   $getAdjacentNode,
@@ -29,7 +29,7 @@ import {
   $isRootOrShadowRoot,
   $isTextNode,
   $setSelection,
-} from 'lexical';
+} from '@meogic/lexical';
 
 import {getStyleObjectFromCSS} from './utils';
 

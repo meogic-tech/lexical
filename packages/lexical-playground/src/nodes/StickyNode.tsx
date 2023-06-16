@@ -14,9 +14,9 @@ import type {
   SerializedEditor,
   SerializedLexicalNode,
   Spread,
-} from 'lexical';
+} from '@meogic/lexical';
 
-import {$setSelection, createEditor, DecoratorNode} from 'lexical';
+import {$setSelection, createEditor, DecoratorNode} from '@meogic/lexical';
 import * as React from 'react';
 import {Suspense} from 'react';
 import {createPortal} from 'react-dom';

@@ -6,8 +6,8 @@
  *
  * @flow strict
  */
-import type {LexicalEditor} from 'lexical';
-import {$getSelection, $isRangeSelection, $isTextNode} from 'lexical';
+import type {LexicalEditor} from '@meogic/lexical';
+import {$getSelection, $isRangeSelection, $isTextNode} from '@meogic/lexical';
 declare export function registerDragonSupport(
   editor: LexicalEditor,
 ): () => void;

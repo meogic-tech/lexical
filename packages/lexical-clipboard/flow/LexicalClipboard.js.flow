@@ -13,7 +13,7 @@ import type {
   NodeSelection,
   RangeSelection,
   LexicalNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
 /*
  * Rich Text

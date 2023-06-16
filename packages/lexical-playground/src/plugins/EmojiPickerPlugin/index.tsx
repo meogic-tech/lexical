@@ -6,18 +6,18 @@
  *
  */
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
 import {
   LexicalTypeaheadMenuPlugin,
   MenuOption,
   useBasicTypeaheadTriggerMatch,
-} from '@lexical/react/LexicalTypeaheadMenuPlugin';
+} from '@meogic/lexical-react/LexicalTypeaheadMenuPlugin';
 import {
   $createTextNode,
   $getSelection,
   $isRangeSelection,
   TextNode,
-} from 'lexical';
+} from '@meogic/lexical';
 import * as React from 'react';
 import {useCallback, useEffect, useMemo, useState} from 'react';
 import * as ReactDOM from 'react-dom';

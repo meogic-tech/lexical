@@ -16,10 +16,10 @@ import type {
   NodeSelection,
   RangeSelection,
   TextFormatType,
-} from 'lexical';
+} from '@meogic/lexical';
 
-import {TableCellNode} from '@lexical/table';
-import {$findMatchingParent} from '@lexical/utils';
+import {TableCellNode} from '@meogic/lexical-table';
+import {$findMatchingParent} from '@meogic/lexical-utils';
 import {
   $createParagraphNode,
   $createRangeSelection,
@@ -49,7 +49,7 @@ import {
   KEY_DELETE_COMMAND,
   KEY_TAB_COMMAND,
   SELECTION_CHANGE_COMMAND,
-} from 'lexical';
+} from '@meogic/lexical';
 import invariant from 'shared/invariant';
 
 import {$isTableCellNode} from './LexicalTableCellNode';

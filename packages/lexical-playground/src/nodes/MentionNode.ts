@@ -6,7 +6,7 @@
  *
  */
 
-import type {Spread} from 'lexical';
+import type {Spread} from '@meogic/lexical';
 
 import {
   type DOMConversionMap,
@@ -18,7 +18,7 @@ import {
   type SerializedTextNode,
   $applyNodeReplacement,
   TextNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
 export type SerializedMentionNode = Spread<
   {

@@ -11,10 +11,10 @@ import type {
   LexicalEditor,
   LexicalNode,
   RangeSelection,
-} from 'lexical';
+} from '@meogic/lexical';
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {$getNearestBlockElementAncestorOrThrow} from '@lexical/utils';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {$getNearestBlockElementAncestorOrThrow} from '@meogic/lexical-utils';
 import {
   $createRangeSelection,
   $getSelection,
@@ -26,10 +26,10 @@ import {
   INSERT_TAB_COMMAND,
   KEY_TAB_COMMAND,
   OUTDENT_CONTENT_COMMAND,
-} from 'lexical';
+} from '@meogic/lexical';
 import {useEffect} from 'react';
 
-// TODO Move to @lexical/utils
+// TODO Move to @meogic/lexical-utils
 function $filter<T>(
   nodes: Array<LexicalNode>,
   filterFn: (node: LexicalNode) => null | T,

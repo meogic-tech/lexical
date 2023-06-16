@@ -23,7 +23,7 @@ const editor = createEditor({
 })
 ```
 
-If you're using `@lexical/react` this can be done on the `initialConfig` passed to `<LexicalComposer>`:
+If you're using `@meogic/lexical-react` this can be done on the `initialConfig` passed to `<LexicalComposer>`:
 
 ```jsx
 <LexicalComposer initialConfig={{editable: true}}>

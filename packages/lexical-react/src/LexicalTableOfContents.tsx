@@ -6,11 +6,11 @@
  *
  */
 
-import type {LexicalEditor, NodeKey, NodeMutation} from 'lexical';
+import type {LexicalEditor, NodeKey, NodeMutation} from '@meogic/lexical';
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {$isHeadingNode, HeadingNode, HeadingTagType} from '@lexical/rich-text';
-import {$getNodeByKey, $getRoot, TextNode} from 'lexical';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {$isHeadingNode, HeadingNode, HeadingTagType} from '@meogic/lexical-rich-text';
+import {$getNodeByKey, $getRoot, TextNode} from '@meogic/lexical';
 import {useEffect, useState} from 'react';
 
 export type TableOfContentsEntry = [

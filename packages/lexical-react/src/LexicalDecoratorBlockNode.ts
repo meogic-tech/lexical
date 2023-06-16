@@ -12,9 +12,9 @@ import type {
   NodeKey,
   SerializedLexicalNode,
   Spread,
-} from 'lexical';
+} from '@meogic/lexical';
 
-import {DecoratorNode} from 'lexical';
+import {DecoratorNode} from '@meogic/lexical';
 
 export type SerializedDecoratorBlockNode = Spread<
   {

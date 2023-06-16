@@ -1,4 +1,4 @@
-# `@lexical/html`
+# `@meogic/lexical-html`
 
 # HTML
 This package exports utility functions for converting `Lexical` -> `HTML` and `HTML` -> `Lexical`. These same functions are also used in the `lexical-clipboard` package for copy and paste.

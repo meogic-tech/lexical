@@ -7,6 +7,6 @@
  * @flow strict
  */
 
-import type {LexicalEditor} from 'lexical';
+import type {LexicalEditor} from '@meogic/lexical';
 
 declare export default function useLexicalEditable(): boolean;

@@ -6,17 +6,17 @@
  *
  */
 
-import {useLexicalComposerContext} from '@lexical/react/src/LexicalComposerContext';
-import {ContentEditable} from '@lexical/react/src/LexicalContentEditable';
-import LexicalErrorBoundary from '@lexical/react/src/LexicalErrorBoundary';
-import {RichTextPlugin} from '@lexical/react/src/LexicalRichTextPlugin';
+import {useLexicalComposerContext} from '@meogic/lexical-react/src/LexicalComposerContext';
+import {ContentEditable} from '@meogic/lexical-react/src/LexicalContentEditable';
+import LexicalErrorBoundary from '@meogic/lexical-react/src/LexicalErrorBoundary';
+import {RichTextPlugin} from '@meogic/lexical-react/src/LexicalRichTextPlugin';
 import {
   $createTableCellNode,
   $createTableNode,
   $createTableRowNode,
   TableCellNode,
   TableRowNode,
-} from '@lexical/table';
+} from '@meogic/lexical-table';
 import {
   type LexicalEditor,
   type LexicalNode,
@@ -37,7 +37,7 @@ import {
   ElementNode,
   ParagraphNode,
   TextNode,
-} from 'lexical';
+} from '@meogic/lexical';
 import * as React from 'react';
 import {
   createRef,

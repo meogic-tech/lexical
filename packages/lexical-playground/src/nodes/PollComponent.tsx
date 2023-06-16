@@ -10,10 +10,10 @@ import type {Option, Options, PollNode} from './PollNode';
 
 import './PollNode.css';
 
-import {useCollaborationContext} from '@lexical/react/LexicalCollaborationContext';
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {useLexicalNodeSelection} from '@lexical/react/useLexicalNodeSelection';
-import {mergeRegister} from '@lexical/utils';
+import {useCollaborationContext} from '@meogic/lexical-react/LexicalCollaborationContext';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {useLexicalNodeSelection} from '@meogic/lexical-react/useLexicalNodeSelection';
+import {mergeRegister} from '@meogic/lexical-utils';
 import {
   $getNodeByKey,
   $getSelection,
@@ -26,7 +26,7 @@ import {
   NodeKey,
   NodeSelection,
   RangeSelection,
-} from 'lexical';
+} from '@meogic/lexical';
 import * as React from 'react';
 import {useCallback, useEffect, useMemo, useRef, useState} from 'react';
 

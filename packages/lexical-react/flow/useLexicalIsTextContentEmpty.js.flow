@@ -7,7 +7,7 @@
  * @flow strict
  */
 
-import type {LexicalEditor} from 'lexical';
+import type {LexicalEditor} from '@meogic/lexical';
 
 declare export function useLexicalIsTextContentEmpty(
   editor: LexicalEditor,

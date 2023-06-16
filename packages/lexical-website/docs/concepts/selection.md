@@ -62,7 +62,7 @@ Selection can be found using the `$getSelection()` helper, exported from the `le
 an update, a read, or a command listener.
 
 ```js
-import {$getSelection, SELECTION_CHANGE_COMMAND} from 'lexical';
+import {$getSelection, SELECTION_CHANGE_COMMAND} from '@meogic/lexical';
 
 editor.update(() => {
   const selection = $getSelection();
@@ -82,7 +82,7 @@ In some cases you might want to create a new type of selection and set the edito
 be that. This can only be done in update or command listeners.
 
 ```js
-import {$setSelection, $createRangeSelection, $createNodeSelection} from 'lexical';
+import {$setSelection, $createRangeSelection, $createNodeSelection} from '@meogic/lexical';
 
 editor.update(() => {
   // Set a range selection

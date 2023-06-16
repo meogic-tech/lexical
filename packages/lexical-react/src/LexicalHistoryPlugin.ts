@@ -6,13 +6,13 @@
  *
  */
 
-import type {HistoryState} from '@lexical/history';
+import type {HistoryState} from '@meogic/lexical-history';
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
 
 import {useHistory} from './shared/useHistory';
 
-export {createEmptyHistoryState} from '@lexical/history';
+export {createEmptyHistoryState} from '@meogic/lexical-history';
 
 export type {HistoryState};
 

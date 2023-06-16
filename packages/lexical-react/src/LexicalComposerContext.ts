@@ -6,7 +6,7 @@
  *
  */
 
-import type {EditorThemeClasses, LexicalEditor} from 'lexical';
+import type {EditorThemeClasses, LexicalEditor} from '@meogic/lexical';
 
 import {createContext as createReactContext, useContext} from 'react';
 import invariant from 'shared/invariant';

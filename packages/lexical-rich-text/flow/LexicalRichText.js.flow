@@ -15,8 +15,8 @@ import type {
   ParagraphNode,
   LexicalEditor,
   LexicalCommand,
-} from 'lexical';
-import {ElementNode} from 'lexical';
+} from '@meogic/lexical';
+import {ElementNode} from '@meogic/lexical';
 
 declare export var DRAG_DROP_PASTE: LexicalCommand<Array<File>>;
 declare export class QuoteNode extends ElementNode {

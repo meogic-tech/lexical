@@ -6,14 +6,14 @@
  *
  */
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
 import {
   $createParagraphNode,
   $getRoot,
   $getSelection,
   CLEAR_EDITOR_COMMAND,
   COMMAND_PRIORITY_EDITOR,
-} from 'lexical';
+} from '@meogic/lexical';
 import useLayoutEffect from 'shared/useLayoutEffect';
 
 type Props = Readonly<{

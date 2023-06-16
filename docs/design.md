@@ -34,5 +34,5 @@ Instead of hoping for the text editor to support what you want, you can work wit
 to make what you want.
 
 This design can make getting started a bit more complex in certain cases, but as we've been
-able to demonstrate with our `@lexical/react` plugins and hooks – you can get started, in the
+able to demonstrate with our `@meogic/lexical-react` plugins and hooks – you can get started, in the
 form of an out-of-the-box experience.

@@ -7,7 +7,7 @@
  */
 
 import type {Binding} from '.';
-import type {ElementNode, NodeKey, NodeMap} from 'lexical';
+import type {ElementNode, NodeKey, NodeMap} from '@meogic/lexical';
 import type {AbstractType, XmlElement, XmlText} from 'yjs';
 
 import {
@@ -15,7 +15,7 @@ import {
   $isDecoratorNode,
   $isElementNode,
   $isTextNode,
-} from 'lexical';
+} from '@meogic/lexical';
 import invariant from 'shared/invariant';
 import {YMap} from 'yjs/dist/src/internals';
 

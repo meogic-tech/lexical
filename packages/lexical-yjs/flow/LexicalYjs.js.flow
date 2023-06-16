@@ -19,7 +19,7 @@ import type {
   NodeMap,
   NodeKey,
   TextNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
 // $FlowFixMe: todo
 export type YjsEvent = Object;

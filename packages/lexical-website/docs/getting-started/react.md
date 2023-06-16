@@ -4,25 +4,25 @@ sidebar_position: 2
 
 # Getting Started with React
 
-Install `lexical` and `@lexical/react`:
+Install `lexical` and `@meogic/lexical-react`:
 
 ```
-npm install --save lexical @lexical/react
+npm install --save lexical @meogic/lexical-react
 ```
 
-Below is an example of a basic plain text editor using `lexical` and `@lexical/react` ([try it yourself](https://codesandbox.io/s/lexical-plain-text-example-g932e)).
+Below is an example of a basic plain text editor using `lexical` and `@meogic/lexical-react` ([try it yourself](https://codesandbox.io/s/lexical-plain-text-example-g932e)).
 
 ```jsx
-import {$getRoot, $getSelection} from 'lexical';
+import {$getRoot, $getSelection} from '@meogic/lexical';
 import {useEffect} from 'react';
 
-import {LexicalComposer} from '@lexical/react/LexicalComposer';
-import {PlainTextPlugin} from '@lexical/react/LexicalPlainTextPlugin';
-import {ContentEditable} from '@lexical/react/LexicalContentEditable';
-import {HistoryPlugin} from '@lexical/react/LexicalHistoryPlugin';
-import {OnChangePlugin} from '@lexical/react/LexicalOnChangePlugin';
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import LexicalErrorBoundary from '@lexical/react/LexicalErrorBoundary';
+import {LexicalComposer} from '@meogic/lexical-react/LexicalComposer';
+import {PlainTextPlugin} from '@meogic/lexical-react/LexicalPlainTextPlugin';
+import {ContentEditable} from '@meogic/lexical-react/LexicalContentEditable';
+import {HistoryPlugin} from '@meogic/lexical-react/LexicalHistoryPlugin';
+import {OnChangePlugin} from '@meogic/lexical-react/LexicalOnChangePlugin';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import LexicalErrorBoundary from '@meogic/lexical-react/LexicalErrorBoundary';
 
 const theme = {
   // Theme styling goes here

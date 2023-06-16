@@ -16,7 +16,7 @@
  *
  */
 
-import type {RangeSelection} from 'lexical';
+import type {RangeSelection} from '@meogic/lexical';
 
 import {
   $createParagraphNode,
@@ -26,7 +26,7 @@ import {
   COMMAND_PRIORITY_NORMAL,
   CONTROLLED_TEXT_INSERTION_COMMAND,
   ParagraphNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
 import {createHeadlessEditor} from '../..';
 

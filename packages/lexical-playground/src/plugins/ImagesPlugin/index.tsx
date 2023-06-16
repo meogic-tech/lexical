@@ -5,8 +5,8 @@
  * LICENSE file in the root directory of this source tree.
  *
  */
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {$wrapNodeInElement, mergeRegister} from '@lexical/utils';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {$wrapNodeInElement, mergeRegister} from '@meogic/lexical-utils';
 import {
   $createParagraphNode,
   $createRangeSelection,
@@ -24,7 +24,7 @@ import {
   DROP_COMMAND,
   LexicalCommand,
   LexicalEditor,
-} from 'lexical';
+} from '@meogic/lexical';
 import {useEffect, useRef, useState} from 'react';
 import * as React from 'react';
 import {CAN_USE_DOM} from 'shared/canUseDOM';

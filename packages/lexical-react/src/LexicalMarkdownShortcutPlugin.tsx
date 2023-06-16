@@ -6,16 +6,16 @@
  *
  */
 
-import type {ElementTransformer, Transformer} from '@lexical/markdown';
-import type {LexicalNode} from 'lexical';
+import type {ElementTransformer, Transformer} from '@meogic/lexical-markdown';
+import type {LexicalNode} from '@meogic/lexical';
 
-import {registerMarkdownShortcuts, TRANSFORMERS} from '@lexical/markdown';
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
+import {registerMarkdownShortcuts, TRANSFORMERS} from '@meogic/lexical-markdown';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
 import {
   $createHorizontalRuleNode,
   $isHorizontalRuleNode,
   HorizontalRuleNode,
-} from '@lexical/react/LexicalHorizontalRuleNode';
+} from '@meogic/lexical-react/LexicalHorizontalRuleNode';
 import {useEffect} from 'react';
 
 const HR: ElementTransformer = {

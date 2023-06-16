@@ -7,9 +7,9 @@
  */
 import './index.css';
 
-import {$isAutoLinkNode, $isLinkNode, TOGGLE_LINK_COMMAND} from '@lexical/link';
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {$findMatchingParent, mergeRegister} from '@lexical/utils';
+import {$isAutoLinkNode, $isLinkNode, TOGGLE_LINK_COMMAND} from '@meogic/lexical-link';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {$findMatchingParent, mergeRegister} from '@meogic/lexical-utils';
 import {
   $getSelection,
   $isRangeSelection,
@@ -22,7 +22,7 @@ import {
   NodeSelection,
   RangeSelection,
   SELECTION_CHANGE_COMMAND,
-} from 'lexical';
+} from '@meogic/lexical';
 import {Dispatch, useCallback, useEffect, useRef, useState} from 'react';
 import * as React from 'react';
 import {createPortal} from 'react-dom';

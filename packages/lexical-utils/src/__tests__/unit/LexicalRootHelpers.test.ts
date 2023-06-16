@@ -10,8 +10,8 @@ import {
   $isRootTextContentEmpty,
   $isRootTextContentEmptyCurry,
   $rootTextContent,
-} from '@lexical/text';
-import {$createParagraphNode, $createTextNode, $getRoot} from 'lexical';
+} from '@meogic/lexical-text';
+import {$createParagraphNode, $createTextNode, $getRoot} from '@meogic/lexical';
 import {initializeUnitTest} from 'lexical/src/__tests__/utils';
 
 describe('LexicalRootHelpers tests', () => {

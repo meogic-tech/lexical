@@ -7,7 +7,7 @@
  * @flow strict
  */
 
-import type {NodeKey} from 'lexical';
+import type {NodeKey} from '@meogic/lexical';
 
 declare export function useLexicalNodeSelection(
   key: NodeKey,

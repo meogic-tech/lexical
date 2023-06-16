@@ -6,11 +6,11 @@
  *
  */
 
-import type {Klass, LexicalEditor, LexicalNode, NodeKey} from 'lexical';
+import type {Klass, LexicalEditor, LexicalNode, NodeKey} from '@meogic/lexical';
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {$findMatchingParent} from '@lexical/utils';
-import {$getNearestNodeFromDOMNode} from 'lexical';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {$findMatchingParent} from '@meogic/lexical-utils';
+import {$getNearestNodeFromDOMNode} from '@meogic/lexical';
 import {useEffect, useRef} from 'react';
 
 const capturedEvents = new Set<string>(['mouseenter', 'mouseleave']);

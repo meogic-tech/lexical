@@ -14,10 +14,10 @@ import type {
   NodeSelection,
   Point,
   RangeSelection,
-} from 'lexical';
+} from '@meogic/lexical';
 import type {AbsolutePosition, RelativePosition} from 'yjs';
 
-import {createDOMRange, createRectsFromDOMRange} from '@lexical/selection';
+import {createDOMRange, createRectsFromDOMRange} from '@meogic/lexical-selection';
 import {
   $getNodeByKey,
   $getSelection,
@@ -25,7 +25,7 @@ import {
   $isLineBreakNode,
   $isRangeSelection,
   $isTextNode,
-} from 'lexical';
+} from '@meogic/lexical';
 import {
   compareRelativePositions,
   createAbsolutePositionFromRelativePosition,

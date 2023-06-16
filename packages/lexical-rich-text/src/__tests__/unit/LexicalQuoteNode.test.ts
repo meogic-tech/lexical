@@ -6,8 +6,8 @@
  *
  */
 
-import {$createQuoteNode} from '@lexical/rich-text';
-import {$getRoot, ParagraphNode} from 'lexical';
+import {$createQuoteNode} from '@meogic/lexical-rich-text';
+import {$getRoot, ParagraphNode} from '@meogic/lexical';
 import {initializeUnitTest} from 'lexical/src/__tests__/utils';
 
 const editorConfig = Object.freeze({

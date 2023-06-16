@@ -5,13 +5,13 @@
  * LICENSE file in the root directory of this source tree.
  *
  */
-import {$isCodeNode} from '@lexical/code';
+import {$isCodeNode} from '@meogic/lexical-code';
 import {
   $getNearestNodeFromDOMNode,
   $getSelection,
   $setSelection,
   LexicalEditor,
-} from 'lexical';
+} from '@meogic/lexical';
 import * as React from 'react';
 import {useState} from 'react';
 

@@ -7,8 +7,8 @@
  * @flow strict
  */
 
-import type {HeadingTagType} from '@lexical/rich-text';
-import type {NodeKey} from 'lexical';
+import type {HeadingTagType} from '@meogic/lexical-rich-text';
+import type {NodeKey} from '@meogic/lexical';
 
 declare export default function LexicalTableOfContentsPlugin({
   children: (

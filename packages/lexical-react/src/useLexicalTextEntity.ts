@@ -6,12 +6,12 @@
  *
  */
 
-import type {EntityMatch} from '@lexical/text';
-import type {Klass, TextNode} from 'lexical';
+import type {EntityMatch} from '@meogic/lexical-text';
+import type {Klass, TextNode} from '@meogic/lexical';
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {registerLexicalTextEntity} from '@lexical/text';
-import {mergeRegister} from '@lexical/utils';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {registerLexicalTextEntity} from '@meogic/lexical-text';
+import {mergeRegister} from '@meogic/lexical-utils';
 import {useEffect} from 'react';
 
 export function useLexicalTextEntity<T extends TextNode>(

@@ -11,7 +11,7 @@ import type {
   LexicalEditor,
   NodeKey,
   TextFormatType,
-} from 'lexical';
+} from '@meogic/lexical';
 
 import {
   $createParagraphNode,
@@ -26,7 +26,7 @@ import {
   DEPRECATED_$createGridSelection,
   DEPRECATED_$isGridSelection,
   SELECTION_CHANGE_COMMAND,
-} from 'lexical';
+} from '@meogic/lexical';
 import {CAN_USE_DOM} from 'shared/canUseDOM';
 import invariant from 'shared/invariant';
 

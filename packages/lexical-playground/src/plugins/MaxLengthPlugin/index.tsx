@@ -6,10 +6,10 @@
  *
  */
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {trimTextContentFromAnchor} from '@lexical/selection';
-import {$restoreEditorState} from '@lexical/utils';
-import {$getSelection, $isRangeSelection, EditorState, RootNode} from 'lexical';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {trimTextContentFromAnchor} from '@meogic/lexical-selection';
+import {$restoreEditorState} from '@meogic/lexical-utils';
+import {$getSelection, $isRangeSelection, EditorState, RootNode} from '@meogic/lexical';
 import {useEffect} from 'react';
 
 export function MaxLengthPlugin({maxLength}: {maxLength: number}): null {

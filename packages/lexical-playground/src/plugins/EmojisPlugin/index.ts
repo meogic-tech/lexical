@@ -6,10 +6,10 @@
  *
  */
 
-import type {LexicalEditor} from 'lexical';
+import type {LexicalEditor} from '@meogic/lexical';
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {TextNode} from 'lexical';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {TextNode} from '@meogic/lexical';
 import {useEffect} from 'react';
 
 import {$createEmojiNode, EmojiNode} from '../../nodes/EmojiNode';

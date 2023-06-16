@@ -10,8 +10,8 @@ import {
   $createHeadingNode,
   $isHeadingNode,
   HeadingNode,
-} from '@lexical/rich-text';
-import {$createTextNode, $getRoot, $getSelection, ParagraphNode} from 'lexical';
+} from '@meogic/lexical-rich-text';
+import {$createTextNode, $getRoot, $getSelection, ParagraphNode} from '@meogic/lexical';
 import {initializeUnitTest} from 'lexical/src/__tests__/utils';
 
 const editorConfig = Object.freeze({

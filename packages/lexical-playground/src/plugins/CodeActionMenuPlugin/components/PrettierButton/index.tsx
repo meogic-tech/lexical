@@ -7,8 +7,8 @@
  */
 import './index.css';
 
-import {$isCodeNode} from '@lexical/code';
-import {$getNearestNodeFromDOMNode, LexicalEditor} from 'lexical';
+import {$isCodeNode} from '@meogic/lexical-code';
+import {$getNearestNodeFromDOMNode, LexicalEditor} from '@meogic/lexical';
 import {Options} from 'prettier';
 import * as React from 'react';
 import {useState} from 'react';

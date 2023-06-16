@@ -14,7 +14,7 @@ import type {
   Point,
   RangeSelection,
   TextNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
 import {
   $createTextNode,
@@ -25,7 +25,7 @@ import {
   $isRootNode,
   $isTextNode,
   DEPRECATED_$isGridSelection,
-} from 'lexical';
+} from '@meogic/lexical';
 
 import {CSS_TO_STYLES} from './constants';
 import {

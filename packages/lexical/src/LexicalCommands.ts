@@ -6,7 +6,7 @@
  *
  */
 
-import type {ElementFormatType, LexicalCommand, TextFormatType} from 'lexical';
+import type {ElementFormatType, LexicalCommand, TextFormatType} from './';
 
 export type PasteCommandType = ClipboardEvent | InputEvent | KeyboardEvent;
 

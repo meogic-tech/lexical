@@ -1,4 +1,4 @@
-/** @module @lexical/table */
+/** @module @meogic/lexical-table */
 /**
  * Copyright (c) Meta Platforms, Inc. and affiliates.
  *
@@ -7,9 +7,9 @@
  *
  */
 
-import type {LexicalCommand} from 'lexical';
+import type {LexicalCommand} from '@meogic/lexical';
 
-import {createCommand} from 'lexical';
+import {createCommand} from '@meogic/lexical';
 
 export type {SerializedTableCellNode} from './LexicalTableCellNode';
 export {

@@ -6,10 +6,10 @@
  *
  */
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {DRAG_DROP_PASTE} from '@lexical/rich-text';
-import {isMimeType, mediaFileReader} from '@lexical/utils';
-import {COMMAND_PRIORITY_LOW} from 'lexical';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {DRAG_DROP_PASTE} from '@meogic/lexical-rich-text';
+import {isMimeType, mediaFileReader} from '@meogic/lexical-utils';
+import {COMMAND_PRIORITY_LOW} from '@meogic/lexical';
 import {useEffect} from 'react';
 
 import {INSERT_IMAGE_COMMAND} from '../ImagesPlugin';

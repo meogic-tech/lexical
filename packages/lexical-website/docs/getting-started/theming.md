@@ -46,7 +46,7 @@ To apply it, you need to pass it to your editor instance. If you're using a fram
 passing it as a property of the `initialConfig` to `<LexicalComposer>`, like shown:
 
 ```jsx
-import {LexicalComposer} from '@lexical/react/LexicalComposer';
+import {LexicalComposer} from '@meogic/lexical-react/LexicalComposer';
 import {exampleTheme} from './exampleTheme';
 
 const initialConfig = {namespace: 'MyEditor', theme: exampleTheme};
@@ -63,7 +63,7 @@ export default function Editor() {
 If you are using vanilla JS, you can pass it to the `createEditor()` function, like shown:
 
 ```js
-import {createEditor} from 'lexical';
+import {createEditor} from '@meogic/lexical';
 
 const editor = createEditor({
   namespace: 'MyEditor',

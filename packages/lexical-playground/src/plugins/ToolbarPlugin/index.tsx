@@ -6,7 +6,7 @@
  *
  */
 
-import type {LexicalEditor, NodeKey} from 'lexical';
+import type {LexicalEditor, NodeKey} from '@meogic/lexical';
 
 import {
   $createCodeNode,
@@ -14,8 +14,8 @@ import {
   CODE_LANGUAGE_FRIENDLY_NAME_MAP,
   CODE_LANGUAGE_MAP,
   getLanguageFriendlyName,
-} from '@lexical/code';
-import {$isLinkNode, TOGGLE_LINK_COMMAND} from '@lexical/link';
+} from '@meogic/lexical-code';
+import {$isLinkNode, TOGGLE_LINK_COMMAND} from '@meogic/lexical-link';
 import {
   $isListNode,
   INSERT_CHECK_LIST_COMMAND,
@@ -23,31 +23,31 @@ import {
   INSERT_UNORDERED_LIST_COMMAND,
   ListNode,
   REMOVE_LIST_COMMAND,
-} from '@lexical/list';
-import {INSERT_EMBED_COMMAND} from '@lexical/react/LexicalAutoEmbedPlugin';
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {$isDecoratorBlockNode} from '@lexical/react/LexicalDecoratorBlockNode';
-import {INSERT_HORIZONTAL_RULE_COMMAND} from '@lexical/react/LexicalHorizontalRuleNode';
+} from '@meogic/lexical-list';
+import {INSERT_EMBED_COMMAND} from '@meogic/lexical-react/LexicalAutoEmbedPlugin';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {$isDecoratorBlockNode} from '@meogic/lexical-react/LexicalDecoratorBlockNode';
+import {INSERT_HORIZONTAL_RULE_COMMAND} from '@meogic/lexical-react/LexicalHorizontalRuleNode';
 import {
   $createHeadingNode,
   $createQuoteNode,
   $isHeadingNode,
   $isQuoteNode,
   HeadingTagType,
-} from '@lexical/rich-text';
+} from '@meogic/lexical-rich-text';
 import {
   $getSelectionStyleValueForProperty,
   $isParentElementRTL,
   $patchStyleText,
   $setBlocksType,
-} from '@lexical/selection';
-import {$isTableNode} from '@lexical/table';
+} from '@meogic/lexical-selection';
+import {$isTableNode} from '@meogic/lexical-table';
 import {
   $findMatchingParent,
   $getNearestBlockElementAncestorOrThrow,
   $getNearestNodeOfType,
   mergeRegister,
-} from '@lexical/utils';
+} from '@meogic/lexical-utils';
 import {
   $createParagraphNode,
   $getNodeByKey,
@@ -69,7 +69,7 @@ import {
   REDO_COMMAND,
   SELECTION_CHANGE_COMMAND,
   UNDO_COMMAND,
-} from 'lexical';
+} from '@meogic/lexical';
 import {useCallback, useEffect, useState} from 'react';
 import * as React from 'react';
 import {IS_APPLE} from 'shared/environment';

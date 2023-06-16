@@ -5,14 +5,14 @@
  * LICENSE file in the root directory of this source tree.
  *
  */
-import type {TableOfContentsEntry} from '@lexical/react/LexicalTableOfContents';
-import type {HeadingTagType} from '@lexical/rich-text';
-import type {NodeKey} from 'lexical';
+import type {TableOfContentsEntry} from '@meogic/lexical-react/LexicalTableOfContents';
+import type {HeadingTagType} from '@meogic/lexical-rich-text';
+import type {NodeKey} from '@meogic/lexical';
 
 import './index.css';
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import LexicalTableOfContents from '@lexical/react/LexicalTableOfContents';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import LexicalTableOfContents from '@meogic/lexical-react/LexicalTableOfContents';
 import {useEffect, useRef, useState} from 'react';
 import * as React from 'react';
 

@@ -6,7 +6,7 @@
  *
  */
 
-import {$createHashtagNode} from '@lexical/hashtag';
+import {$createHashtagNode} from '@meogic/lexical-hashtag';
 import {initializeUnitTest} from 'lexical/src/__tests__/utils';
 
 describe('LexicalHashtagNode tests', () => {

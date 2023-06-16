@@ -6,16 +6,16 @@
  *
  */
 
-import {LinkNode, TOGGLE_LINK_COMMAND, toggleLink} from '@lexical/link';
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {mergeRegister} from '@lexical/utils';
+import {LinkNode, TOGGLE_LINK_COMMAND, toggleLink} from '@meogic/lexical-link';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {mergeRegister} from '@meogic/lexical-utils';
 import {
   $getSelection,
   $isElementNode,
   $isRangeSelection,
   COMMAND_PRIORITY_LOW,
   PASTE_COMMAND,
-} from 'lexical';
+} from '@meogic/lexical';
 import {useEffect} from 'react';
 
 type Props = {

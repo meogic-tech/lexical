@@ -7,9 +7,9 @@
  */
 
 import type {Grid} from './LexicalTableSelection';
-import type {DEPRECATED_GridRowNode, ElementNode} from 'lexical';
+import type {DEPRECATED_GridRowNode, ElementNode} from '@meogic/lexical';
 
-import {$findMatchingParent} from '@lexical/utils';
+import {$findMatchingParent} from '@meogic/lexical-utils';
 import {
   $createParagraphNode,
   $createTextNode,
@@ -21,7 +21,7 @@ import {
   DEPRECATED_$isGridSelection,
   DEPRECATED_GridCellNode,
   LexicalNode,
-} from 'lexical';
+} from '@meogic/lexical';
 import invariant from 'shared/invariant';
 
 import {InsertTableCommandPayloadHeaders} from '.';

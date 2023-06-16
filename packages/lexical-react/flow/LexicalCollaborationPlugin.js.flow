@@ -7,8 +7,8 @@
  * @flow strict
  */
 
-import type {InitialEditorStateType} from '@lexical/react/LexicalComposer';
-import type {ExcludedProperties, ProviderAwareness} from '@lexical/yjs';
+import type {InitialEditorStateType} from '@meogic/lexical-react/LexicalComposer';
+import type {ExcludedProperties, ProviderAwareness} from '@meogic/lexical-yjs';
 import type {Doc, RelativePosition} from 'yjs';
 
 export interface Provider {

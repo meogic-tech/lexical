@@ -11,7 +11,7 @@ import type {
   LexicalEditor,
   LexicalNode,
   ElementNode,
-} from 'lexical';
+} from '@meogic/lexical';
 export type DFSNode = $ReadOnly<{
   depth: number,
   node: LexicalNode,

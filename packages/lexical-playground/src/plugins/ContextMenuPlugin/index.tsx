@@ -6,13 +6,13 @@
  *
  */
 
-import type {LexicalNode} from 'lexical';
+import type {LexicalNode} from '@meogic/lexical';
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
 import {
   LexicalContextMenuPlugin,
   MenuOption,
-} from '@lexical/react/LexicalContextMenuPlugin';
+} from '@meogic/lexical-react/LexicalContextMenuPlugin';
 import {useCallback, useMemo} from 'react';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';

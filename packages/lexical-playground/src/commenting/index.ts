@@ -6,10 +6,10 @@
  *
  */
 
-import type {LexicalEditor} from 'lexical';
+import type {LexicalEditor} from '@meogic/lexical';
 
-import {Provider, TOGGLE_CONNECT_COMMAND} from '@lexical/yjs';
-import {COMMAND_PRIORITY_LOW} from 'lexical';
+import {Provider, TOGGLE_CONNECT_COMMAND} from '@meogic/lexical-yjs';
+import {COMMAND_PRIORITY_LOW} from '@meogic/lexical';
 import {useEffect, useState} from 'react';
 import {
   Array as YArray,

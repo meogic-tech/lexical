@@ -1,4 +1,4 @@
-/** @module @lexical/text */
+/** @module @meogic/lexical-text */
 /**
  * Copyright (c) Meta Platforms, Inc. and affiliates.
  *
@@ -7,7 +7,7 @@
  *
  */
 
-import type {Klass, LexicalEditor, LexicalNode, RootNode} from 'lexical';
+import type {Klass, LexicalEditor, LexicalNode, RootNode} from '@meogic/lexical';
 
 import {
   $createTextNode,
@@ -17,7 +17,7 @@ import {
   $isParagraphNode,
   $isTextNode,
   TextNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
 export type TextNodeWithOffset = {
   node: TextNode;

@@ -7,8 +7,8 @@
  */
 import type {MenuRenderFn, MenuResolution} from './shared/LexicalMenu';
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {LexicalNode} from 'lexical';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {LexicalNode} from '@meogic/lexical';
 import {
   MutableRefObject,
   ReactPortal,

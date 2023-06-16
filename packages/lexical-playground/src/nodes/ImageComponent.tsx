@@ -12,21 +12,21 @@ import type {
   NodeKey,
   NodeSelection,
   RangeSelection,
-} from 'lexical';
+} from '@meogic/lexical';
 
 import './ImageNode.css';
 
-import {AutoFocusPlugin} from '@lexical/react/LexicalAutoFocusPlugin';
-import {useCollaborationContext} from '@lexical/react/LexicalCollaborationContext';
-import {CollaborationPlugin} from '@lexical/react/LexicalCollaborationPlugin';
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import LexicalErrorBoundary from '@lexical/react/LexicalErrorBoundary';
-import {HashtagPlugin} from '@lexical/react/LexicalHashtagPlugin';
-import {HistoryPlugin} from '@lexical/react/LexicalHistoryPlugin';
-import {LexicalNestedComposer} from '@lexical/react/LexicalNestedComposer';
-import {RichTextPlugin} from '@lexical/react/LexicalRichTextPlugin';
-import {useLexicalNodeSelection} from '@lexical/react/useLexicalNodeSelection';
-import {mergeRegister} from '@lexical/utils';
+import {AutoFocusPlugin} from '@meogic/lexical-react/LexicalAutoFocusPlugin';
+import {useCollaborationContext} from '@meogic/lexical-react/LexicalCollaborationContext';
+import {CollaborationPlugin} from '@meogic/lexical-react/LexicalCollaborationPlugin';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import LexicalErrorBoundary from '@meogic/lexical-react/LexicalErrorBoundary';
+import {HashtagPlugin} from '@meogic/lexical-react/LexicalHashtagPlugin';
+import {HistoryPlugin} from '@meogic/lexical-react/LexicalHistoryPlugin';
+import {LexicalNestedComposer} from '@meogic/lexical-react/LexicalNestedComposer';
+import {RichTextPlugin} from '@meogic/lexical-react/LexicalRichTextPlugin';
+import {useLexicalNodeSelection} from '@meogic/lexical-react/useLexicalNodeSelection';
+import {mergeRegister} from '@meogic/lexical-utils';
 import {
   $getNodeByKey,
   $getSelection,
@@ -40,7 +40,7 @@ import {
   KEY_ENTER_COMMAND,
   KEY_ESCAPE_COMMAND,
   SELECTION_CHANGE_COMMAND,
-} from 'lexical';
+} from '@meogic/lexical';
 import * as React from 'react';
 import {Suspense, useCallback, useEffect, useRef, useState} from 'react';
 

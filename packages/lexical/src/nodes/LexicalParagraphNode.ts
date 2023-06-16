@@ -17,7 +17,7 @@ import type {
   ElementFormatType,
   SerializedElementNode,
 } from './LexicalElementNode';
-import type {RangeSelection} from 'lexical';
+import type {RangeSelection} from '../';
 
 import {$applyNodeReplacement, getCachedClassNameArray} from '../LexicalUtils';
 import {ElementNode} from './LexicalElementNode';

@@ -20,13 +20,13 @@ import type {
   RangeSelection,
   SerializedElementNode,
   Spread,
-} from 'lexical';
+} from '@meogic/lexical';
 
 import {
   addClassNamesToElement,
   isHTMLElement,
   removeClassNamesFromElement,
-} from '@lexical/utils';
+} from '@meogic/lexical-utils';
 import {
   $applyNodeReplacement,
   $createParagraphNode,
@@ -34,7 +34,7 @@ import {
   $isParagraphNode,
   $isRangeSelection,
   ElementNode,
-} from 'lexical';
+} from '@meogic/lexical';
 import invariant from 'shared/invariant';
 
 import {$createListNode, $isListNode} from './';

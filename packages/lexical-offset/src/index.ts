@@ -1,4 +1,4 @@
-/** @module @lexical/offset */
+/** @module @meogic/lexical-offset */
 /**
  * Copyright (c) Meta Platforms, Inc. and affiliates.
  *
@@ -15,14 +15,14 @@ import type {
   NodeMap,
   RangeSelection,
   RootNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
 import {
   $createRangeSelection,
   $getNodeByKey,
   $isElementNode,
   $isTextNode,
-} from 'lexical';
+} from '@meogic/lexical';
 import invariant from 'shared/invariant';
 
 type OffsetElementNode = {

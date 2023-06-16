@@ -8,7 +8,7 @@
 
 import type {Binding} from '.';
 import type {CollabElementNode} from './CollabElementNode';
-import type {NodeKey, NodeMap, TextNode} from 'lexical';
+import type {NodeKey, NodeMap, TextNode} from '@meogic/lexical';
 import type {Map as YMap} from 'yjs';
 
 import {
@@ -16,7 +16,7 @@ import {
   $getSelection,
   $isRangeSelection,
   $isTextNode,
-} from 'lexical';
+} from '@meogic/lexical';
 import invariant from 'shared/invariant';
 import simpleDiffWithCursor from 'shared/simpleDiffWithCursor';
 

@@ -16,91 +16,91 @@ import babel from '@rollup/plugin-babel';
 
 const moduleResolution = [
   {
-    find: /lexical$/,
+    find: /@meogic\/lexical$/,
     replacement: path.resolve('../lexical/src/index.ts'),
   },
   {
-    find: '@lexical/clipboard',
+    find: '@meogic/lexical-clipboard',
     replacement: path.resolve('../lexical-clipboard/src/index.ts'),
   },
   {
-    find: '@lexical/selection',
+    find: '@meogic/lexical-selection',
     replacement: path.resolve('../lexical-selection/src/index.ts'),
   },
   {
-    find: '@lexical/text',
+    find: '@meogic/lexical-text',
     replacement: path.resolve('../lexical-text/src/index.ts'),
   },
   {
-    find: '@lexical/headless',
+    find: '@meogic/lexical-headless',
     replacement: path.resolve('../lexical-headless/src/index.ts'),
   },
   {
-    find: '@lexical/html',
+    find: '@meogic/lexical-html',
     replacement: path.resolve('../lexical-html/src/index.ts'),
   },
   {
-    find: '@lexical/hashtag',
+    find: '@meogic/lexical-hashtag',
     replacement: path.resolve('../lexical-hashtag/src/index.ts'),
   },
   {
-    find: '@lexical/history',
+    find: '@meogic/lexical-history',
     replacement: path.resolve('../lexical-history/src/index.ts'),
   },
   {
-    find: '@lexical/list',
+    find: '@meogic/lexical-list',
     replacement: path.resolve('../lexical-list/src/index.ts'),
   },
   {
-    find: '@lexical/file',
+    find: '@meogic/lexical-file',
     replacement: path.resolve('../lexical-file/src/index.ts'),
   },
   {
-    find: '@lexical/table',
+    find: '@meogic/lexical-table',
     replacement: path.resolve('../lexical-table/src/index.ts'),
   },
   {
-    find: '@lexical/offset',
+    find: '@meogic/lexical-offset',
     replacement: path.resolve('../lexical-offset/src/index.ts'),
   },
   {
-    find: '@lexical/utils',
+    find: '@meogic/lexical-utils',
     replacement: path.resolve('../lexical-utils/src/index.ts'),
   },
   {
-    find: '@lexical/code',
+    find: '@meogic/lexical-code',
     replacement: path.resolve('../lexical-code/src/index.ts'),
   },
   {
-    find: '@lexical/plain-text',
+    find: '@meogic/lexical-plain-text',
     replacement: path.resolve('../lexical-plain-text/src/index.ts'),
   },
   {
-    find: '@lexical/rich-text',
+    find: '@meogic/lexical-rich-text',
     replacement: path.resolve('../lexical-rich-text/src/index.ts'),
   },
   {
-    find: '@lexical/dragon',
+    find: '@meogic/lexical-dragon',
     replacement: path.resolve('../lexical-dragon/src/index.ts'),
   },
   {
-    find: '@lexical/link',
+    find: '@meogic/lexical-link',
     replacement: path.resolve('../lexical-link/src/index.ts'),
   },
   {
-    find: '@lexical/overflow',
+    find: '@meogic/lexical-overflow',
     replacement: path.resolve('../lexical-overflow/src/index.ts'),
   },
   {
-    find: '@lexical/markdown',
+    find: '@meogic/lexical-markdown',
     replacement: path.resolve('../lexical-markdown/src/index.ts'),
   },
   {
-    find: '@lexical/mark',
+    find: '@meogic/lexical-mark',
     replacement: path.resolve('../lexical-mark/src/index.ts'),
   },
   {
-    find: '@lexical/yjs',
+    find: '@meogic/lexical-yjs',
     replacement: path.resolve('../lexical-yjs/src/index.ts'),
   },
   {
@@ -154,13 +154,13 @@ const moduleResolution = [
 
   if (fs.existsSync(resolvedPath)) {
     moduleResolution.push({
-      find: `@lexical/react/${module}`,
+      find: `@meogic/lexical-react/${module}`,
       replacement: resolvedPath,
     });
   } else {
     resolvedPath = path.resolve(`../lexical-react/src/${module}.tsx`);
     moduleResolution.push({
-      find: `@lexical/react/${module}`,
+      find: `@meogic/lexical-react/${module}`,
       replacement: resolvedPath,
     });
   }

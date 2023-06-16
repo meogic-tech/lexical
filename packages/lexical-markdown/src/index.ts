@@ -1,4 +1,4 @@
-/** @module @lexical/markdown */
+/** @module @meogic/lexical-markdown */
 /**
  * Copyright (c) Meta Platforms, Inc. and affiliates.
  *
@@ -13,7 +13,7 @@ import type {
   TextMatchTransformer,
   Transformer,
 } from './MarkdownTransformers';
-import type {ElementNode} from 'lexical';
+import type {ElementNode} from '@meogic/lexical';
 
 import {createMarkdownExport} from './MarkdownExport';
 import {createMarkdownImport} from './MarkdownImport';

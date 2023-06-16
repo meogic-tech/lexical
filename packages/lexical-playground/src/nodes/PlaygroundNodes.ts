@@ -6,17 +6,17 @@
  *
  */
 
-import type {Klass, LexicalNode} from 'lexical';
+import type {Klass, LexicalNode} from '@meogic/lexical';
 
-import {CodeHighlightNode, CodeNode} from '@lexical/code';
-import {HashtagNode} from '@lexical/hashtag';
-import {AutoLinkNode, LinkNode} from '@lexical/link';
-import {ListItemNode, ListNode} from '@lexical/list';
-import {MarkNode} from '@lexical/mark';
-import {OverflowNode} from '@lexical/overflow';
-import {HorizontalRuleNode} from '@lexical/react/LexicalHorizontalRuleNode';
-import {HeadingNode, QuoteNode} from '@lexical/rich-text';
-import {TableCellNode, TableNode, TableRowNode} from '@lexical/table';
+import {CodeHighlightNode, CodeNode} from '@meogic/lexical-code';
+import {HashtagNode} from '@meogic/lexical-hashtag';
+import {AutoLinkNode, LinkNode} from '@meogic/lexical-link';
+import {ListItemNode, ListNode} from '@meogic/lexical-list';
+import {MarkNode} from '@meogic/lexical-mark';
+import {OverflowNode} from '@meogic/lexical-overflow';
+import {HorizontalRuleNode} from '@meogic/lexical-react/LexicalHorizontalRuleNode';
+import {HeadingNode, QuoteNode} from '@meogic/lexical-rich-text';
+import {TableCellNode, TableNode, TableRowNode} from '@meogic/lexical-table';
 
 import {CollapsibleContainerNode} from '../plugins/CollapsiblePlugin/CollapsibleContainerNode';
 import {CollapsibleContentNode} from '../plugins/CollapsiblePlugin/CollapsibleContentNode';

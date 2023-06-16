@@ -11,8 +11,8 @@ import type {
   TextFormatTransformer,
   TextMatchTransformer,
   Transformer,
-} from '@lexical/markdown';
-import type {ElementNode, LexicalNode, TextFormatType, TextNode} from 'lexical';
+} from '@meogic/lexical-markdown';
+import type {ElementNode, LexicalNode, TextFormatType, TextNode} from '@meogic/lexical';
 
 import {
   $getRoot,
@@ -20,7 +20,7 @@ import {
   $isElementNode,
   $isLineBreakNode,
   $isTextNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
 import {transformersByType} from './utils';
 

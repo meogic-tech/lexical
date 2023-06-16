@@ -14,7 +14,7 @@ import type {
   NodeMap,
   RangeSelection,
   TextNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
 import {
   $getNodeByKey,
@@ -25,7 +25,7 @@ import {
   createEditor,
   Klass,
   NodeKey,
-} from 'lexical';
+} from '@meogic/lexical';
 import invariant from 'shared/invariant';
 import {Doc, Map as YMap, XmlElement, XmlText} from 'yjs';
 

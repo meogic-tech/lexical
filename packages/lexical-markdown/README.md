@@ -1,4 +1,4 @@
-# `@lexical/markdown`
+# `@meogic/lexical-markdown`
 
 This package contains markdown helpers for Lexical: import, export and shortcuts.
 
@@ -8,7 +8,7 @@ import {
   $convertFromMarkdownString,
   $convertToMarkdownString,
   TRANSFORMERS,
-} from '@lexical/markdown';
+} from '@meogic/lexical-markdown';
 
 editor.update(() => {
   const markdown = $convertToMarkdownString(TRANSFORMERS);
@@ -32,8 +32,8 @@ It can also be used for initializing editor's state from markdown string. Here's
 ## Shortcuts
 Can use `<MarkdownShortcutPlugin>` if using React
 ```jsx
-import { TRANSFORMERS } from '@lexical/markdown';
-import {MarkdownShortcutPlugin} from '@lexical/react/LexicalMarkdownShortcutPlugin';
+import { TRANSFORMERS } from '@meogic/lexical-markdown';
+import {MarkdownShortcutPlugin} from '@meogic/lexical-react/LexicalMarkdownShortcutPlugin';
 
 <LexicalComposer>
   <MarkdownShortcutPlugin transformers={TRANSFORMERS} />
@@ -45,7 +45,7 @@ Or `registerMarkdownShortcuts` to register it manually:
 import {
   registerMarkdownShortcuts,
   TRANSFORMERS,
-} from '@lexical/markdown';
+} from '@meogic/lexical-markdown';
 
 const editor = createEditor(...);
 registerMarkdownShortcuts(editor, TRANSFORMERS);
@@ -53,7 +53,7 @@ registerMarkdownShortcuts(editor, TRANSFORMERS);
 
 ## Transformers
 Markdown functionality relies on transformers configuration. It's an array of objects that define how certain text or nodes
-are processed during import, export or while typing. `@lexical/markdown` package provides set of built-in transformers:
+are processed during import, export or while typing. `@meogic/lexical-markdown` package provides set of built-in transformers:
 ```js
 // Element transformers
 UNORDERED_LIST

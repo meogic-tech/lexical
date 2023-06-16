@@ -6,16 +6,16 @@
  *
  */
 
-import type {LexicalEditor, NodeKey} from 'lexical';
+import type {LexicalEditor, NodeKey} from '@meogic/lexical';
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
 import {
   $createNodeSelection,
   $getNodeByKey,
   $getSelection,
   $isNodeSelection,
   $setSelection,
-} from 'lexical';
+} from '@meogic/lexical';
 import {useCallback, useEffect, useState} from 'react';
 
 function isNodeSelected(editor: LexicalEditor, key: NodeKey): boolean {

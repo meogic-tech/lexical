@@ -6,16 +6,16 @@
  *
  */
 
-import {$isLinkNode} from '@lexical/link';
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {$findMatchingParent, isHTMLAnchorElement} from '@lexical/utils';
+import {$isLinkNode} from '@meogic/lexical-link';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {$findMatchingParent, isHTMLAnchorElement} from '@meogic/lexical-utils';
 import {
   $getNearestNodeFromDOMNode,
   $getSelection,
   $isElementNode,
   $isRangeSelection,
   getNearestEditorFromDOMNode,
-} from 'lexical';
+} from '@meogic/lexical';
 import {useEffect} from 'react';
 
 function findMatchingDOM<T extends Node>(

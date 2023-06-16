@@ -1,4 +1,4 @@
-/** @module @lexical/dragon */
+/** @module @meogic/lexical-dragon */
 /**
  * Copyright (c) Meta Platforms, Inc. and affiliates.
  *
@@ -13,7 +13,7 @@ import {
   $isRangeSelection,
   $isTextNode,
   LexicalEditor,
-} from 'lexical';
+} from '@meogic/lexical';
 
 export function registerDragonSupport(editor: LexicalEditor): () => void {
   const origin = window.location.origin;

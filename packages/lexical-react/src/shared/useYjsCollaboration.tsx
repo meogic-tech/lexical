@@ -6,10 +6,10 @@
  *
  */
 
-import type {Binding, ExcludedProperties, Provider} from '@lexical/yjs';
-import type {LexicalEditor} from 'lexical';
+import type {Binding, ExcludedProperties, Provider} from '@meogic/lexical-yjs';
+import type {LexicalEditor} from '@meogic/lexical';
 
-import {mergeRegister} from '@lexical/utils';
+import {mergeRegister} from '@meogic/lexical-utils';
 import {
   CONNECTED_COMMAND,
   createBinding,
@@ -20,7 +20,7 @@ import {
   syncLexicalUpdateToYjs,
   syncYjsChangesToLexical,
   TOGGLE_CONNECT_COMMAND,
-} from '@lexical/yjs';
+} from '@meogic/lexical-yjs';
 import {
   $createParagraphNode,
   $getRoot,
@@ -30,7 +30,7 @@ import {
   FOCUS_COMMAND,
   REDO_COMMAND,
   UNDO_COMMAND,
-} from 'lexical';
+} from '@meogic/lexical';
 import * as React from 'react';
 import {useCallback, useEffect, useMemo, useRef, useState} from 'react';
 import {createPortal} from 'react-dom';

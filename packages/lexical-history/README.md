@@ -1,4 +1,4 @@
-# `@lexical/history`
+# `@meogic/lexical-history`
 
 This package contains history helpers for Lexical.
 
@@ -21,7 +21,7 @@ function registerHistory(
 History package handles `UNDO_COMMAND`, `REDO_COMMAND` and `CLEAR_HISTORY_COMMAND` commands. It also triggers `CAN_UNDO_COMMAND` and `CAN_REDO_COMMAND` commands when history state is changed. These commands could be used to work with history state:
 
 ```jsx
-import {UNDO_COMMAND, REDO_COMMAND} from 'lexical';
+import {UNDO_COMMAND, REDO_COMMAND} from '@meogic/lexical';
 
 <Toolbar>
   <Button onClick={() => editor.dispatchCommand(UNDO_COMMAND)}>Undo</Button>

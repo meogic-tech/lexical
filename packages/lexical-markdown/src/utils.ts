@@ -6,18 +6,18 @@
  *
  */
 
-import type {ListNode} from '@lexical/list';
+import type {ListNode} from '@meogic/lexical-list';
 import type {
   ElementTransformer,
   TextFormatTransformer,
   TextMatchTransformer,
   Transformer,
-} from '@lexical/markdown';
-import type {ElementNode, LexicalNode, TextFormatType} from 'lexical';
+} from '@meogic/lexical-markdown';
+import type {ElementNode, LexicalNode, TextFormatType} from '@meogic/lexical';
 
-import {$isCodeNode} from '@lexical/code';
-import {$isListItemNode, $isListNode} from '@lexical/list';
-import {$isHeadingNode, $isQuoteNode} from '@lexical/rich-text';
+import {$isCodeNode} from '@meogic/lexical-code';
+import {$isListItemNode, $isListNode} from '@meogic/lexical-list';
+import {$isHeadingNode, $isQuoteNode} from '@meogic/lexical-rich-text';
 
 type MarkdownFormatKind =
   | 'noTransformation'

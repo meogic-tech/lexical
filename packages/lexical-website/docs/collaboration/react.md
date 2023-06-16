@@ -4,14 +4,14 @@ sidebar_position: 1
 
 # React
 
-Below is an example of a basic plain text editor using `lexical`, `@lexical/react`, and `yjs`
+Below is an example of a basic plain text editor using `lexical`, `@meogic/lexical-react`, and `yjs`
 
 ```jsx
-import {$getRoot, $createParagraphNode, $createTextNode} from 'lexical';
-import {LexicalComposer} from '@lexical/react/LexicalComposer';
-import {ContentEditable} from '@lexical/react/LexicalContentEditable';
-import {PlainTextPlugin} from '@lexical/react/LexicalPlainTextPlugin';
-import {CollaborationPlugin} from "@lexical/react/LexicalCollaborationPlugin";
+import {$getRoot, $createParagraphNode, $createTextNode} from '@meogic/lexical';
+import {LexicalComposer} from '@meogic/lexical-react/LexicalComposer';
+import {ContentEditable} from '@meogic/lexical-react/LexicalContentEditable';
+import {PlainTextPlugin} from '@meogic/lexical-react/LexicalPlainTextPlugin';
+import {CollaborationPlugin} from "@meogic/lexical-react/LexicalCollaborationPlugin";
 import * as Y from 'yjs';
 import {WebsocketProvider} from 'y-websocket';
 

@@ -6,10 +6,10 @@
  *
  */
 
-import type {RangeSelection} from 'lexical';
+import type {RangeSelection} from '@meogic/lexical';
 
-import {$getListDepth, $isListItemNode, $isListNode} from '@lexical/list';
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
+import {$getListDepth, $isListItemNode, $isListNode} from '@meogic/lexical-list';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
 import {
   $getSelection,
   $isElementNode,
@@ -17,7 +17,7 @@ import {
   COMMAND_PRIORITY_CRITICAL,
   ElementNode,
   INDENT_CONTENT_COMMAND,
-} from 'lexical';
+} from '@meogic/lexical';
 import {useEffect} from 'react';
 
 type Props = Readonly<{

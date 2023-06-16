@@ -28,7 +28,7 @@ In order to control how our Emoticons appear and behave in the editor, we'll wan
 ```jsx
 //EmoticonNode.js
 
-import {TextNode} from 'lexical';
+import {TextNode} from '@meogic/lexical';
 
 export class EmoticonNode extends TextNode {
 
@@ -43,7 +43,7 @@ export class EmoticonNode extends TextNode {
 Once we have this class, we can override the createDOM method to control how our new node is rendered in the browser. In this case, we want to give it a specific class name to apply our emoticon styles, so we'll add an argument to the constructor to accommodate that:
 
 ```jsx
-import {TextNode} from 'lexical';
+import {TextNode} from '@meogic/lexical';
 
 export class EmoticonNode extends TextNode {
   __className;
@@ -66,7 +66,7 @@ export class EmoticonNode extends TextNode {
 Next, we need to add a couple of required methods that help Lexical understand how to deserialize the node (among other things):
 
 ```jsx
-import {TextNode} from 'lexical';
+import {TextNode} from '@meogic/lexical';
 
 export class EmoticonNode extends TextNode {
   __className: string;
@@ -95,7 +95,7 @@ export class EmoticonNode extends TextNode {
 Conventionally, custom nodes expose a function for checking against their type, as well as a create function that wraps the constructor. We'll add these at the bottom of the module below the class:
 
 ```jsx
-import {TextNode} from 'lexical';
+import {TextNode} from '@meogic/lexical';
 
 export class EmoticonNode extends TextNode {
   __className;

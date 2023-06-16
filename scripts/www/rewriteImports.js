@@ -16,7 +16,7 @@ const options = {};
 // This script attempts to find all Flow definition modules, and makes
 // them compatible with www. Specifically, it finds any imports that
 // reference lower case 'lexical' -> 'Lexical' and package references,
-// such as 'lexical/Foo' -> 'LexicalFoo' and '@lexical/react/Foo' ->
+// such as 'lexical/Foo' -> 'LexicalFoo' and '@meogic/lexical-react/Foo' ->
 // 'LexicalFoo'. Lastly, it creates these files in the 'dist' directory
 // for each package so they can easily be copied to www.
 
@@ -34,8 +34,8 @@ glob('packages/**/flow/*.flow', options, function (error1, files) {
           / \* @flow strict/g,
           ' * @flow strict\n * @generated\n * @oncall lexical_web_text_editor',
         )
-        .replace(/from 'lexical'/g, "from 'Lexical'")
-        .replace(/from 'lexical'/g, "from 'Lexical'")
+        .replace(/from '@meogic\/lexical'/g, "from '@meogic/lexical'")
+        .replace(/from '@meogic\/lexical'/g, "from '@meogic/lexical'")
         .replace(/from 'lexical\/LinkNode'/g, "from 'LexicalLinkNode'")
         .replace(/from '@lexical\/react\/Lexical/g, "from 'Lexical")
         .replace(/from '@lexical\/utils\/'/g, "from 'LexicalUtils")

@@ -6,25 +6,25 @@
  *
  */
 
-import type {LexicalEditor} from 'lexical';
+import type {LexicalEditor} from '@meogic/lexical';
 
-import {$createCodeNode, $isCodeNode} from '@lexical/code';
-import {exportFile, importFile} from '@lexical/file';
+import {$createCodeNode, $isCodeNode} from '@meogic/lexical-code';
+import {exportFile, importFile} from '@meogic/lexical-file';
 import {
   $convertFromMarkdownString,
   $convertToMarkdownString,
-} from '@lexical/markdown';
-import {useCollaborationContext} from '@lexical/react/LexicalCollaborationContext';
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {mergeRegister} from '@lexical/utils';
-import {CONNECTED_COMMAND, TOGGLE_CONNECT_COMMAND} from '@lexical/yjs';
+} from '@meogic/lexical-markdown';
+import {useCollaborationContext} from '@meogic/lexical-react/LexicalCollaborationContext';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {mergeRegister} from '@meogic/lexical-utils';
+import {CONNECTED_COMMAND, TOGGLE_CONNECT_COMMAND} from '@meogic/lexical-yjs';
 import {
   $createTextNode,
   $getRoot,
   $isParagraphNode,
   CLEAR_EDITOR_COMMAND,
   COMMAND_PRIORITY_EDITOR,
-} from 'lexical';
+} from '@meogic/lexical';
 import * as React from 'react';
 import {useCallback, useEffect, useState} from 'react';
 

@@ -7,9 +7,9 @@
  * @flow strict
  */
 
-import type {LexicalNode, LexicalCommand} from 'lexical';
+import type {LexicalNode, LexicalCommand} from '@meogic/lexical';
 
-import {DecoratorNode} from 'lexical';
+import {DecoratorNode} from '@meogic/lexical';
 
 declare export class HorizontalRuleNode extends DecoratorNode<React$Node> {
   static getType(): string;

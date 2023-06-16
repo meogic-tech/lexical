@@ -16,7 +16,7 @@ import type {
   LineBreakNode,
   GridSelection,
   NodeKey,
-} from 'lexical';
+} from '@meogic/lexical';
 
 import * as Prism from 'prismjs';
 
@@ -35,7 +35,7 @@ import 'prismjs/components/prism-typescript';
 import 'prismjs/components/prism-java';
 import 'prismjs/components/prism-cpp';
 
-import {mergeRegister} from '@lexical/utils';
+import {mergeRegister} from '@meogic/lexical-utils';
 import {
   $createLineBreakNode,
   $createTextNode,
@@ -58,7 +58,7 @@ import {
   TextNode,
   $isTabNode,
   TabNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
 import {
   $createCodeHighlightNode,

@@ -8,8 +8,8 @@
 
 import type {MenuRenderFn, MenuResolution} from './shared/LexicalMenu';
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {$getNodeByKey, NodeKey, TextNode} from 'lexical';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {$getNodeByKey, NodeKey, TextNode} from '@meogic/lexical';
 import {useCallback, useEffect, useState} from 'react';
 import * as React from 'react';
 

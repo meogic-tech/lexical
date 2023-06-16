@@ -12,7 +12,7 @@ import {
   $isNodeSelection,
   ParagraphNode,
   TextNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
 import {$createRangeSelection} from '../..';
 import {LexicalNode} from '../../LexicalNode';

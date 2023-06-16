@@ -11,12 +11,12 @@ import type {
   TextFormatTransformer,
   TextMatchTransformer,
   Transformer,
-} from '@lexical/markdown';
-import type {LexicalNode, TextNode} from 'lexical';
+} from '@meogic/lexical-markdown';
+import type {LexicalNode, TextNode} from '@meogic/lexical';
 
-import {$isListItemNode, $isListNode} from '@lexical/list';
-import {$isQuoteNode} from '@lexical/rich-text';
-import {$findMatchingParent} from '@lexical/utils';
+import {$isListItemNode, $isListNode} from '@meogic/lexical-list';
+import {$isQuoteNode} from '@meogic/lexical-rich-text';
+import {$findMatchingParent} from '@meogic/lexical-utils';
 import {
   $createLineBreakNode,
   $createParagraphNode,
@@ -26,7 +26,7 @@ import {
   $isParagraphNode,
   $isTextNode,
   ElementNode,
-} from 'lexical';
+} from '@meogic/lexical';
 import {IS_APPLE_WEBKIT, IS_IOS, IS_SAFARI} from 'shared/environment';
 
 import {PUNCTUATION_OR_SPACE, transformersByType} from './utils';

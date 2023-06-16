@@ -11,10 +11,10 @@ import type {
   LexicalEditor,
   NodeSelection,
   RangeSelection,
-} from 'lexical';
+} from '@meogic/lexical';
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {$createParagraphNode, $createTextNode, $getRoot} from 'lexical';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {$createParagraphNode, $createTextNode, $getRoot} from '@meogic/lexical';
 import * as React from 'react';
 import {useCallback, useEffect, useRef, useState} from 'react';
 import {IS_APPLE} from 'shared/environment';
@@ -200,8 +200,8 @@ import {
   repeat,
 } from '../utils';
 import {selectAll} from '../keyboardShortcuts';
-import { RangeSelection } from 'lexical';
-import { NodeSelection } from 'lexical';
+import { RangeSelection } from '@meogic/lexical';
+import { NodeSelection } from '@meogic/lexical';
 
 describe('Test case', () => {
   initializeE2E((e2e) => {

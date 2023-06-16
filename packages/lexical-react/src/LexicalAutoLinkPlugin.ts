@@ -6,24 +6,24 @@
  *
  */
 
-import type {LinkAttributes} from '@lexical/link';
-import type {ElementNode, LexicalEditor, LexicalNode} from 'lexical';
+import type {LinkAttributes} from '@meogic/lexical-link';
+import type {ElementNode, LexicalEditor, LexicalNode} from '@meogic/lexical';
 
 import {
   $createAutoLinkNode,
   $isAutoLinkNode,
   $isLinkNode,
   AutoLinkNode,
-} from '@lexical/link';
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {mergeRegister} from '@lexical/utils';
+} from '@meogic/lexical-link';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {mergeRegister} from '@meogic/lexical-utils';
 import {
   $createTextNode,
   $isElementNode,
   $isLineBreakNode,
   $isTextNode,
   TextNode,
-} from 'lexical';
+} from '@meogic/lexical';
 import {useEffect} from 'react';
 import invariant from 'shared/invariant';
 

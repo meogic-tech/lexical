@@ -13,9 +13,9 @@ import {
   CodeNode,
   getLanguageFriendlyName,
   normalizeCodeLang,
-} from '@lexical/code';
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {$getNearestNodeFromDOMNode} from 'lexical';
+} from '@meogic/lexical-code';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {$getNearestNodeFromDOMNode} from '@meogic/lexical';
 import {useEffect, useRef, useState} from 'react';
 import * as React from 'react';
 import {createPortal} from 'react-dom';

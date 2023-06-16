@@ -1,4 +1,4 @@
-/** @module @lexical/headless */
+/** @module @meogic/lexical-headless */
 /**
  * Copyright (c) Meta Platforms, Inc. and affiliates.
  *
@@ -7,9 +7,9 @@
  *
  */
 
-import type {CreateEditorArgs, LexicalEditor} from 'lexical';
+import type {CreateEditorArgs, LexicalEditor} from '@meogic/lexical';
 
-import {createEditor} from 'lexical';
+import {createEditor} from '@meogic/lexical';
 
 /**
  * Generates a headless editor that allows lexical to be used without the need for a DOM, eg in Node.js.

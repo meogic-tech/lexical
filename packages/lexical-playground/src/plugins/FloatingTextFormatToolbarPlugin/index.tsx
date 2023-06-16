@@ -8,10 +8,10 @@
 
 import './index.css';
 
-import {$isCodeHighlightNode} from '@lexical/code';
-import {$isLinkNode, TOGGLE_LINK_COMMAND} from '@lexical/link';
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {mergeRegister} from '@lexical/utils';
+import {$isCodeHighlightNode} from '@meogic/lexical-code';
+import {$isLinkNode, TOGGLE_LINK_COMMAND} from '@meogic/lexical-link';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {mergeRegister} from '@meogic/lexical-utils';
 import {
   $getSelection,
   $isRangeSelection,
@@ -20,7 +20,7 @@ import {
   FORMAT_TEXT_COMMAND,
   LexicalEditor,
   SELECTION_CHANGE_COMMAND,
-} from 'lexical';
+} from '@meogic/lexical';
 import {useCallback, useEffect, useRef, useState} from 'react';
 import * as React from 'react';
 import {createPortal} from 'react-dom';

@@ -6,18 +6,18 @@
  *
  */
 
-import type {LexicalEditor, NodeKey} from 'lexical';
+import type {LexicalEditor, NodeKey} from '@meogic/lexical';
 
 import './StickyNode.css';
 
-import {useCollaborationContext} from '@lexical/react/LexicalCollaborationContext';
-import {CollaborationPlugin} from '@lexical/react/LexicalCollaborationPlugin';
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import LexicalErrorBoundary from '@lexical/react/LexicalErrorBoundary';
-import {HistoryPlugin} from '@lexical/react/LexicalHistoryPlugin';
-import {LexicalNestedComposer} from '@lexical/react/LexicalNestedComposer';
-import {PlainTextPlugin} from '@lexical/react/LexicalPlainTextPlugin';
-import {$getNodeByKey} from 'lexical';
+import {useCollaborationContext} from '@meogic/lexical-react/LexicalCollaborationContext';
+import {CollaborationPlugin} from '@meogic/lexical-react/LexicalCollaborationPlugin';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import LexicalErrorBoundary from '@meogic/lexical-react/LexicalErrorBoundary';
+import {HistoryPlugin} from '@meogic/lexical-react/LexicalHistoryPlugin';
+import {LexicalNestedComposer} from '@meogic/lexical-react/LexicalNestedComposer';
+import {PlainTextPlugin} from '@meogic/lexical-react/LexicalPlainTextPlugin';
+import {$getNodeByKey} from '@meogic/lexical';
 import * as React from 'react';
 import {useEffect, useRef} from 'react';
 import useLayoutEffect from 'shared/useLayoutEffect';

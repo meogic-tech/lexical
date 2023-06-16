@@ -6,9 +6,9 @@
  *
  */
 
-import type {EditorState, LexicalEditor} from 'lexical';
+import type {EditorState, LexicalEditor} from '@meogic/lexical';
 
-import {CLEAR_HISTORY_COMMAND} from 'lexical';
+import {CLEAR_HISTORY_COMMAND} from '@meogic/lexical';
 
 import {version} from '../package.json';
 

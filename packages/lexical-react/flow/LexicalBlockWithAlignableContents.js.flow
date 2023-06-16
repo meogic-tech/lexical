@@ -13,7 +13,7 @@ import type {
   EditorThemeClasses,
   LexicalNode,
   NodeKey,
-} from 'lexical';
+} from '@meogic/lexical';
 
 type Props = $ReadOnly<{
   children: React$Node,

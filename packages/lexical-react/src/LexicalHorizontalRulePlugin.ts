@@ -6,17 +6,17 @@
  *
  */
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
 import {
   $createHorizontalRuleNode,
   INSERT_HORIZONTAL_RULE_COMMAND,
-} from '@lexical/react/LexicalHorizontalRuleNode';
-import {$insertNodeToNearestRoot} from '@lexical/utils';
+} from '@meogic/lexical-react/LexicalHorizontalRuleNode';
+import {$insertNodeToNearestRoot} from '@meogic/lexical-utils';
 import {
   $getSelection,
   $isRangeSelection,
   COMMAND_PRIORITY_EDITOR,
-} from 'lexical';
+} from '@meogic/lexical';
 import {useEffect} from 'react';
 
 export function HorizontalRulePlugin(): null {

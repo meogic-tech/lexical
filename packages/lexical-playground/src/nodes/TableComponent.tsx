@@ -6,18 +6,18 @@
  *
  */
 
-import type {RangeSelection, TextFormatType} from 'lexical';
+import type {RangeSelection, TextFormatType} from '@meogic/lexical';
 
 import {
   $generateJSONFromSelectedNodes,
   $generateNodesFromSerializedNodes,
   $insertGeneratedNodes,
-} from '@lexical/clipboard';
-import {$generateHtmlFromNodes, $generateNodesFromDOM} from '@lexical/html';
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {LexicalNestedComposer} from '@lexical/react/LexicalNestedComposer';
-import {useLexicalNodeSelection} from '@lexical/react/useLexicalNodeSelection';
-import {mergeRegister} from '@lexical/utils';
+} from '@meogic/lexical-clipboard';
+import {$generateHtmlFromNodes, $generateNodesFromDOM} from '@meogic/lexical-html';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {LexicalNestedComposer} from '@meogic/lexical-react/LexicalNestedComposer';
+import {useLexicalNodeSelection} from '@meogic/lexical-react/useLexicalNodeSelection';
+import {mergeRegister} from '@meogic/lexical-utils';
 import {
   $addUpdateTag,
   $createParagraphNode,
@@ -46,7 +46,7 @@ import {
   LexicalEditor,
   NodeKey,
   PASTE_COMMAND,
-} from 'lexical';
+} from '@meogic/lexical';
 import {
   useCallback,
   useContext,

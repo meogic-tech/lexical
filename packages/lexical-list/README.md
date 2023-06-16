@@ -1,9 +1,9 @@
-`@lexical/list`
+`@meogic/lexical-list`
 
 This package exposes the primitives for implementing lists in Lexical. If you're trying to implement conventional lists with React, take a look at the ListPlugin exposed
-by [@lexical/react](https://lexical.dev/docs/packages/lexical-react), which wraps these primitives into a neat component that you can drop into any LexicalComposer.
+by [@meogic/lexical-react](https://lexical.dev/docs/packages/lexical-react), which wraps these primitives into a neat component that you can drop into any LexicalComposer.
 
-The API of @lexical/list primarily consists of Lexical Nodes that encapsulate list behaviors and a set of functions that can be called to trigger typical list manipulation functionality:
+The API of @meogic/lexical-list primarily consists of Lexical Nodes that encapsulate list behaviors and a set of functions that can be called to trigger typical list manipulation functionality:
 
 ## Functions
 

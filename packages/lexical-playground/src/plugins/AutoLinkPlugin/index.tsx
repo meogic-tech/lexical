@@ -9,7 +9,7 @@
 import {
   AutoLinkPlugin,
   createLinkMatcherWithRegExp,
-} from '@lexical/react/LexicalAutoLinkPlugin';
+} from '@meogic/lexical-react/LexicalAutoLinkPlugin';
 import * as React from 'react';
 
 const URL_REGEX =

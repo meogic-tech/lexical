@@ -9,7 +9,7 @@
 import {
   addClassNamesToElement,
   removeClassNamesFromElement,
-} from '@lexical/utils';
+} from '@meogic/lexical-utils';
 
 describe('LexicalElementHelpers tests', () => {
   describe('addClassNamesToElement() and removeClassNamesFromElement()', () => {

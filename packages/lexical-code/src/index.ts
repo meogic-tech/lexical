@@ -1,4 +1,4 @@
-/** @module @lexical/code */
+/** @module @meogic/lexical-code */
 /**
  * Copyright (c) Meta Platforms, Inc. and affiliates.
  *

@@ -7,12 +7,12 @@
  * @flow strict
  */
 
-import type {LexicalNode, MutationListener} from 'lexical';
+import type {LexicalNode, MutationListener} from '@meogic/lexical';
 
-import {MenuOption} from '@lexical/react/LexicalTypeaheadMenuPlugin';
-import type {LexicalCommand, LexicalEditor, NodeKey, TextNode} from 'lexical';
+import {MenuOption} from '@meogic/lexical-react/LexicalTypeaheadMenuPlugin';
+import type {LexicalCommand, LexicalEditor, NodeKey, TextNode} from '@meogic/lexical';
 import * as React from 'react';
-import {createCommand} from 'lexical';
+import {createCommand} from '@meogic/lexical';
 import type {MenuRenderFn} from './LexicalTypeaheadMenuPlugin';
 
 export type EmbedMatchResult = {

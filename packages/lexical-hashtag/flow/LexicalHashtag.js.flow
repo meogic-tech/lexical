@@ -12,9 +12,9 @@ import type {
   LexicalNode,
   NodeKey,
   SerializedTextNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
-import {TextNode} from 'lexical';
+import {TextNode} from '@meogic/lexical';
 
 declare export class HashtagNode extends TextNode {
   static getType(): string;

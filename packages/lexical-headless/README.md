@@ -1,17 +1,17 @@
-# `@lexical/headless`
+# `@meogic/lexical-headless`
 
 This package allows you to interact with Lexical in a headless environment (one that does not rely on DOM, e.g. for Node.js environment), and use its
 main features like editor.update(), editor.registerNodeTransform(), editor.registerUpdateListener()
 to create, update or traverse state.
 
-Install `@lexical/headless`:
+Install `@meogic/lexical-headless`:
 
 ```
-npm install --save @lexical/headless
+npm install --save @meogic/lexical-headless
 ```
 
 ```js
-const { createHeadlessEditor } = require('@lexical/headless');
+const { createHeadlessEditor } = require('@meogic/lexical-headless');
 
 const editor = createHeadlessEditor({
   nodes: [],
@@ -30,8 +30,8 @@ editor.update(() => {
 Any plugins that do not rely on DOM could also be used. Here's an example of how
 you can convert lexical editor state to markdown on server:
 ```js
-const { createHeadlessEditor } = require('@lexical/headless');
-const { $convertToMarkdownString, TRANSFORMERS } = require('@lexical/markdown');
+const { createHeadlessEditor } = require('@meogic/lexical-headless');
+const { $convertToMarkdownString, TRANSFORMERS } = require('@meogic/lexical-markdown');
 
 app.get('article/:id/markdown', await (req, res) => {
   const editor = createHeadlessEditor({

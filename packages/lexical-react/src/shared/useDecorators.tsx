@@ -6,7 +6,7 @@
  *
  */
 
-import type {LexicalEditor} from 'lexical';
+import type {LexicalEditor} from '@meogic/lexical';
 
 import {Suspense, useEffect, useMemo, useState} from 'react';
 import * as React from 'react';

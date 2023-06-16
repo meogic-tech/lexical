@@ -15,7 +15,7 @@ import type {
   NodeSelection,
   Point,
   RangeSelection,
-} from 'lexical';
+} from '@meogic/lexical';
 declare export function $cloneWithProperties<T: LexicalNode>(node: T): T;
 declare export function getStyleObjectFromCSS(css: string): {
   [string]: string,

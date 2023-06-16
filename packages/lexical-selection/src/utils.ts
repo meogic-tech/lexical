@@ -5,9 +5,9 @@
  * LICENSE file in the root directory of this source tree.
  *
  */
-import type {LexicalEditor, LexicalNode} from 'lexical';
+import type {LexicalEditor, LexicalNode} from '@meogic/lexical';
 
-import {$isTextNode} from 'lexical';
+import {$isTextNode} from '@meogic/lexical';
 
 import {CSS_TO_STYLES} from './constants';
 

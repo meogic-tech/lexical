@@ -6,13 +6,13 @@
  *
  */
 
-import {$generateHtmlFromNodes, $generateNodesFromDOM} from '@lexical/html';
+import {$generateHtmlFromNodes, $generateNodesFromDOM} from '@meogic/lexical-html';
 import {
   $addNodeStyle,
   $cloneWithProperties,
   $sliceSelectedTextNodeContent,
-} from '@lexical/selection';
-import {$findMatchingParent} from '@lexical/utils';
+} from '@meogic/lexical-selection';
+import {$findMatchingParent} from '@meogic/lexical-utils';
 import {
   $createParagraphNode,
   $createTabNode,
@@ -41,7 +41,7 @@ import {
   RangeSelection,
   SELECTION_CHANGE_COMMAND,
   SerializedTextNode,
-} from 'lexical';
+} from '@meogic/lexical';
 import invariant from 'shared/invariant';
 
 /**

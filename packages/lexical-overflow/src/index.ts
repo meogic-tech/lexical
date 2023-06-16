@@ -1,4 +1,4 @@
-/** @module @lexical/overflow */
+/** @module @meogic/lexical-overflow */
 /**
  * Copyright (c) Meta Platforms, Inc. and affiliates.
  *
@@ -13,9 +13,9 @@ import type {
   NodeKey,
   RangeSelection,
   SerializedElementNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
-import {$applyNodeReplacement, ElementNode} from 'lexical';
+import {$applyNodeReplacement, ElementNode} from '@meogic/lexical';
 
 export type SerializedOverflowNode = SerializedElementNode;
 

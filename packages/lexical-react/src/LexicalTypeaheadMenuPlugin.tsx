@@ -13,7 +13,7 @@ import type {
   TriggerFn,
 } from './shared/LexicalMenu';
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
 import {
   $getSelection,
   $isRangeSelection,
@@ -23,7 +23,7 @@ import {
   LexicalEditor,
   RangeSelection,
   TextNode,
-} from 'lexical';
+} from '@meogic/lexical';
 import {useCallback, useEffect, useState} from 'react';
 import * as React from 'react';
 

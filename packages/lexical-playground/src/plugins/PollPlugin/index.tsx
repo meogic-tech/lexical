@@ -6,8 +6,8 @@
  *
  */
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {$wrapNodeInElement} from '@lexical/utils';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {$wrapNodeInElement} from '@meogic/lexical-utils';
 import {
   $createParagraphNode,
   $insertNodes,
@@ -16,7 +16,7 @@ import {
   createCommand,
   LexicalCommand,
   LexicalEditor,
-} from 'lexical';
+} from '@meogic/lexical';
 import {useEffect, useState} from 'react';
 import * as React from 'react';
 

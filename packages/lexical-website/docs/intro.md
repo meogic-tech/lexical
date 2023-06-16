@@ -34,7 +34,7 @@ editor surfaces. Lexical has a few concepts that are worth exploring:
 
 Editor instances are the core thing that wires everything together. You can attach a contenteditable DOM element to editor instances, and also
 register listeners and commands. Most importantly, the editor allows for updates to its `EditorState`. You can create an editor instance
-using the `createEditor()` API, however you normally don't have to worry when using framework bindings such as `@lexical/react` as this
+using the `createEditor()` API, however you normally don't have to worry when using framework bindings such as `@meogic/lexical-react` as this
 is handled for you.
 
 ### Editor States

@@ -14,12 +14,12 @@ import type {
   LexicalNode,
   NodeSelection,
   RangeSelection,
-} from 'lexical';
+} from '@meogic/lexical';
 
-import {$generateHtmlFromNodes} from '@lexical/html';
-import {$isLinkNode, LinkNode} from '@lexical/link';
-import {$isMarkNode} from '@lexical/mark';
-import {mergeRegister} from '@lexical/utils';
+import {$generateHtmlFromNodes} from '@meogic/lexical-html';
+import {$isLinkNode, LinkNode} from '@meogic/lexical-link';
+import {$isMarkNode} from '@meogic/lexical-mark';
+import {mergeRegister} from '@meogic/lexical-utils';
 import {
   $getRoot,
   $getSelection,
@@ -29,7 +29,7 @@ import {
   COMMAND_PRIORITY_HIGH,
   DEPRECATED_$isGridSelection,
   LexicalCommand,
-} from 'lexical';
+} from '@meogic/lexical';
 import * as React from 'react';
 import {useCallback, useEffect, useMemo, useRef, useState} from 'react';
 

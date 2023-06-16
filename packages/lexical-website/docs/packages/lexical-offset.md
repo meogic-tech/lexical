@@ -1,7 +1,7 @@
 ---
 title: ''
 sidebar_position: 12
-sidebar_label: '@lexical/offset'
+sidebar_label: '@meogic/lexical-offset'
 ---
 
 {@import ../../../lexical-offset/README.md}

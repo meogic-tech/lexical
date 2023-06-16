@@ -1,4 +1,4 @@
-/** @module @lexical/utils */
+/** @module @meogic/lexical-utils */
 /**
  * Copyright (c) Meta Platforms, Inc. and affiliates.
  *
@@ -7,7 +7,7 @@
  *
  */
 
-import {$cloneWithProperties} from '@lexical/selection';
+import {$cloneWithProperties} from '@meogic/lexical-selection';
 import {
   $createParagraphNode,
   $getPreviousSelection,
@@ -26,7 +26,7 @@ import {
   Klass,
   LexicalEditor,
   LexicalNode,
-} from 'lexical';
+} from '@meogic/lexical';
 import invariant from 'shared/invariant';
 
 export {$splitNode};

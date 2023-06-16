@@ -16,14 +16,14 @@ import type {
   LexicalEditor,
   TextFormatType,
   LexicalCommand,
-} from 'lexical';
+} from '@meogic/lexical';
 
 import {
   ElementNode,
   deprecated_GridCellNode,
   deprecated_GridRowNode,
   deprecated_GridNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
 /**
  * LexicalTableCellNode

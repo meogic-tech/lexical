@@ -8,9 +8,9 @@
 
 import type {Doc} from 'yjs';
 
-import {useCollaborationContext} from '@lexical/react/LexicalCollaborationContext';
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {ExcludedProperties, Provider} from '@lexical/yjs';
+import {useCollaborationContext} from '@meogic/lexical-react/LexicalCollaborationContext';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {ExcludedProperties, Provider} from '@meogic/lexical-yjs';
 import {useEffect, useMemo} from 'react';
 
 import {InitialEditorStateType} from './LexicalComposer';

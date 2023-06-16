@@ -19,9 +19,9 @@ import type {
   SerializedElementNode,
   SerializedTabNode,
   TabNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
-import {ElementNode, TextNode} from 'lexical';
+import {ElementNode, TextNode} from '@meogic/lexical';
 
 /**
  *  CodeHighlighter

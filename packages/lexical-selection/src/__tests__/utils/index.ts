@@ -12,7 +12,7 @@ import {
   $isNodeSelection,
   $isRangeSelection,
   $isTextNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
 Object.defineProperty(HTMLElement.prototype, 'contentEditable', {
   get() {

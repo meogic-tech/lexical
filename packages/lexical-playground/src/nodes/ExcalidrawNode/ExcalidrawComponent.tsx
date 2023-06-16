@@ -7,12 +7,12 @@
  */
 
 import type {ExcalidrawElementFragment} from './ExcalidrawModal';
-import type {NodeKey} from 'lexical';
+import type {NodeKey} from '@meogic/lexical';
 
 import {AppState, BinaryFiles} from '@excalidraw/excalidraw/types/types';
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {useLexicalNodeSelection} from '@lexical/react/useLexicalNodeSelection';
-import {mergeRegister} from '@lexical/utils';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {useLexicalNodeSelection} from '@meogic/lexical-react/useLexicalNodeSelection';
+import {mergeRegister} from '@meogic/lexical-utils';
 import {
   $getNodeByKey,
   $getSelection,
@@ -21,7 +21,7 @@ import {
   COMMAND_PRIORITY_LOW,
   KEY_BACKSPACE_COMMAND,
   KEY_DELETE_COMMAND,
-} from 'lexical';
+} from '@meogic/lexical';
 import {useCallback, useEffect, useMemo, useRef, useState} from 'react';
 import * as React from 'react';
 

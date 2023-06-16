@@ -12,7 +12,7 @@ import type {
   LexicalEditor,
   LexicalNode,
   EditorState,
-} from 'lexical';
+} from '@meogic/lexical';
 
 export type InitialEditorStateType =
   | null

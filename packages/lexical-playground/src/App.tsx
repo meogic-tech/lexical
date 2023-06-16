@@ -6,11 +6,11 @@
  *
  */
 
-import {$createLinkNode} from '@lexical/link';
-import {$createListItemNode, $createListNode} from '@lexical/list';
-import {LexicalComposer} from '@lexical/react/LexicalComposer';
-import {$createHeadingNode, $createQuoteNode} from '@lexical/rich-text';
-import {$createParagraphNode, $createTextNode, $getRoot} from 'lexical';
+import {$createLinkNode} from '@meogic/lexical-link';
+import {$createListItemNode, $createListNode} from '@meogic/lexical-list';
+import {LexicalComposer} from '@meogic/lexical-react/LexicalComposer';
+import {$createHeadingNode, $createQuoteNode} from '@meogic/lexical-rich-text';
+import {$createParagraphNode, $createTextNode, $getRoot} from '@meogic/lexical';
 import * as React from 'react';
 
 import {isDevPlayground} from './appSettings';
@@ -49,7 +49,7 @@ function prepopulatedRichText() {
     const paragraph = $createParagraphNode();
     paragraph.append(
       $createTextNode('The playground is a demo environment built with '),
-      $createTextNode('@lexical/react').toggleFormat('code'),
+      $createTextNode('@meogic/lexical-react').toggleFormat('code'),
       $createTextNode('.'),
       $createTextNode(' Try typing in '),
       $createTextNode('some text').toggleFormat('bold'),

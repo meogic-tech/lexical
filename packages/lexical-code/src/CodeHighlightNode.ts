@@ -15,7 +15,7 @@ import type {
   SerializedTextNode,
   Spread,
   TabNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
 import 'prismjs/components/prism-clike';
 import 'prismjs/components/prism-javascript';
@@ -35,13 +35,13 @@ import 'prismjs/components/prism-cpp';
 import {
   addClassNamesToElement,
   removeClassNamesFromElement,
-} from '@lexical/utils';
+} from '@meogic/lexical-utils';
 import {
   $applyNodeReplacement,
   $isTabNode,
   ElementNode,
   TextNode,
-} from 'lexical';
+} from '@meogic/lexical';
 import * as Prism from 'prismjs';
 
 import {$createCodeNode} from './CodeNode';

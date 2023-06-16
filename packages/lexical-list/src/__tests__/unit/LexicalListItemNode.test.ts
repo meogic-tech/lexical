@@ -6,7 +6,7 @@
  *
  */
 
-import {$createParagraphNode, $getRoot, TextNode} from 'lexical';
+import {$createParagraphNode, $getRoot, TextNode} from '@meogic/lexical';
 import {initializeUnitTest} from 'lexical/src/__tests__/utils';
 
 import {

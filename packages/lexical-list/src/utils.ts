@@ -6,7 +6,7 @@
  *
  */
 
-import type {LexicalNode} from 'lexical';
+import type {LexicalNode} from '@meogic/lexical';
 
 import invariant from 'shared/invariant';
 

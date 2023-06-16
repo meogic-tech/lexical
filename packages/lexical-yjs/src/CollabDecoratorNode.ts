@@ -8,10 +8,10 @@
 
 import type {Binding} from '.';
 import type {CollabElementNode} from './CollabElementNode';
-import type {DecoratorNode, NodeKey, NodeMap} from 'lexical';
+import type {DecoratorNode, NodeKey, NodeMap} from '@meogic/lexical';
 import type {XmlElement} from 'yjs';
 
-import {$getNodeByKey, $isDecoratorNode} from 'lexical';
+import {$getNodeByKey, $isDecoratorNode} from '@meogic/lexical';
 import invariant from 'shared/invariant';
 
 import {syncPropertiesFromLexical, syncPropertiesFromYjs} from './Utils';

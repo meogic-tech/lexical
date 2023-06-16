@@ -11,7 +11,7 @@ import {
   $createTextNode,
   $getNodeByKey,
   $getRoot,
-} from 'lexical';
+} from '@meogic/lexical';
 
 import {
   $createTestElementNode,

@@ -10,7 +10,7 @@ import {
   addClassNamesToElement,
   isHTMLElement,
   removeClassNamesFromElement,
-} from '@lexical/utils';
+} from '@meogic/lexical-utils';
 import {
   $applyNodeReplacement,
   $createTextNode,
@@ -26,7 +26,7 @@ import {
   NodeKey,
   SerializedElementNode,
   Spread,
-} from 'lexical';
+} from '@meogic/lexical';
 
 import {$createListItemNode, $isListItemNode, ListItemNode} from '.';
 import {updateChildrenListItemValue} from './formatList';

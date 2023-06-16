@@ -6,21 +6,21 @@
  *
  */
 
-import type {ListItemNode} from '@lexical/list';
-import type {LexicalEditor} from 'lexical';
+import type {ListItemNode} from '@meogic/lexical-list';
+import type {LexicalEditor} from '@meogic/lexical';
 
 import {
   $isListItemNode,
   $isListNode,
   INSERT_CHECK_LIST_COMMAND,
   insertList,
-} from '@lexical/list';
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
+} from '@meogic/lexical-list';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
 import {
   $findMatchingParent,
   isHTMLElement,
   mergeRegister,
-} from '@lexical/utils';
+} from '@meogic/lexical-utils';
 import {
   $getNearestNodeFromDOMNode,
   $getSelection,
@@ -32,7 +32,7 @@ import {
   KEY_ARROW_UP_COMMAND,
   KEY_ESCAPE_COMMAND,
   KEY_SPACE_COMMAND,
-} from 'lexical';
+} from '@meogic/lexical';
 import {useEffect} from 'react';
 
 export function CheckListPlugin(): null {

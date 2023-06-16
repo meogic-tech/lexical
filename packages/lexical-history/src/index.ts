@@ -1,4 +1,4 @@
-/** @module @lexical/history */
+/** @module @meogic/lexical-history */
 /**
  * Copyright (c) Meta Platforms, Inc. and affiliates.
  *
@@ -7,9 +7,9 @@
  *
  */
 
-import type {EditorState, LexicalEditor, LexicalNode, NodeKey} from 'lexical';
+import type {EditorState, LexicalEditor, LexicalNode, NodeKey} from '@meogic/lexical';
 
-import {mergeRegister} from '@lexical/utils';
+import {mergeRegister} from '@meogic/lexical-utils';
 import {
   $isRangeSelection,
   $isRootNode,
@@ -21,7 +21,7 @@ import {
   COMMAND_PRIORITY_EDITOR,
   REDO_COMMAND,
   UNDO_COMMAND,
-} from 'lexical';
+} from '@meogic/lexical';
 
 type MergeAction = 0 | 1 | 2;
 const HISTORY_MERGE = 0;

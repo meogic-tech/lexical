@@ -16,23 +16,23 @@ import type {
   SerializedElementNode,
   SerializedLexicalNode,
   SerializedTextNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
-import {CodeHighlightNode, CodeNode} from '@lexical/code';
-import {HashtagNode} from '@lexical/hashtag';
-import {AutoLinkNode, LinkNode} from '@lexical/link';
-import {ListItemNode, ListNode} from '@lexical/list';
-import {OverflowNode} from '@lexical/overflow';
-import {LexicalComposer} from '@lexical/react/src/LexicalComposer';
-import {HeadingNode, QuoteNode} from '@lexical/rich-text';
-import {TableCellNode, TableNode, TableRowNode} from '@lexical/table';
+import {CodeHighlightNode, CodeNode} from '@meogic/lexical-code';
+import {HashtagNode} from '@meogic/lexical-hashtag';
+import {AutoLinkNode, LinkNode} from '@meogic/lexical-link';
+import {ListItemNode, ListNode} from '@meogic/lexical-list';
+import {OverflowNode} from '@meogic/lexical-overflow';
+import {LexicalComposer} from '@meogic/lexical-react/src/LexicalComposer';
+import {HeadingNode, QuoteNode} from '@meogic/lexical-rich-text';
+import {TableCellNode, TableNode, TableRowNode} from '@meogic/lexical-table';
 import {
   $isRangeSelection,
   createEditor,
   DecoratorNode,
   ElementNode,
   TextNode,
-} from 'lexical';
+} from '@meogic/lexical';
 import * as React from 'react';
 import {createRef} from 'react';
 import {createRoot} from 'react-dom/client';

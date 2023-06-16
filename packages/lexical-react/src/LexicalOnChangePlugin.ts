@@ -6,9 +6,9 @@
  *
  */
 
-import type {EditorState, LexicalEditor} from 'lexical';
+import type {EditorState, LexicalEditor} from '@meogic/lexical';
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
 import useLayoutEffect from 'shared/useLayoutEffect';
 
 export function OnChangePlugin({

@@ -1,7 +1,7 @@
 ---
 title: ''
 sidebar_position: 10
-sidebar_label: '@lexical/table'
+sidebar_label: '@meogic/lexical-table'
 ---
 
 {@import ../../../lexical-table/README.md}

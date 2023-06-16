@@ -6,9 +6,9 @@
  *
  */
 
-import type {EditorConfig, LexicalNode, SerializedTextNode} from 'lexical';
+import type {EditorConfig, LexicalNode, SerializedTextNode} from '@meogic/lexical';
 
-import {TextNode} from 'lexical';
+import {TextNode} from '@meogic/lexical';
 
 export type SerializedKeywordNode = SerializedTextNode;
 

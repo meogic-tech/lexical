@@ -14,8 +14,8 @@ import type {
   RangeSelection,
   LexicalCommand,
   SerializedElementNode,
-} from 'lexical';
-import {ElementNode} from 'lexical';
+} from '@meogic/lexical';
+import {ElementNode} from '@meogic/lexical';
 
 type ListNodeTagType = 'ul' | 'ol';
 export type ListType = 'number' | 'bullet' | 'check';

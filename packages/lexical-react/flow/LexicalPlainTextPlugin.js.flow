@@ -7,9 +7,9 @@
  * @flow strict
  */
 
-import type {EditorState, LexicalEditor} from 'lexical';
+import type {EditorState, LexicalEditor} from '@meogic/lexical';
 
-import typeof LexicalErrorBoundary from '@lexical/react/LexicalErrorBoundary';
+import typeof LexicalErrorBoundary from '@meogic/lexical-react/LexicalErrorBoundary';
 
 import * as React from 'react';
 

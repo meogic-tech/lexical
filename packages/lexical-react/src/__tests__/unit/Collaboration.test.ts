@@ -6,7 +6,7 @@
  *
  */
 
-import {$createTextNode, $getRoot, ParagraphNode, TextNode} from 'lexical';
+import {$createTextNode, $getRoot, ParagraphNode, TextNode} from '@meogic/lexical';
 
 import {createTestConnection, waitForReact} from './utils';
 

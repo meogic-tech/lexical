@@ -20,87 +20,87 @@ const moduleResolution = [
     replacement: path.resolve('../lexical/dist/Lexical.js'),
   },
   {
-    find: '@lexical/clipboard',
+    find: '@meogic/lexical-clipboard',
     replacement: path.resolve('../lexical-clipboard/dist/LexicalClipboard.js'),
   },
   {
-    find: '@lexical/selection',
+    find: '@meogic/lexical-selection',
     replacement: path.resolve('../lexical-selection/dist/LexicalSelection.js'),
   },
   {
-    find: '@lexical/text',
+    find: '@meogic/lexical-text',
     replacement: path.resolve('../lexical-text/dist/LexicalText.js'),
   },
   {
-    find: '@lexical/headless',
+    find: '@meogic/lexical-headless',
     replacement: path.resolve('../lexical-headless/dist/LexicalHeadless.js'),
   },
   {
-    find: '@lexical/html',
+    find: '@meogic/lexical-html',
     replacement: path.resolve('../lexical-html/dist/LexicalHtml.js'),
   },
   {
-    find: '@lexical/hashtag',
+    find: '@meogic/lexical-hashtag',
     replacement: path.resolve('../lexical-hashtag/dist/LexicalHashtag.js'),
   },
   {
-    find: '@lexical/history',
+    find: '@meogic/lexical-history',
     replacement: path.resolve('../lexical-history/dist/LexicalHistory.js'),
   },
   {
-    find: '@lexical/list',
+    find: '@meogic/lexical-list',
     replacement: path.resolve('../lexical-list/dist/LexicalList.js'),
   },
   {
-    find: '@lexical/file',
+    find: '@meogic/lexical-file',
     replacement: path.resolve('../lexical-file/dist/LexicalFile.js'),
   },
   {
-    find: '@lexical/table',
+    find: '@meogic/lexical-table',
     replacement: path.resolve('../lexical-table/dist/LexicalTable.js'),
   },
   {
-    find: '@lexical/offset',
+    find: '@meogic/lexical-offset',
     replacement: path.resolve('../lexical-offset/dist/LexicalOffset.js'),
   },
   {
-    find: '@lexical/utils',
+    find: '@meogic/lexical-utils',
     replacement: path.resolve('../lexical-utils/dist/LexicalUtils.js'),
   },
   {
-    find: '@lexical/code',
+    find: '@meogic/lexical-code',
     replacement: path.resolve('../lexical-code/dist/LexicalCode.js'),
   },
   {
-    find: '@lexical/plain-text',
+    find: '@meogic/lexical-plain-text',
     replacement: path.resolve('../lexical-plain-text/dist/LexicalPlainText.js'),
   },
   {
-    find: '@lexical/rich-text',
+    find: '@meogic/lexical-rich-text',
     replacement: path.resolve('../lexical-rich-text/dist/LexicalRichText.js'),
   },
   {
-    find: '@lexical/dragon',
+    find: '@meogic/lexical-dragon',
     replacement: path.resolve('../lexical-dragon/dist/LexicalDragon.js'),
   },
   {
-    find: '@lexical/link',
+    find: '@meogic/lexical-link',
     replacement: path.resolve('../lexical-link/dist/LexicalLink.js'),
   },
   {
-    find: '@lexical/overflow',
+    find: '@meogic/lexical-overflow',
     replacement: path.resolve('../lexical-overflow/dist/LexicalOverflow.js'),
   },
   {
-    find: '@lexical/markdown',
+    find: '@meogic/lexical-markdown',
     replacement: path.resolve('../lexical-markdown/dist/LexicalMarkdown.js'),
   },
   {
-    find: '@lexical/mark',
+    find: '@meogic/lexical-mark',
     replacement: path.resolve('../lexical-mark/dist/LexicalMark.js'),
   },
   {
-    find: '@lexical/yjs',
+    find: '@meogic/lexical-yjs',
     replacement: path.resolve('../lexical-yjs/dist/LexicalYjs.js'),
   },
   {
@@ -152,7 +152,7 @@ const moduleResolution = [
 ].forEach((module) => {
   let resolvedPath = path.resolve(`../lexical-react/dist/${module}.js`);
   moduleResolution.push({
-    find: `@lexical/react/${module}`,
+    find: `@meogic/lexical-react/${module}`,
     replacement: resolvedPath,
   });
 });

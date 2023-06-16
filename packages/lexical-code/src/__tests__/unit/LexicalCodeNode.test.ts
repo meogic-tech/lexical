@@ -10,10 +10,10 @@ import {
   $createCodeNode,
   $isCodeHighlightNode,
   registerCodeHighlighting,
-} from '@lexical/code';
-import {registerTabIndentation} from '@lexical/react/LexicalTabIndentationPlugin';
-import {registerRichText} from '@lexical/rich-text';
-import {$dfs} from '@lexical/utils';
+} from '@meogic/lexical-code';
+import {registerTabIndentation} from '@meogic/lexical-react/LexicalTabIndentationPlugin';
+import {registerRichText} from '@meogic/lexical-rich-text';
+import {$dfs} from '@meogic/lexical-utils';
 import {
   $createParagraphNode,
   $createRangeSelection,
@@ -30,7 +30,7 @@ import {
   KEY_TAB_COMMAND,
   MOVE_TO_END,
   MOVE_TO_START,
-} from 'lexical';
+} from '@meogic/lexical';
 import {
   initializeUnitTest,
   invariant,

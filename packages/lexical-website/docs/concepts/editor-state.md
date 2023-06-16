@@ -86,8 +86,8 @@ based on the changes from the update.
 Here's an example of how you can update an editor instance:
 
 ```js
-import {$getRoot, $getSelection} from 'lexical';
-import {$createParagraphNode} from 'lexical';
+import {$getRoot, $getSelection} from '@meogic/lexical';
+import {$createParagraphNode} from '@meogic/lexical';
 
 // Inside the `editor.update` you can use special $ prefixed helper functions.
 // These functions cannot be used outside the closure, and will error if you try.

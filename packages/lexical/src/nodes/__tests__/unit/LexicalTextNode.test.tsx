@@ -18,7 +18,7 @@ import {
   TextFormatType,
   TextModeType,
   TextNode,
-} from 'lexical';
+} from '@meogic/lexical';
 import * as React from 'react';
 import {createRef, useEffect, useMemo} from 'react';
 import {createRoot} from 'react-dom/client';

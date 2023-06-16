@@ -8,12 +8,12 @@
 
 import './Collapsible.css';
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
 import {
   $findMatchingParent,
   $insertNodeToNearestRoot,
   mergeRegister,
-} from '@lexical/utils';
+} from '@meogic/lexical-utils';
 import {
   $createParagraphNode,
   $getPreviousSelection,
@@ -32,7 +32,7 @@ import {
   KEY_ARROW_UP_COMMAND,
   LexicalNode,
   NodeKey,
-} from 'lexical';
+} from '@meogic/lexical';
 import {useEffect} from 'react';
 
 import {

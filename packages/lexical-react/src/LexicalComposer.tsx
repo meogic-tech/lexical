@@ -6,12 +6,12 @@
  *
  */
 
-import type {LexicalComposerContextType} from '@lexical/react/LexicalComposerContext';
+import type {LexicalComposerContextType} from '@meogic/lexical-react/LexicalComposerContext';
 
 import {
   createLexicalComposerContext,
   LexicalComposerContext,
-} from '@lexical/react/LexicalComposerContext';
+} from '@meogic/lexical-react/LexicalComposerContext';
 import {
   $createParagraphNode,
   $getRoot,
@@ -22,7 +22,7 @@ import {
   Klass,
   LexicalEditor,
   LexicalNode,
-} from 'lexical';
+} from '@meogic/lexical';
 import {useMemo} from 'react';
 import * as React from 'react';
 import {CAN_USE_DOM} from 'shared/canUseDOM';

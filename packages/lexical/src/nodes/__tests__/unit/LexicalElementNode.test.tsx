@@ -14,7 +14,7 @@ import {
   ElementNode,
   LexicalNode,
   TextNode,
-} from 'lexical';
+} from '@meogic/lexical';
 import * as React from 'react';
 import {createRef, useEffect} from 'react';
 import {createRoot} from 'react-dom/client';

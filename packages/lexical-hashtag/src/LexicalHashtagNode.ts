@@ -11,10 +11,10 @@ import type {
   LexicalNode,
   NodeKey,
   SerializedTextNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
-import {addClassNamesToElement} from '@lexical/utils';
-import {$applyNodeReplacement, TextNode} from 'lexical';
+import {addClassNamesToElement} from '@meogic/lexical-utils';
+import {$applyNodeReplacement, TextNode} from '@meogic/lexical';
 
 /** @noInheritDoc */
 export class HashtagNode extends TextNode {

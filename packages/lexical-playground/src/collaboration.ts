@@ -6,7 +6,7 @@
  *
  */
 
-import {Provider} from '@lexical/yjs';
+import {Provider} from '@meogic/lexical-yjs';
 import {WebsocketProvider} from 'y-websocket';
 import {Doc} from 'yjs';
 

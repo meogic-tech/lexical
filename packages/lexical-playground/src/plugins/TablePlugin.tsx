@@ -6,8 +6,8 @@
  *
  */
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {INSERT_TABLE_COMMAND} from '@lexical/table';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {INSERT_TABLE_COMMAND} from '@meogic/lexical-table';
 import {
   $insertNodes,
   COMMAND_PRIORITY_EDITOR,
@@ -17,7 +17,7 @@ import {
   LexicalCommand,
   LexicalEditor,
   LexicalNode,
-} from 'lexical';
+} from '@meogic/lexical';
 import {createContext, useContext, useEffect, useMemo, useState} from 'react';
 import * as React from 'react';
 import invariant from 'shared/invariant';

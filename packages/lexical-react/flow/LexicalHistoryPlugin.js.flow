@@ -13,7 +13,7 @@ import type {
   LexicalEditor,
   NodeSelection,
   RangeSelection,
-} from 'lexical';
+} from '@meogic/lexical';
 
 export type HistoryStateEntry = {
   editor: LexicalEditor,

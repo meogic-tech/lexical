@@ -1,4 +1,4 @@
-/** @module @lexical/link */
+/** @module @meogic/lexical-link */
 /**
  * Copyright (c) Meta Platforms, Inc. and affiliates.
  *
@@ -18,9 +18,9 @@ import type {
   NodeSelection,
   RangeSelection,
   SerializedElementNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
-import {addClassNamesToElement, isHTMLAnchorElement} from '@lexical/utils';
+import {addClassNamesToElement, isHTMLAnchorElement} from '@meogic/lexical-utils';
 import {
   $applyNodeReplacement,
   $getSelection,
@@ -29,7 +29,7 @@ import {
   createCommand,
   ElementNode,
   Spread,
-} from 'lexical';
+} from '@meogic/lexical';
 
 export type LinkAttributes = {
   rel?: null | string;

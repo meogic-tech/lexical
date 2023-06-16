@@ -1,4 +1,4 @@
-/** @module @lexical/rich-text */
+/** @module @meogic/lexical-rich-text */
 /**
  * Copyright (c) Meta Platforms, Inc. and affiliates.
  *
@@ -24,22 +24,22 @@ import type {
   SerializedElementNode,
   Spread,
   TextFormatType,
-} from 'lexical';
+} from '@meogic/lexical';
 
 import {
   $insertDataTransferForRichText,
   copyToClipboard,
-} from '@lexical/clipboard';
+} from '@meogic/lexical-clipboard';
 import {
   $moveCharacter,
   $shouldOverrideDefaultCharacterSelection,
-} from '@lexical/selection';
+} from '@meogic/lexical-selection';
 import {
   $findMatchingParent,
   $getNearestBlockElementAncestorOrThrow,
   addClassNamesToElement,
   mergeRegister,
-} from '@lexical/utils';
+} from '@meogic/lexical-utils';
 import {
   $applyNodeReplacement,
   $createParagraphNode,
@@ -90,7 +90,7 @@ import {
   OUTDENT_CONTENT_COMMAND,
   PASTE_COMMAND,
   REMOVE_TEXT_COMMAND,
-} from 'lexical';
+} from '@meogic/lexical';
 import caretFromPoint from 'shared/caretFromPoint';
 import {
   CAN_USE_BEFORE_INPUT,

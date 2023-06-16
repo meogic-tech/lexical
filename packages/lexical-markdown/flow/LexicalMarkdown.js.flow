@@ -13,7 +13,7 @@ import type {
   ElementNode,
   TextFormatType,
   TextNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
 export type Transformer =
   | ElementTransformer

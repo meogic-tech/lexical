@@ -14,7 +14,7 @@ import {
   ElementNode,
   LexicalNode,
   SerializedElementNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
 type SerializedCollapsibleContentNode = SerializedElementNode;
 

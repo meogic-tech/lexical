@@ -6,9 +6,9 @@
  *
  */
 
-import type {EditorState, NodeKey} from 'lexical';
+import type {EditorState, NodeKey} from '@meogic/lexical';
 
-import {$createOffsetView} from '@lexical/offset';
+import {$createOffsetView} from '@meogic/lexical-offset';
 import {
   $createParagraphNode,
   $getNodeByKey,
@@ -17,7 +17,7 @@ import {
   $isRangeSelection,
   $isTextNode,
   $setSelection,
-} from 'lexical';
+} from '@meogic/lexical';
 import invariant from 'shared/invariant';
 import {Text as YText, YEvent, YMapEvent, YTextEvent, YXmlEvent} from 'yjs';
 

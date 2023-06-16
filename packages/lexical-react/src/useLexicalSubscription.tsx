@@ -6,9 +6,9 @@
  *
  */
 
-import type {LexicalEditor} from 'lexical';
+import type {LexicalEditor} from '@meogic/lexical';
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
 import {useMemo, useRef, useState} from 'react';
 import useLayoutEffect from 'shared/useLayoutEffect';
 

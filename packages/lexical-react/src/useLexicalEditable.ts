@@ -7,7 +7,7 @@
  */
 
 import type {LexicalSubscription} from './useLexicalSubscription';
-import type {LexicalEditor} from 'lexical';
+import type {LexicalEditor} from '@meogic/lexical';
 
 import useLexicalSubscription from './useLexicalSubscription';
 

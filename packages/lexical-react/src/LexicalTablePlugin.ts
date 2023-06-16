@@ -10,15 +10,15 @@ import type {
   HTMLTableElementWithWithTableSelectionState,
   InsertTableCommandPayload,
   TableSelection,
-} from '@lexical/table';
+} from '@meogic/lexical-table';
 import type {
   DEPRECATED_GridCellNode,
   ElementNode,
   LexicalNode,
   NodeKey,
-} from 'lexical';
+} from '@meogic/lexical';
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
 import {
   $createTableCellNode,
   $createTableNodeWithDimensions,
@@ -28,8 +28,8 @@ import {
   TableCellNode,
   TableNode,
   TableRowNode,
-} from '@lexical/table';
-import {$insertNodeToNearestRoot} from '@lexical/utils';
+} from '@meogic/lexical-table';
+import {$insertNodeToNearestRoot} from '@meogic/lexical-utils';
 import {
   $getNodeByKey,
   $isTextNode,
@@ -38,7 +38,7 @@ import {
   DEPRECATED_$computeGridMap,
   DEPRECATED_$getNodeTriplet,
   DEPRECATED_$isGridRowNode,
-} from 'lexical';
+} from '@meogic/lexical';
 import {useEffect} from 'react';
 import invariant from 'shared/invariant';
 

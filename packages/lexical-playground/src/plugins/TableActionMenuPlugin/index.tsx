@@ -10,10 +10,10 @@ import type {
   DEPRECATED_GridCellNode,
   ElementNode,
   LexicalEditor,
-} from 'lexical';
+} from '@meogic/lexical';
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import useLexicalEditable from '@lexical/react/useLexicalEditable';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import useLexicalEditable from '@meogic/lexical-react/useLexicalEditable';
 import {
   $deleteTableColumn__EXPERIMENTAL,
   $deleteTableRow__EXPERIMENTAL,
@@ -30,7 +30,7 @@ import {
   HTMLTableElementWithWithTableSelectionState,
   TableCellHeaderStates,
   TableCellNode,
-} from '@lexical/table';
+} from '@meogic/lexical-table';
 import {
   $createParagraphNode,
   $getRoot,
@@ -43,7 +43,7 @@ import {
   DEPRECATED_$isGridCellNode,
   DEPRECATED_$isGridSelection,
   GridSelection,
-} from 'lexical';
+} from '@meogic/lexical';
 import * as React from 'react';
 import {ReactPortal, useCallback, useEffect, useRef, useState} from 'react';
 import {createPortal} from 'react-dom';

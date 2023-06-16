@@ -15,7 +15,7 @@ import {
   $isRootNode,
   ElementNode,
   TextNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
 import {
   $createTestDecoratorNode,

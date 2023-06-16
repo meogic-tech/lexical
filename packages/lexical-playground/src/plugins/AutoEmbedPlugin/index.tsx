@@ -6,7 +6,7 @@
  *
  */
 
-import type {LexicalEditor} from 'lexical';
+import type {LexicalEditor} from '@meogic/lexical';
 
 import {
   AutoEmbedOption,
@@ -14,8 +14,8 @@ import {
   EmbedMatchResult,
   LexicalAutoEmbedPlugin,
   URL_MATCHER,
-} from '@lexical/react/LexicalAutoEmbedPlugin';
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
+} from '@meogic/lexical-react/LexicalAutoEmbedPlugin';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
 import {useMemo, useState} from 'react';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';

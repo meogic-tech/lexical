@@ -12,7 +12,7 @@ import {
   $getRoot,
   createEditor,
   ParagraphNode,
-} from 'lexical';
+} from '@meogic/lexical';
 import * as React from 'react';
 import {createRoot} from 'react-dom/client';
 import * as ReactTestUtils from 'react-dom/test-utils';

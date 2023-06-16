@@ -11,10 +11,10 @@ import type {
   TextFormatTransformer,
   TextMatchTransformer,
   Transformer,
-} from '@lexical/markdown';
-import type {ElementNode, LexicalEditor, TextNode} from 'lexical';
+} from '@meogic/lexical-markdown';
+import type {ElementNode, LexicalEditor, TextNode} from '@meogic/lexical';
 
-import {$isCodeNode} from '@lexical/code';
+import {$isCodeNode} from '@meogic/lexical-code';
 import {
   $createRangeSelection,
   $getSelection,
@@ -23,7 +23,7 @@ import {
   $isRootOrShadowRoot,
   $isTextNode,
   $setSelection,
-} from 'lexical';
+} from '@meogic/lexical';
 import invariant from 'shared/invariant';
 
 import {TRANSFORMERS} from '.';

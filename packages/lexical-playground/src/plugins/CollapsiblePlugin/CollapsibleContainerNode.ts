@@ -17,7 +17,7 @@ import {
   NodeKey,
   SerializedElementNode,
   Spread,
-} from 'lexical';
+} from '@meogic/lexical';
 
 type SerializedCollapsibleContainerNode = Spread<
   {

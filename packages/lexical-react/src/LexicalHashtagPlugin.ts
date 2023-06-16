@@ -6,11 +6,11 @@
  *
  */
 
-import type {TextNode} from 'lexical';
+import type {TextNode} from '@meogic/lexical';
 
-import {$createHashtagNode, HashtagNode} from '@lexical/hashtag';
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {useLexicalTextEntity} from '@lexical/react/useLexicalTextEntity';
+import {$createHashtagNode, HashtagNode} from '@meogic/lexical-hashtag';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {useLexicalTextEntity} from '@meogic/lexical-react/useLexicalTextEntity';
 import {useCallback, useEffect} from 'react';
 
 function getHashtagRegexStringChars(): Readonly<{

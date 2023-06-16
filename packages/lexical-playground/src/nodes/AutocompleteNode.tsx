@@ -6,14 +6,14 @@
  *
  */
 
-import type {Spread} from 'lexical';
+import type {Spread} from '@meogic/lexical';
 
 import {
   DecoratorNode,
   EditorConfig,
   NodeKey,
   SerializedLexicalNode,
-} from 'lexical';
+} from '@meogic/lexical';
 import * as React from 'react';
 
 import {useSharedAutocompleteContext} from '../context/SharedAutocompleteContext';

@@ -6,7 +6,7 @@
  *
  */
 
-import {$createParagraphNode, $createTextNode, $getRoot} from 'lexical';
+import {$createParagraphNode, $createTextNode, $getRoot} from '@meogic/lexical';
 
 import {EditorState} from '../../LexicalEditorState';
 import {$createRootNode} from '../../nodes/LexicalRootNode';

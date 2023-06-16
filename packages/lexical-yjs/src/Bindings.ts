@@ -11,10 +11,10 @@ import type {CollabElementNode} from './CollabElementNode';
 import type {CollabLineBreakNode} from './CollabLineBreakNode';
 import type {CollabTextNode} from './CollabTextNode';
 import type {Cursor} from './SyncCursors';
-import type {LexicalEditor, NodeKey} from 'lexical';
+import type {LexicalEditor, NodeKey} from '@meogic/lexical';
 import type {Doc} from 'yjs';
 
-import {Klass, LexicalNode} from 'lexical';
+import {Klass, LexicalNode} from '@meogic/lexical';
 import invariant from 'shared/invariant';
 import {XmlText} from 'yjs';
 

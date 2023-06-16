@@ -6,10 +6,10 @@
  *
  */
 
-import {useLexicalComposerContext} from '@lexical/react/src/LexicalComposerContext';
-import LexicalErrorBoundary from '@lexical/react/src/LexicalErrorBoundary';
-import {UserState} from '@lexical/yjs/src/index';
-import {LexicalEditor} from 'lexical';
+import {useLexicalComposerContext} from '@meogic/lexical-react/src/LexicalComposerContext';
+import LexicalErrorBoundary from '@meogic/lexical-react/src/LexicalErrorBoundary';
+import {UserState} from '@meogic/lexical-yjs/src/index';
+import {LexicalEditor} from '@meogic/lexical';
 import * as React from 'react';
 import {createRoot, Root} from 'react-dom/client';
 import * as ReactTestUtils from 'react-dom/test-utils';

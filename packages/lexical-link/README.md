@@ -1,4 +1,4 @@
-# `@lexical/link`
+# `@meogic/lexical-link`
 
 This package contains the functionality for Lexical links.
 

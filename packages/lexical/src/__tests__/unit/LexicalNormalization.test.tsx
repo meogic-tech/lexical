@@ -6,7 +6,7 @@
  *
  */
 
-import {$createParagraphNode, $createTextNode, $getRoot} from 'lexical';
+import {$createParagraphNode, $createTextNode, $getRoot} from '@meogic/lexical';
 
 import {$normalizeSelection} from '../../LexicalNormalization';
 import {

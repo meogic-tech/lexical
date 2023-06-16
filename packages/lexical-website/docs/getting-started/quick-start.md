@@ -15,7 +15,7 @@ for wiring up an EditorState with the DOM. The editor is also the place where yo
 An editor instance can be created from the `lexical` package and accepts an optional configuration object that allows for theming and other options:
 
 ```js
-import {createEditor} from 'lexical';
+import {createEditor} from '@meogic/lexical';
 
 const config = {
   namespace: 'MyEditor',
@@ -79,7 +79,7 @@ based on the changes from the update.
 Here's an example of how you can update an editor instance:
 
 ```js
-import {$getRoot, $getSelection, $createParagraphNode, $createTextNode} from 'lexical';
+import {$getRoot, $getSelection, $createParagraphNode, $createTextNode} from '@meogic/lexical';
 
 // Inside the `editor.update` you can use special $ prefixed helper functions.
 // These functions cannot be used outside the closure, and will error if you try.

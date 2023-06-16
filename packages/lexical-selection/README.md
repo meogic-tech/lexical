@@ -1,4 +1,4 @@
-# `@lexical/selection`
+# `@meogic/lexical-selection`
 
 This package contains selection helpers for Lexical.
 

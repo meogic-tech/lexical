@@ -6,11 +6,11 @@
  *
  */
 
-import type {LexicalEditor} from 'lexical';
+import type {LexicalEditor} from '@meogic/lexical';
 
-import {registerDragonSupport} from '@lexical/dragon';
-import {registerRichText} from '@lexical/rich-text';
-import {mergeRegister} from '@lexical/utils';
+import {registerDragonSupport} from '@meogic/lexical-dragon';
+import {registerRichText} from '@meogic/lexical-rich-text';
+import {mergeRegister} from '@meogic/lexical-utils';
 import useLayoutEffect from 'shared/useLayoutEffect';
 
 export function useRichTextSetup(editor: LexicalEditor): void {

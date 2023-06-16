@@ -6,22 +6,22 @@
  *
  */
 
-import {CodeHighlightNode, CodeNode} from '@lexical/code';
-import {HashtagNode} from '@lexical/hashtag';
-import {AutoLinkNode, LinkNode} from '@lexical/link';
-import {ListItemNode, ListNode} from '@lexical/list';
-import {OverflowNode} from '@lexical/overflow';
-import {AutoFocusPlugin} from '@lexical/react/src/LexicalAutoFocusPlugin';
-import {useLexicalComposerContext} from '@lexical/react/src/LexicalComposerContext';
-import {ContentEditable} from '@lexical/react/src/LexicalContentEditable';
-import LexicalErrorBoundary from '@lexical/react/src/LexicalErrorBoundary';
-import {RichTextPlugin} from '@lexical/react/src/LexicalRichTextPlugin';
-import {HeadingNode, QuoteNode} from '@lexical/rich-text';
+import {CodeHighlightNode, CodeNode} from '@meogic/lexical-code';
+import {HashtagNode} from '@meogic/lexical-hashtag';
+import {AutoLinkNode, LinkNode} from '@meogic/lexical-link';
+import {ListItemNode, ListNode} from '@meogic/lexical-list';
+import {OverflowNode} from '@meogic/lexical-overflow';
+import {AutoFocusPlugin} from '@meogic/lexical-react/src/LexicalAutoFocusPlugin';
+import {useLexicalComposerContext} from '@meogic/lexical-react/src/LexicalComposerContext';
+import {ContentEditable} from '@meogic/lexical-react/src/LexicalContentEditable';
+import LexicalErrorBoundary from '@meogic/lexical-react/src/LexicalErrorBoundary';
+import {RichTextPlugin} from '@meogic/lexical-react/src/LexicalRichTextPlugin';
+import {HeadingNode, QuoteNode} from '@meogic/lexical-rich-text';
 import {
   applySelectionInputs,
   pasteHTML,
-} from '@lexical/selection/src/__tests__/utils';
-import {TableCellNode, TableNode, TableRowNode} from '@lexical/table';
+} from '@meogic/lexical-selection/src/__tests__/utils';
+import {TableCellNode, TableNode, TableRowNode} from '@meogic/lexical-table';
 import {initializeClipboard, TestComposer} from 'lexical/src/__tests__/utils';
 import * as React from 'react';
 import {createRoot} from 'react-dom/client';

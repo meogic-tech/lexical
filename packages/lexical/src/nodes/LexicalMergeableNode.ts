@@ -1,3 +1,5 @@
+import {LexicalNode} from "../LexicalNode";
+
 /**
  * Copyright (c) Meta Platforms, Inc. and affiliates.
  *
@@ -17,3 +19,5 @@ export function $isMergeableNode(
         typeof node.mergeWithSibling === 'function'
     );
 }
+
+export type LexicalMergeableNode = MergeableNode<unknown> & LexicalNode

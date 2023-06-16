@@ -7,11 +7,11 @@ sidebar_position: 1
 React-based plugins are using Lexical editor instance from `<LexicalComposer>` context:
 
 ```js
-import {LexicalComposer} from '@lexical/react/LexicalComposer';
-import {PlainTextPlugin} from '@lexical/react/LexicalPlainTextPlugin';
-import {ContentEditable} from '@lexical/react/LexicalContentEditable';
-import {HistoryPlugin} from '@lexical/react/LexicalHistoryPlugin';
-import {OnChangePlugin} from '@lexical/react/LexicalOnChangePlugin';
+import {LexicalComposer} from '@meogic/lexical-react/LexicalComposer';
+import {PlainTextPlugin} from '@meogic/lexical-react/LexicalPlainTextPlugin';
+import {ContentEditable} from '@meogic/lexical-react/LexicalContentEditable';
+import {HistoryPlugin} from '@meogic/lexical-react/LexicalHistoryPlugin';
+import {OnChangePlugin} from '@meogic/lexical-react/LexicalOnChangePlugin';
 ```
 
 ```jsx
@@ -45,7 +45,7 @@ const initialConfig = {
 
 ### `LexicalPlainTextPlugin`
 
-React wrapper for `@lexical/plain-text` that adds major features for plain text editing, including typing, deletion and copy/pasting
+React wrapper for `@meogic/lexical-plain-text` that adds major features for plain text editing, including typing, deletion and copy/pasting
 
 ```jsx
 <PlainTextPlugin
@@ -57,7 +57,7 @@ React wrapper for `@lexical/plain-text` that adds major features for plain text 
 
 ### `LexicalRichTextPlugin`
 
-React wrapper for `@lexical/rich-text` that adds major features for rich text editing, including typing, deletion, copy/pasting, indent/outdent and bold/italic/underline/strikethrough text formatting
+React wrapper for `@meogic/lexical-rich-text` that adds major features for rich text editing, including typing, deletion, copy/pasting, indent/outdent and bold/italic/underline/strikethrough text formatting
 
 ```jsx
 <RichTextPlugin
@@ -77,7 +77,7 @@ Plugin that calls `onChange` whenever Lexical state is updated. Using `ignoreHis
 
 ### `LexicalHistoryPlugin`
 
-React wrapper for `@lexical/history` that adds support for history stack management and `undo` / `redo` commands
+React wrapper for `@meogic/lexical-history` that adds support for history stack management and `undo` / `redo` commands
 
 ```jsx
 <HistoryPlugin />
@@ -85,7 +85,7 @@ React wrapper for `@lexical/history` that adds support for history stack managem
 
 ### `LexicalLinkPlugin`
 
-React wrapper for `@lexical/link` that adds support for links, including `toggleLink` command support that toggles link for selected text
+React wrapper for `@meogic/lexical-link` that adds support for links, including `toggleLink` command support that toggles link for selected text
 
 ```jsx
 <LinkPlugin />
@@ -93,7 +93,7 @@ React wrapper for `@lexical/link` that adds support for links, including `toggle
 
 ### `LexicalListPlugin`
 
-React wrapper for `@lexical/list` that adds support for lists (ordered and unordered)
+React wrapper for `@meogic/lexical-list` that adds support for lists (ordered and unordered)
 
 ```jsx
 <ListPlugin />
@@ -101,7 +101,7 @@ React wrapper for `@lexical/list` that adds support for lists (ordered and unord
 
 ### `LexicalCheckListPlugin`
 
-React wrapper for `@lexical/list` that adds support for check lists. Note that it requires some css to render check/uncheck marks. See PlaygroundEditorTheme.css for details.
+React wrapper for `@meogic/lexical-list` that adds support for check lists. Note that it requires some css to render check/uncheck marks. See PlaygroundEditorTheme.css for details.
 
 ```jsx
 <CheckListPlugin />
@@ -109,7 +109,7 @@ React wrapper for `@lexical/list` that adds support for check lists. Note that i
 
 ### `LexicalTablePlugin`
 
-React wrapper for `@lexical/table` that adds support for tables
+React wrapper for `@meogic/lexical-table` that adds support for tables
 
 ```jsx
 <TablePlugin />
@@ -117,7 +117,7 @@ React wrapper for `@lexical/table` that adds support for tables
 
 ### `LexicalTabIndentationPlugin`
 
-Plugin that allows tab indentation in combination with `@lexical/rich-text`.
+Plugin that allows tab indentation in combination with `@meogic/lexical-rich-text`.
 
 ```jsx
 <TabIndentationPlugin />

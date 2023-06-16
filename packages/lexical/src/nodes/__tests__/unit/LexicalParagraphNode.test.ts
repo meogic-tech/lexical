@@ -11,7 +11,7 @@ import {
   $getRoot,
   $isParagraphNode,
   ParagraphNode,
-} from 'lexical';
+} from '@meogic/lexical';
 
 import {initializeUnitTest} from '../../../__tests__/utils';
 

@@ -6,8 +6,8 @@
  *
  */
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {COMMAND_PRIORITY_NORMAL, PASTE_COMMAND} from 'lexical';
+import {useLexicalComposerContext} from '@meogic/lexical-react/LexicalComposerContext';
+import {COMMAND_PRIORITY_NORMAL, PASTE_COMMAND} from '@meogic/lexical';
 import * as React from 'react';
 import {useEffect, useState} from 'react';
 

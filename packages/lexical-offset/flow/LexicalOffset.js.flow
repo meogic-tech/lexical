@@ -11,7 +11,7 @@ import type {
   LexicalEditor,
   NodeKey,
   RangeSelection,
-} from 'lexical';
+} from '@meogic/lexical';
 type OffsetElementNode = {
   child: null | OffsetNode,
   end: number,

@@ -6,14 +6,14 @@
  *
  */
 
-import {createEmptyHistoryState, registerHistory} from '@lexical/history';
-import {useLexicalComposerContext} from '@lexical/react/src/LexicalComposerContext';
-import {ContentEditable} from '@lexical/react/src/LexicalContentEditable';
-import LexicalErrorBoundary from '@lexical/react/src/LexicalErrorBoundary';
-import {HistoryPlugin} from '@lexical/react/src/LexicalHistoryPlugin';
-import {RichTextPlugin} from '@lexical/react/src/LexicalRichTextPlugin';
-import {$createQuoteNode} from '@lexical/rich-text/src';
-import {$setBlocksType} from '@lexical/selection/src';
+import {createEmptyHistoryState, registerHistory} from '@meogic/lexical-history';
+import {useLexicalComposerContext} from '@meogic/lexical-react/src/LexicalComposerContext';
+import {ContentEditable} from '@meogic/lexical-react/src/LexicalContentEditable';
+import LexicalErrorBoundary from '@meogic/lexical-react/src/LexicalErrorBoundary';
+import {HistoryPlugin} from '@meogic/lexical-react/src/LexicalHistoryPlugin';
+import {RichTextPlugin} from '@meogic/lexical-react/src/LexicalRichTextPlugin';
+import {$createQuoteNode} from '@meogic/lexical-rich-text/src';
+import {$setBlocksType} from '@meogic/lexical-selection/src';
 import {
   $createNodeSelection,
   $createRangeSelection,

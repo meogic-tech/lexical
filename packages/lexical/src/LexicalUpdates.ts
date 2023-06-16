@@ -54,7 +54,7 @@ import {
   scheduleMicroTask,
   updateDOMBlockCursorElement,
 } from './LexicalUtils';
-import {$isMergeableNode} from "./nodes/LexicalMergeableNode";
+import {$isMergeableNode} from './nodes/LexicalMergeableNode';
 
 let activeEditorState: null | EditorState = null;
 let activeEditor: null | LexicalEditor = null;
@@ -268,6 +268,12 @@ function $applyAllTransforms(
         $isNodeValidForTransform(node, compositionKey)
       ) {
         $applyTransforms(editor, node, transformsCache);
+      }
+      if (
+          node !== undefined &&
+          $isMergeableNode(node)
+      ) {
+        $normalizeMergeableNode(node);
       }
 
       dirtyElements.set(nodeKey, intentionallyMarkedAsDirty);

@@ -1,4 +1,4 @@
-# `@lexical/dragon`
+# `@meogic/lexical-dragon`
 
 This package contains compatibility with Dragon NaturallySpeaking accessibility tools.
 

@@ -13,7 +13,7 @@ import {
   $getRoot,
   LexicalEditor,
   NodeKey,
-} from 'lexical';
+} from '@meogic/lexical';
 import {
   $createTestElementNode,
   initializeUnitTest,

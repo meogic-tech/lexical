@@ -78,7 +78,7 @@ You can leverage Lexical's command listening system. Lexical provides specific c
 - `KEY_ESCAPE_COMMAND`
 
 ```js
-import {KEY_ENTER_COMMAND, COMMAND_PRIORITY_LOW} from 'lexical';
+import {KEY_ENTER_COMMAND, COMMAND_PRIORITY_LOW} from '@meogic/lexical';
 
 editor.registerCommand(KEY_ENTER_COMMAND, (event: KeyboardEvent) => {
   // Handle enter key presses here
@@ -92,7 +92,7 @@ other key based commands from firing, so in most cases you'll want to return `fa
 the command listener.
 
 ```js
-import {KEY_DOWN_COMMAND, COMMAND_PRIORITY_LOW} from 'lexical';
+import {KEY_DOWN_COMMAND, COMMAND_PRIORITY_LOW} from '@meogic/lexical';
 
 editor.registerCommand(KEY_DOWN_COMMAND, (event: KeyboardEvent) => {
   // Handle event here

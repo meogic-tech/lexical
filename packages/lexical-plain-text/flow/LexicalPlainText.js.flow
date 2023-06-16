@@ -6,6 +6,6 @@
  *
  * @flow strict
  */
-import type {EditorState, LexicalEditor} from 'lexical';
+import type {EditorState, LexicalEditor} from '@meogic/lexical';
 
 declare export function registerPlainText(editor: LexicalEditor): () => void;

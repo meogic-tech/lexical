@@ -1,4 +1,4 @@
-/** @module @lexical/list */
+/** @module @meogic/lexical-list */
 /**
  * Copyright (c) Meta Platforms, Inc. and affiliates.
  *
@@ -9,9 +9,9 @@
 
 import type {SerializedListItemNode} from './LexicalListItemNode';
 import type {ListType, SerializedListNode} from './LexicalListNode';
-import type {LexicalCommand} from 'lexical';
+import type {LexicalCommand} from '@meogic/lexical';
 
-import {createCommand} from 'lexical';
+import {createCommand} from '@meogic/lexical';
 
 import {$handleListInsertParagraph, insertList, removeList} from './formatList';
 import {

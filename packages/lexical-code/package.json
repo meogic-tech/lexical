@@ -1,5 +1,5 @@
 {
-  "name": "@lexical/code",
+  "name": "@meogic/lexical-code",
   "description": "This package contains the functionality for the code blocks and code highlighting for Lexical.",
   "keywords": [
     "lexical",
@@ -8,13 +8,13 @@
     "code"
   ],
   "license": "MIT",
-  "version": "0.11.1",
+  "version": "0.11.1-mod5",
   "main": "LexicalCode.js",
   "peerDependencies": {
-    "lexical": "0.11.1"
+    "@meogic/lexical": "0.11.1-mod5"
   },
   "dependencies": {
-    "@lexical/utils": "0.11.1",
+    "@meogic/lexical-utils": "0.11.1-mod5",
     "prismjs": "^1.27.0"
   },
   "repository": {

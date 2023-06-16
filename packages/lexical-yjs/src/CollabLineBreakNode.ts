@@ -8,10 +8,10 @@
 
 import type {Binding} from '.';
 import type {CollabElementNode} from './CollabElementNode';
-import type {LineBreakNode, NodeKey} from 'lexical';
+import type {LineBreakNode, NodeKey} from '@meogic/lexical';
 import type {Map as YMap} from 'yjs';
 
-import {$getNodeByKey, $isLineBreakNode} from 'lexical';
+import {$getNodeByKey, $isLineBreakNode} from '@meogic/lexical';
 
 export class CollabLineBreakNode {
   _map: YMap<unknown>;
