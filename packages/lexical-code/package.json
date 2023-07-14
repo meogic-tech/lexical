@@ -8,13 +8,13 @@
     "code"
   ],
   "license": "MIT",
-  "version": "0.11.1-mod5",
+  "version": "0.11.1-mod6",
   "main": "LexicalCode.js",
   "peerDependencies": {
-    "@meogic/lexical": "0.11.1-mod5"
+    "@meogic/lexical": "0.11.1-mod6"
   },
   "dependencies": {
-    "@meogic/lexical-utils": "0.11.1-mod5",
+    "@meogic/lexical-utils": "0.11.1-mod6",
     "prismjs": "^1.27.0"
   },
   "repository": {

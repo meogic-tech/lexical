@@ -105,7 +105,8 @@ export function $normalizeMergeableNode(mergeableNode: MergeableNode<unknown>): 
 
   if (
       (previousNode = node.getPreviousSibling()) !== null &&
-      $isMergeableNode(previousNode)
+      $isMergeableNode(previousNode) &&
+      previousNode.__type === node.__type
       ) {
     node = $mergeMergeableNodes(previousNode, node);
   }
@@ -115,7 +116,8 @@ export function $normalizeMergeableNode(mergeableNode: MergeableNode<unknown>): 
 
   if (
       (nextNode = node.getNextSibling()) !== null &&
-      $isMergeableNode(nextNode)
+      $isMergeableNode(nextNode) &&
+      nextNode.__type === node.__type
       ) {
     node = $mergeMergeableNodes(node, nextNode);
   }

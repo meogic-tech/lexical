@@ -8,15 +8,15 @@
     "utils"
   ],
   "license": "MIT",
-  "version": "0.11.1-mod5",
+  "version": "0.11.1-mod6",
   "main": "LexicalUtils.js",
   "peerDependencies": {
-    "@meogic/lexical": "0.11.1-mod5"
+    "@meogic/lexical": "0.11.1-mod6"
   },
   "dependencies": {
-    "@meogic/lexical-list": "0.11.1-mod5",
-    "@meogic/lexical-table": "0.11.1-mod5",
-    "@meogic/lexical-selection": "0.11.1-mod5"
+    "@meogic/lexical-list": "0.11.1-mod6",
+    "@meogic/lexical-table": "0.11.1-mod6",
+    "@meogic/lexical-selection": "0.11.1-mod6"
   },
   "repository": {
     "type": "git",
