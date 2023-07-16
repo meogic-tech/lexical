@@ -224,7 +224,7 @@ function $applyAllTransforms(
         ) {
           $normalizeTextNode(node);
         }
-        if (node && $isMergeableNode(node)) {
+        if (node && $isMergeableNode(node) && !$isTextNode(node)) {
           $normalizeMergeableNode(node)
         }
 

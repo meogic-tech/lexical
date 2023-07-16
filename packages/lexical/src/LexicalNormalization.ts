@@ -103,7 +103,6 @@ export function $normalizeMergeableNode(mergeableNode: MergeableNode<unknown>): 
 
   // Backward
   let previousNode;
-  console.log('node.getPreviousSibling()', node.getPreviousSibling());
 
   if (
       (previousNode = node.getPreviousSibling()) !== null &&
