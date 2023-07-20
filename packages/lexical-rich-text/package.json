@@ -7,13 +7,13 @@
     "rich-text"
   ],
   "license": "MIT",
-  "version": "0.11.3",
+  "version": "0.11.3-mod2",
   "main": "LexicalRichText.js",
   "peerDependencies": {
-    "lexical": "0.11.3",
-    "@lexical/selection": "0.11.3",
-    "@lexical/clipboard": "0.11.3",
-    "@lexical/utils": "0.11.3"
+    "lexical": "0.11.3-mod2",
+    "@lexical/selection": "0.11.3-mod2",
+    "@lexical/clipboard": "0.11.3-mod2",
+    "@lexical/utils": "0.11.3-mod2"
   },
   "repository": {
     "type": "git",
