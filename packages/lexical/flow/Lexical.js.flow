@@ -88,7 +88,11 @@ type TextContentListener = (text: string) => void;
 type ErrorHandler = (error: Error) => void;
 export type MutationListener = (
   nodes: Map<NodeKey, NodeMutation>,
-  {updateTags: Set<string>, dirtyLeaves: Set<string>},
+  {
+    updateTags: Set<string>,
+    dirtyLeaves: Set<string>,
+    prevEditorState: EditorState,
+  },
 ) => void;
 export type EditableListener = (editable: boolean) => void;
 type Listeners = {
@@ -477,6 +481,7 @@ declare export class RangeSelection implements BaseSelection {
   applyDOMRange(range: StaticRange): void;
   clone(): RangeSelection;
   toggleFormat(format: TextFormatType): void;
+  setStyle(style: string): void;
   hasFormat(type: TextFormatType): boolean;
   insertText(text: string): void;
   insertRawText(text: string): void;
