@@ -766,7 +766,7 @@ export class RangeSelection implements BaseSelection {
     }
 
     let nodes: Array<LexicalNode>;
-    // Another way to add a second parameter to getNodesBetween to determine whether to remove redundant nodes
+    // UNDONE: Another way to add a second parameter to getNodesBetween to determine whether to remove redundant nodes
     // https://github.com/facebook/lexical/issues/4785
     if (firstNode.is(lastNode)) {
       if ($isElementNode(firstNode) && firstNode.getChildrenSize() > 0) {
