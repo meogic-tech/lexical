@@ -345,13 +345,18 @@ function onSelectionChange(
         let hasTextNodes = false;
 
         const nodes = selection.getNodes();
-
+        // This code snippet is used to solve the bug that the selection format
+        // is affected by the format of the end of the previous line of the selected line
+        // and the beginning of the next line of the selected line
+        // The toolbar's style activation state is incorrect in certain cases #4785
+        // https://github.com/facebook/lexical/issues/4785
         if (
-            selection.getTextContent().startsWith('\n') &&
-            selection.getTextContent().endsWith('\n') &&
-            ((anchorNode.getTextContentSize() === anchor.offset && focus.offset === 0) ||
-                (focusNode.getTextContentSize() === focus.offset && anchor.offset === 0)
-            )
+          selection.getTextContent().startsWith('\n') &&
+          selection.getTextContent().endsWith('\n') &&
+          ((anchorNode.getTextContentSize() === anchor.offset &&
+            focus.offset === 0) ||
+            (focusNode.getTextContentSize() === focus.offset &&
+              anchor.offset === 0))
         ) {
           if ($isTextNode(nodes[0])) {
             nodes.shift();
@@ -360,17 +365,18 @@ function onSelectionChange(
             nodes.pop();
           }
         } else if (
-            selection.getTextContent().startsWith('\n') &&
-            !selection.getTextContent().endsWith('\n') &&
-            (anchorNode.getTextContentSize() === anchor.offset || focusNode.getTextContentSize() === focus.offset) &&
-            $isTextNode(nodes[0])
+          selection.getTextContent().startsWith('\n') &&
+          !selection.getTextContent().endsWith('\n') &&
+          (anchorNode.getTextContentSize() === anchor.offset ||
+            focusNode.getTextContentSize() === focus.offset) &&
+          $isTextNode(nodes[0])
         ) {
           nodes.shift();
         } else if (
-            !selection.getTextContent().startsWith('\n') &&
-            selection.getTextContent().endsWith('\n') &&
-            (anchor.offset === 0 || focus.offset === 0) &&
-            $isTextNode(nodes[nodes.length - 1])
+          !selection.getTextContent().startsWith('\n') &&
+          selection.getTextContent().endsWith('\n') &&
+          (anchor.offset === 0 || focus.offset === 0) &&
+          $isTextNode(nodes[nodes.length - 1])
         ) {
           nodes.pop();
         }
